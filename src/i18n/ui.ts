@@ -1,21 +1,21 @@
-import GermanyFlag from '/svg/Germany.svg';
-import MexicoFlag from '/svg/Mexico.svg';
-import USFlag from '/svg/US.svg';
+import GermanyFlag from '@/components/flags/Germany.astro';
+import MexicoFlag from '@/components/flags/Mexico.astro';
+import USFlag from '@/components/flags/US.astro';
 
 // Add missing imports
 export const LANGUAGES: Record<
   string,
   { code: string; name: string; flag: typeof MexicoFlag }
 > = {
-  ca: {
-    code: 'ca',
-    name: 'Català',
-    flag: USFlag,
+  de: {
+    code: 'de',
+    name: 'Deutsch',
+    flag: GermanyFlag,
   },
   en: {
     code: 'en',
     name: 'English',
-    flag: GermanyFlag,
+    flag: USFlag,
   },
   es: {
     code: 'es',
@@ -29,57 +29,36 @@ export const showDefaultLang = false;
 
 export const ui = {
   es: {
-    'nav.inicio': 'Inicio',
-    'nav.vota': 'Vota',
-    'nav.info': 'Información',
-    'nav.archivo': 'Archivo',
-    'nav.legal': 'Aviso Legal',
-    'nav.privacidad': 'Privacidad',
-    'nav.cookies': 'Cookies',
+    'nav.about': 'Acerca de',
+    'nav.projects': 'Proyectos',
+    'nav.skills': 'Habilidades',
+    'nav.contact': 'Contactame',
   },
   en: {
-    'nav.inicio': 'Home',
-    'nav.vota': 'Vote',
-    'nav.info': 'Information',
-    'nav.archivo': 'Archive',
-    'nav.legal': 'Legal Notice',
-    'nav.privacidad': 'Privacy',
-    'nav.cookies': 'Cookies',
+    'nav.about': 'About me',
+    'nav.projects': 'Projects',
+    'nav.skills': 'Skills',
+    'nav.contact': 'Contact me',
   },
-  ca: {
-    'nav.inicio': 'Inici',
-    'nav.vota': 'Vota',
-    'nav.info': 'Informació',
-    'nav.archivo': 'Arxiu',
-    'nav.legal': 'Avís Legal',
-    'nav.privacidad': 'Privacitat',
-    'nav.cookies': 'Cookies',
+  de: {
+    'nav.about': 'Über mich',
+    'nav.projects': 'Projekte',
+    'nav.skills': 'Fähigkeiten',
+    'nav.contact': 'Kontaktiere mich',
   },
 } as const;
 
 export const routes = {
   es: {
-    vota: 'vota',
-    info: 'info',
-    archivo: 'archivo',
-    'aviso-legal': 'aviso-legal',
-    privacidad: 'privacidad',
-    cookies: 'cookies',
+    about: 'sobre-mi',
+    projects: 'proyectos',
   },
   en: {
-    vota: 'vote',
-    info: 'information',
-    archivo: 'archive',
-    'aviso-legal': 'legal-notice',
-    privacidad: 'privacy',
-    cookies: 'cookies',
+    about: 'about-me',
+    projects: 'projects',
   },
-  ca: {
-    vota: 'vota',
-    info: 'informacio',
-    archivo: 'arxiu',
-    'aviso-legal': 'avis-legal',
-    privacidad: 'privacitat',
-    cookies: 'cookies',
+  de: {
+    about: 'ueber-mich',
+    projects: 'projekte',
   },
 };
