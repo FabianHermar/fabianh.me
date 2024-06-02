@@ -2,7 +2,7 @@
   "name": "fabianh.dev",
   "author": "Fabian Herrera",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
