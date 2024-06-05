@@ -3,7 +3,7 @@ import english from '@/i18n/lang/EN.json';
 import spanish from '@/i18n/lang/ES.json';
 
 const LANG = {
-  CATALAN: 'ca',
+  DEUTSCH: 'de',
   ENGLISH: 'en',
   SPANISH: 'es',
 };
@@ -13,7 +13,7 @@ export const getI18N = ( {
 }: {
   currentLocale: string | undefined;
 } ) => {
-  if ( currentLocale === LANG.CATALAN ) return { ...spanish, ...english };
-  if ( currentLocale === LANG.ENGLISH ) return { ...spanish, ...deutsch };
+  if ( currentLocale === LANG.DEUTSCH ) return { ...spanish, ...deutsch };
+  if ( currentLocale === LANG.ENGLISH ) return { ...spanish, ...english };
   return spanish;
 };
