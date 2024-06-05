@@ -29,7 +29,7 @@ export const showDefaultLang = false;
 
 export const ui = {
   es: {
-    'nav.about': 'Acerca de',
+    'nav.about': 'Sobre mi',
     'nav.projects': 'Proyectos',
     'nav.skills': 'Habilidades',
     'nav.contact': 'Contactame',
