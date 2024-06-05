@@ -7,9 +7,10 @@ export default defineConfig({
   integrations: [ tailwind() ],
   i18n: {
     defaultLocale: 'es',
-    locales: [ 'es', 'en', 'de' ],
+    locales: [ 'es', 'en', 'ca' ],
     routing: {
       prefixDefaultLocale: false
     }
   },
+  output: "server",
 });
