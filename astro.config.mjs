@@ -11,6 +11,5 @@ export default defineConfig({
     routing: {
       prefixDefaultLocale: false
     }
-  },
-  output: "server",
+  }
 });
