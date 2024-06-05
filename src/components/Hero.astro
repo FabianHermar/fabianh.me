@@ -1,5 +1,9 @@
 ---
+import { getI18N } from "@/i18n/index"
 import Container from "./Container.astro"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <Container>
@@ -7,14 +11,13 @@ import Container from "./Container.astro"
 		<div class="size-full flex-1 pr-4 font-GilroyBold">
 			<span
 				class="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-4xl text-transparent lg:text-7xl"
-				>I design products</span
+				>{i18n.hero.title}</span
 			>
 			<p class="text-balance text-3xl lg:text-5xl">
-				that capture the imagination and elevate people's experience.
+				{i18n.hero.title_2}
 			</p>
 			<p class="pt-4 font-GilroyRegular text-base text-neutral-500 lg:text-xl">
-				Hello! I'm Fabian Herrera, a software developer based in Mexico. I specialize in creating
-				intuitive interfaces for growing startups and a variety of clients.
+				{i18n.hero.subtitle}
 			</p>
 		</div>
 		<div class="h-auto w-96 grayscale lg:w-[500px]">
