@@ -1,34 +1,18 @@
 ---
 import { Image } from "astro:assets"
 import Container from "./Container.astro"
+import HeaderLink from "./HeaderLink.astro"
 import LangSelector from "./LangSelector.astro"
 
-const links = [
-	{
-		to: "",
-		label: "About Me",
-		target: "",
-		class: "",
-	},
-	{
-		to: "",
-		label: "Projects",
-		target: "",
-		class: "",
-	},
-	{
-		to: "",
-		label: "Skills",
-		target: "",
-		class: "",
-	},
-	{
-		to: "",
-		label: "Contact Me",
-		target: "",
-		class: "",
-	},
-]
+import { getI18N } from "@/i18n/index"
+import { getLangFromUrl, useTranslatedPath, useTranslations } from "@/i18n/utils"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const translatePath = useTranslatedPath(lang)
 ---
 
 <script>
@@ -69,19 +53,20 @@ const links = [
 		<Container>
 			<div class="flex w-full flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
 				<div class="z-20 flex w-full justify-between md:px-0">
-					<a href="/" aria-label="logo" class="flex w-full items-center space-x-2">
-						<picture>
-							<source media="(prefers-color-scheme: dark)" srcset="/svg/dark-logo.svg" />
-							<source media="(prefers-color-scheme: light)" srcset="/svg/logo-dark.svg" />
-							<Image
-								alt="Fabian Herrera Logo"
-								src="/svg/dark-logo.svg"
-								width="50"
-								height="70"
-								style="max-width: 100%;"
-							/>
-						</picture>
-					</a>
+					<HeaderLink
+						checkActive={false}
+						href={translatePath("/")}
+						aria-label="logo"
+						class="flex w-full items-center space-x-2"
+					>
+						<Image
+							alt="Fabian Herrera Logo"
+							src="/svg/dark-logo.svg"
+							width="50"
+							height="70"
+							style="max-width: 100%;"
+						/>
+					</HeaderLink>
 
 					<div class="relative flex max-h-10 w-full items-center justify-end pr-4 lg:hidden">
 						<button
@@ -106,7 +91,7 @@ const links = [
 					<!-- <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 backdrop-blur-lg transition duration-500 dark:bg-gray-100/10 lg:hidden"></div> -->
 					<div
 						id="navlinks"
-						class="dark:bg-darker invisible absolute left-0 top-full z-20 h-96 lg:h-auto w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl bg-gray-300 p-8 opacity-0 shadow-2xl transition-all duration-300 lg:visible lg:relative lg:flex lg:w-3/4 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:shadow-none"
+						class="dark:bg-darker invisible absolute left-0 top-full z-20 h-96 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl bg-gray-300 p-8 opacity-0 shadow-2xl transition-all duration-300 lg:visible lg:relative lg:flex lg:h-auto lg:w-full lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:shadow-none"
 					>
 						<div class="w-full text-gray-600 lg:w-full lg:pr-4 lg:pt-0">
 							<ul
@@ -117,7 +102,7 @@ const links = [
 										href=""
 										class="block font-GilroySemibold text-base text-black transition hover:text-black md:px-4"
 									>
-										<span>About Me</span>
+										<span>{t("nav.about")}</span>
 									</a>
 								</li>
 								<li>
@@ -125,7 +110,7 @@ const links = [
 										href=""
 										class="block font-GilroySemibold text-base text-black transition hover:text-black md:px-4"
 									>
-										<span>Projects</span>
+										<span>{t("nav.projects")}</span>
 									</a>
 								</li>
 								<li>
@@ -133,7 +118,7 @@ const links = [
 										href=""
 										class="block font-GilroySemibold text-base text-black transition hover:text-black md:px-4"
 									>
-										<span>Skills</span>
+										<span>{t("nav.skills")}</span>
 									</a>
 								</li>
 								<li>
@@ -141,7 +126,7 @@ const links = [
 										href=""
 										class="block font-GilroySemibold text-base text-black transition hover:text-black md:px-4"
 									>
-										<span>Contact Me</span>
+										<span>{t("nav.contact")}</span>
 									</a>
 								</li>
 								<li>
