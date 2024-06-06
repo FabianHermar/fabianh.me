@@ -18,3 +18,12 @@
 		src: url(/fonts/Gilroy-Bold.woff2) format("woff2");
 	}
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: #2978ee;
+	color: #fff;
+}
