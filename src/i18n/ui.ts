@@ -33,18 +33,24 @@ export const ui = {
     'nav.projects': 'Proyectos',
     'nav.skills': 'Habilidades',
     'nav.contact': 'Contactame',
+    'btn.downloadCV': 'Descargar CV',
+    'btn.digitalCV': 'CV Digital',
   },
   en: {
     'nav.about': 'About me',
     'nav.projects': 'Projects',
     'nav.skills': 'Skills',
     'nav.contact': 'Contact me',
+    'btn.downloadCV': 'Download CV',
+    'btn.digitalCV': 'Digital CV',
   },
   de: {
     'nav.about': 'Über mich',
     'nav.projects': 'Projekte',
     'nav.skills': 'Fähigkeiten',
     'nav.contact': 'Kontaktiere mich',
+    'btn.downloadCV': 'CV herunterladen',
+    'btn.digitalCV': 'Digitaler Lebenslauf',
   },
 } as const;
 
