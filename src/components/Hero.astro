@@ -1,6 +1,7 @@
 ---
 import { getI18N } from "@/i18n/index"
 import Container from "./Container.astro"
+import SocialMediaLinks from "./SocialMediaLinks.astro"
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -8,19 +9,22 @@ const i18n = getI18N({ currentLocale })
 
 <Container>
 	<section class="flex flex-col items-center justify-center pt-28 lg:flex-row lg:pt-32">
-		<div class="size-full flex-1 pr-4 font-GilroyBold">
+		<div class="size-full flex-1 pr-4">
 			<span
-				class="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-4xl text-transparent lg:text-7xl"
+				class="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text font-GilroyBold text-4xl tracking-tight text-transparent lg:text-7xl"
 				>{i18n.hero.title}</span
 			>
-			<p class="text-balance text-3xl lg:text-5xl">
+			<p class="text-balance font-GilroyBold text-3xl lg:text-5xl">
 				{i18n.hero.title_2}
 			</p>
 			<p class="pt-4 font-GilroyRegular text-base text-neutral-500 lg:text-xl">
 				{i18n.hero.subtitle}
 			</p>
+			<div>
+				<SocialMediaLinks />
+			</div>
 		</div>
-		<div class="h-auto w-96 grayscale lg:w-[500px]">
+		<div class="h-auto w-96 select-none grayscale lg:w-[500px]">
 			<img src="/me.png" alt="Fabian Herrera photo" />
 		</div>
 	</section>
