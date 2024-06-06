@@ -1,0 +1,177 @@
+---
+import styles from "../styles/DownloadButton.module.css"
+
+import { getI18N } from "@/i18n/index"
+import { getLangFromUrl, useTranslatedPath, useTranslations } from "@/i18n/utils"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const translatePath = useTranslatedPath(lang)
+---
+
+<section class="flex flex-col gap-4 py-8 font-light lg:flex-row">
+	<div class="flex flex-row justify-center gap-4 lg:justify-start">
+		<!-- Twitter -->
+		<a
+			href="https://x.com/FabianHermar"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full
+		bg-white shadow-md shadow-gray-200 transition-all duration-300"
+		>
+			<svg
+				class="z-10 fill-black transition-all duration-300 group-hover:fill-white"
+				xmlns="http://www.w3.org/2000/svg"
+				width="28"
+				height="28"
+				viewBox="0 0 72 72"
+				fill="none"
+			>
+				<path
+					d="M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z"
+					fill=""></path>
+			</svg>
+			<div
+				class="absolute left-0 top-full z-0 h-full w-full rounded-full bg-black transition-all duration-300 group-hover:top-0"
+			>
+			</div>
+		</a>
+
+		<!-- LinkedIn -->
+
+		<a
+			href="https://www.linkedin.com/in/fabianhmz/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 transition-all duration-300"
+		>
+			<svg
+				class="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white"
+				xmlns="http://www.w3.org/2000/svg"
+				width="28"
+				height="28"
+				viewBox="0 0 72 72"
+				fill="none"
+			>
+				<path
+					d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z"
+					fill=""></path>
+			</svg>
+			<div
+				class="absolute left-0 top-full z-0 h-full w-full rounded-full bg-[#006699] transition-all
+			duration-300 group-hover:top-0"
+			>
+			</div>
+		</a>
+
+		<!-- GitHub -->
+
+		<a
+			href="https://github.com/FabianHermar"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 transition-all duration-300"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="relative z-10 size-6 fill-gray-900 transition-all duration-300 group-hover:fill-white"
+				viewBox="0 0 512 512"
+			>
+				<path
+					d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+				>
+				</path>
+			</svg>
+			<div
+				class="absolute left-0 top-full z-0 h-full w-full rounded-full bg-[#2B3137] transition-all
+			duration-300 group-hover:top-0"
+			>
+			</div>
+		</a>
+
+		<!-- Mail -->
+
+		<a
+			href="mailto:ctofabian@gmail.com"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 transition-all duration-300"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="relative z-10 size-6 fill-gray-900 transition-all duration-300 group-hover:fill-white"
+				viewBox="0 0 512 512"
+			>
+				<path
+					d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"
+				>
+				</path>
+			</svg>
+			<div
+				class="absolute left-0 top-full z-0 h-full w-full rounded-full bg-gradient-to-bl
+			from-purple-500 via-pink-500 to-yellow-500 transition-all duration-300 group-hover:top-0"
+			>
+			</div>
+		</a>
+	</div>
+	<div class="flex flex-row justify-center gap-4 lg:justify-start">
+		<a class={styles.Btn} href="/FabianHerreraCV.pdf" download="FabianHerreraCV.pdf">
+			<span>{t("btn.downloadCV")}</span>
+			<svg
+				class={styles.svgIcon}
+				viewBox="0 0 384 512"
+				height="1em"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+				>
+				</path>
+			</svg>
+		</a>
+
+		<a
+			href="https://cv.fabianh.dev"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group relative inline-flex h-10 items-center justify-center bg-neutral-950 px-6 font-GilroyBold text-neutral-200"
+			><span>{t("btn.digitalCV")}</span>
+			<div class="relative ml-1 h-5 w-5 overflow-hidden">
+				<div
+					class="absolute transition-all duration-300 group-hover:-translate-y-5 group-hover:translate-x-4"
+				>
+					<svg
+						width="15"
+						height="15"
+						viewBox="0 0 15 15"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+					>
+						<path
+							d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+							fill="currentColor"
+							fill-rule="evenodd"
+							clip-rule="evenodd"></path>
+					</svg><svg
+						width="15"
+						height="15"
+						viewBox="0 0 15 15"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5 -translate-x-4"
+					>
+						<path
+							d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+							fill="currentColor"
+							fill-rule="evenodd"
+							clip-rule="evenodd"></path>
+					</svg>
+				</div>
+			</div>
+		</a>
+	</div>
+</section>
