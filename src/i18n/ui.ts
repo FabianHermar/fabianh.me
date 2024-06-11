@@ -32,7 +32,7 @@ export const ui = {
     'nav.about': 'Sobre mi',
     'nav.projects': 'Proyectos',
     'nav.skills': 'Habilidades',
-    'nav.contact': 'Contactame',
+    'nav.contact': 'Contáctame',
     'btn.downloadCV': 'Descargar CV',
     'btn.digitalCV': 'CV Digital',
   },
