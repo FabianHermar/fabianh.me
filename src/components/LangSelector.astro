@@ -1,5 +1,5 @@
 ---
-import ChevronIcon from "@/components/Arrow.astro"
+import Arrow from "@/components/Arrow.astro"
 import { LANGUAGES } from "@/i18n/ui"
 import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from "../i18n/utils"
 
@@ -23,7 +23,7 @@ const otherLocales = Object.values(LANGUAGES).filter((locale) => locale.code !==
 		>
 			<currentLocaleData.flag />
 			{currentLocaleData.name}
-			<ChevronIcon />
+			<Arrow />
 		</button>
 		<ul
 			class="group-hover:animate-fade-down group-hover:animate-duration-200 absolute hidden w-full pt-0.5 group-hover:block"
