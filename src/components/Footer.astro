@@ -1,11 +1,14 @@
 ---
 import Container from "./Container.astro"
+import { ModeToggle } from "./DarkModeToggle"
 ---
 
-<footer class="h-screen bg-black">
+<footer class="h-screen">
 	<Container>
 		<div class="pt-10 lg:pt-20">
-			<h3 class="pb-4 font-GilroyBold text-3xl tracking-tight text-white lg:text-6xl">
+			<h3
+				class="pb-4 font-GilroyBold text-3xl tracking-tight text-black dark:text-white lg:text-6xl"
+			>
 				¿Listo para crear algo genial juntos?
 			</h3>
 			<p
@@ -15,12 +18,12 @@ import Container from "./Container.astro"
 			</p>
 		</div>
 
-		<div class="pt-0 text-white lg:pt-20">
+		<div class="pt-0 text-black dark:text-white lg:pt-20">
 			<div class="mx-auto max-w-screen-xl space-y-8 py-16 lg:space-y-16">
 				<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
 					<div>
 						<div>
-							<h4 class="font-GilroyBold text-2xl tracking-tight text-white">
+							<h4 class="font-GilroyBold text-2xl tracking-tight text-black dark:text-white">
 								Fabian Herrera <span
 									class="bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold tracking-tight text-transparent"
 									>.</span
@@ -43,7 +46,7 @@ import Container from "./Container.astro"
 									</path>
 								</svg>
 								<span
-									class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+									class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>ctofabian@gmail.com</span
 								>
 							</a>
@@ -55,7 +58,7 @@ import Container from "./Container.astro"
 									href="https://x.com/FabianHermar"
 									rel="noreferrer"
 									target="_blank"
-									class="text-gray-500 transition hover:opacity-75"
+									class="text-neutral-500 transition hover:opacity-75"
 								>
 									<span class="sr-only">Twitter</span>
 
@@ -80,7 +83,7 @@ import Container from "./Container.astro"
 									href="https://github.com/FabianHermar"
 									rel="noreferrer"
 									target="_blank"
-									class="text-gray-500 transition hover:opacity-75"
+									class="text-neutral-500 transition hover:opacity-75"
 								>
 									<span class="sr-only">GitHub</span>
 
@@ -98,7 +101,7 @@ import Container from "./Container.astro"
 									href="https://www.linkedin.com/in/fabianhmz/"
 									rel="noreferrer"
 									target="_blank"
-									class="text-gray-500 transition hover:opacity-75"
+									class="text-neutral-500 transition hover:opacity-75"
 								>
 									<span class="sr-only">LinkedIn</span>
 
@@ -123,12 +126,12 @@ import Container from "./Container.astro"
 					<div class="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
 						<div>
 							<ul
-								class="mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-white transition-colors lg:mt-6 lg:text-2xl"
+								class="mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-black transition-colors dark:text-white lg:mt-6 lg:text-2xl"
 							>
 								<li>
 									<a
 										href="#"
-										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>
 										Sobre mi
 									</a>
@@ -137,7 +140,7 @@ import Container from "./Container.astro"
 								<li>
 									<a
 										href="#"
-										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-red-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>
 										Contáctame
 									</a>
@@ -147,12 +150,12 @@ import Container from "./Container.astro"
 
 						<div>
 							<ul
-								class="mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-white transition-colors lg:mt-6 lg:text-2xl"
+								class="mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-black transition-colors dark:text-white lg:mt-6 lg:text-2xl"
 							>
 								<li>
 									<a
 										href="#"
-										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-red-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>
 										Servicios
 									</a>
@@ -161,7 +164,7 @@ import Container from "./Container.astro"
 								<li>
 									<a
 										href="#"
-										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>
 										Blog
 									</a>
@@ -171,12 +174,12 @@ import Container from "./Container.astro"
 
 						<div>
 							<ul
-								class="mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-white transition-colors lg:mt-6 lg:text-2xl"
+								class="mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-black transition-colors dark:text-white lg:mt-6 lg:text-2xl"
 							>
 								<li>
 									<a
 										href="#"
-										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>
 										Experiencia
 									</a>
@@ -185,7 +188,7 @@ import Container from "./Container.astro"
 								<li>
 									<a
 										href="#"
-										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-red-500 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+										class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
 									>
 										Proyectos
 									</a>
@@ -194,10 +197,12 @@ import Container from "./Container.astro"
 						</div>
 					</div>
 				</div>
-
-				<p class="font-GilroyRegular text-xs tracking-wide text-gray-300">
-					Desarrollado moviendo las manitas y mucho ❤.
-				</p>
+				<div class="flex flex-row items-center justify-between">
+					<p class="font-GilroyRegular text-xs tracking-wide text-gray-300">
+						Desarrollado moviendo las manitas y mucho ❤.
+					</p>
+					<ModeToggle client:load />
+				</div>
 			</div>
 		</div>
 	</Container>
