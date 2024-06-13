@@ -13,7 +13,7 @@ const otherLocales = Object.values(LANGUAGES).filter((locale) => locale.code !==
 
 <div class="relative inline-block text-left">
 	<div
-		class="group rounded-md bg-black/30 font-GilroySemibold text-xs text-white transition-all hover:bg-black/70"
+		class="group rounded-md bg-black/30 font-GilroySemibold text-xs text-white transition-all hover:bg-black/70 dark:bg-white/30"
 	>
 		<button
 			type="button"
@@ -32,7 +32,7 @@ const otherLocales = Object.values(LANGUAGES).filter((locale) => locale.code !==
 				otherLocales.map((locale) => (
 					<li class="py-[2px]">
 						<a
-							class="inline-flex w-full items-center justify-start gap-x-2 whitespace-nowrap rounded-md bg-black/30 px-3 py-2 hover:bg-black/70"
+							class="inline-flex w-full items-center justify-start gap-x-2 whitespace-nowrap rounded-md bg-black/30 px-3 py-2 hover:bg-black/70 dark:bg-white/30"
 							href={translatePath(`/${route ? route : ""}`, locale.code)}
 						>
 							<locale.flag />
