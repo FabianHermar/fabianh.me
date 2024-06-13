@@ -13,7 +13,7 @@ const isActive = currentPath === href && checkActive
 
 <a
 	href={href}
-	class:list={[className, "border-b-2", isActive ? "border-white" : "border-transparent"]}
+	class:list={[className, "", isActive ? "border-white" : "border-transparent"]}
 	{...restOfProps}
 >
 	<slot />
