@@ -10,7 +10,7 @@
         srcSet='https://github.com/FabianHermar/fabianh.dev/blob/main/public/svg/dark-logo.svg'
       />
       <img
-        height="125em"
+        height="100em"
         alt='Boxode Logo'
         src='https://github.com/FabianHermar/fabianh.dev/blob/main/public/svg/dark-logo.svg'
       />
@@ -21,7 +21,7 @@
     <br />
   </div>
     <div>
-      <h1>🛠 Stack</h1>
+      <h2>🛠 Stack</h2>
       <ul>
         <li><a href="https://astro.build/">Astro</a></li>
       </ul>
