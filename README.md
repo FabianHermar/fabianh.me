@@ -85,6 +85,6 @@
   </div>
   <div>
     <h2>🔑 Licencia</h2>
-    <a>MIT</a> - Creada con mucho ❤️ por <a href="https://fabianh.dev">Fabian Herrera</a>
+    <a href="https://github.com/FabianHermar/fabianh.dev/blob/main/LICENSE">MIT</a> - Creada con mucho ❤️ por <a href="https://fabianh.dev">Fabian Herrera</a>
   </div>
 </main>
