@@ -44,8 +44,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "./node_modules/standard/.eslintrc.js",
-      "plugin:astro/recommended"
+      "./node_modules/standard/eslintrc.json"
     ]
   }
 }
