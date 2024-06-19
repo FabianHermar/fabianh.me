@@ -1,7 +1,7 @@
 ---
-import Arrow from "@/components/Arrow.astro"
-import { LANGUAGES } from "@/i18n/ui"
-import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from "../i18n/utils"
+import Arrow from '@/components/Arrow.astro'
+import { LANGUAGES } from '@/i18n/ui'
+import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from '../i18n/utils'
 
 const route = getRouteFromUrl(Astro.url)
 const lang = getLangFromUrl(Astro.url)
@@ -11,29 +11,29 @@ const currentLocaleData = LANGUAGES[lang]
 const otherLocales = Object.values(LANGUAGES).filter((locale) => locale.code !== lang)
 ---
 
-<div class="relative inline-block text-left">
+<div class='relative inline-block text-left'>
 	<div
-		class="group rounded-md bg-black/30 font-GilroySemibold text-xs text-white transition-all hover:bg-black/70 dark:bg-white/30"
+		class='group rounded-md bg-black/30 font-GilroySemibold text-xs text-white transition-all hover:bg-black/70 dark:bg-white/30'
 	>
 		<button
-			type="button"
-			class="inline-flex w-full items-center justify-start gap-x-2 px-3 py-2"
-			aria-expanded="true"
-			aria-haspopup="true"
+			type='button'
+			class='inline-flex w-full items-center justify-start gap-x-2 px-3 py-2'
+			aria-expanded='true'
+			aria-haspopup='true'
 		>
 			<currentLocaleData.flag />
 			{currentLocaleData.name}
 			<Arrow />
 		</button>
 		<ul
-			class="absolute hidden w-full pt-0.5 group-hover:block group-hover:animate-accordion-down group-hover:duration-200"
+			class='absolute hidden w-full pt-0.5 group-hover:block group-hover:animate-accordion-down group-hover:duration-200'
 		>
 			{
 				otherLocales.map((locale) => (
-					<li class="py-[2px]">
+					<li class='py-[2px]'>
 						<a
-							class="inline-flex w-full items-center justify-start gap-x-2 whitespace-nowrap rounded-md bg-black/30 px-3 py-2 hover:bg-black/70 dark:bg-white/30"
-							href={translatePath(`/${route ? route : ""}`, locale.code)}
+							class='inline-flex w-full items-center justify-start gap-x-2 whitespace-nowrap rounded-md bg-black/30 px-3 py-2 hover:bg-black/70 dark:bg-white/30'
+							href={translatePath(`/${route || ''}`, locale.code)}
 						>
 							<locale.flag />
 							{locale.name}
