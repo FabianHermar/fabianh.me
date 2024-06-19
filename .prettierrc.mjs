@@ -2,8 +2,8 @@
 export default {
   printWidth: 100,
   semi: false,
-  singleQuote: false,
-  jsxSingleQuote: false,
+  singleQuote: true,
+  jsxSingleQuote: true,
   quoteProps: "consistent",
   tabWidth: 2,
   trailingComma: "es5",
