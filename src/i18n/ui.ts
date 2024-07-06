@@ -1,6 +1,6 @@
-import GermanyFlag from '@/components/flags/Germany.astro'
-import MexicoFlag from '@/components/flags/Mexico.astro'
-import USFlag from '@/components/flags/US.astro'
+import GermanyFlag from '@/components/flags/Germany.astro';
+import MexicoFlag from '@/components/flags/Mexico.astro';
+import USFlag from '@/components/flags/US.astro';
 
 // Add missing imports
 export const LANGUAGES: Record<string, { code: string; name: string; flag: typeof MexicoFlag }> = {
@@ -32,6 +32,15 @@ export const ui = {
 		'nav.contact': 'Contáctame',
 		'btn.downloadCV': 'Descargar CV',
 		'btn.digitalCV': 'CV Digital',
+		'footer.title': '¿Listo para crear algo genial juntos?',
+		'footer.subtitle': 'Pongámonos en contacto.',
+		'footer.about': 'Sobre mi',
+		'footer.projects': 'Proyectos',
+		'footer.services': 'Servicios',
+		'footer.contact': 'Contáctame',
+		'footer.expertise': 'Experiencia',
+		'footer.blog': 'Blog',
+		'footer.small': 'Desarrollado moviendo las manitas y mucho ❤.'
 	},
 	en: {
 		'nav.about': 'About me',
@@ -40,6 +49,15 @@ export const ui = {
 		'nav.contact': 'Contact me',
 		'btn.downloadCV': 'Download CV',
 		'btn.digitalCV': 'Digital CV',
+		'footer.title': 'Ready to create something awesome together?',
+		'footer.subtitle': 'Let\'s get in touch.',
+		'footer.about': 'About me',
+		'footer.projects': 'Projects',
+		'footer.services': 'Services',
+		'footer.contact': 'Contact me',
+		'footer.expertise': 'Expertise',
+		'footer.blog': 'Blog',
+		'footer.small': 'Developed moving the hands and a lot of ❤.'
 	},
 	de: {
 		'nav.about': 'Über mich',
@@ -48,6 +66,15 @@ export const ui = {
 		'nav.contact': 'Kontaktiere mich',
 		'btn.downloadCV': 'CV herunterladen',
 		'btn.digitalCV': 'Digitaler Lebenslauf',
+		'footer.title': 'Bereit, zusammen etwas Tolles zu schaffen?',
+		'footer.subtitle': 'Lass uns in Kontakt kommen.',
+		'footer.about': 'Über mich',
+		'footer.projects': 'Projekte',
+		'footer.services': 'Dienstleistungen',
+		'footer.contact': 'Kontaktiere mich',
+		'footer.expertise': 'Erfahrung',
+		'footer.blog': 'Blog',
+		'footer.small': 'Entwickelt, indem die Hände bewegt und viel ❤.'
 	},
 } as const
 
