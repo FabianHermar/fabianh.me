@@ -8,7 +8,7 @@ const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 ---
 
-<script is:inline>
+<!-- <script is:inline>
 	const getThemePreference = () => {
 		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme')
@@ -25,8 +25,7 @@ const i18n = getI18N({ currentLocale })
 		})
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
 	}
-</script>
-
+</script> -->
 <Layout title={i18n.SEO.title}>
 	<Header />
 	<main>
