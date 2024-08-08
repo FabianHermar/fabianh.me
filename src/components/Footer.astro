@@ -1,6 +1,5 @@
 ---
 import Container from './Container.astro'
-import { ModeToggle } from './DarkModeToggle'
 
 import { getI18N } from '@/i18n/index'
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '@/i18n/utils'
@@ -207,7 +206,7 @@ const translatePath = useTranslatedPath(lang)
 					<p class='text-gray-300 font-GilroyRegular text-xs tracking-wide'>
 						{t('footer.small')}
 					</p>
-					<ModeToggle client:load />
+					<!-- <ModeToggle client:load /> -->
 				</div>
 			</div>
 		</div>
