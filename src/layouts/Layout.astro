@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl } from '@/i18n/utils'
+import { ViewTransitions } from 'astro:transitions'
 import '../globals.css'
 interface Props {
 	title: string
@@ -60,8 +61,9 @@ const lang = getLangFromUrl(Astro.url)
 			content='Desarrollador web fullstack con más de 2 años de experiencia.'
 		/>
 		<meta name='twitter:image' content='' />
+		<ViewTransitions />
 	</head>
-	<body>
+	<body class='dark-transition'>
 		<slot />
 	</body>
 </html>
