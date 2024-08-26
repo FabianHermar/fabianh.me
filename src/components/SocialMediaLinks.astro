@@ -16,6 +16,7 @@ const translatePath = useTranslatedPath(lang)
 	<div class='flex flex-row justify-center gap-4 lg:justify-start'>
 		<!-- Twitter -->
 		<a
+			aria-label='Mantente al tanto de mis tweets sobre desarrollo web y tecnología'
 			href='https://x.com/FabianHermar'
 			target='_blank'
 			rel='noopener noreferrer'
@@ -43,6 +44,7 @@ const translatePath = useTranslatedPath(lang)
 		<!-- LinkedIn -->
 
 		<a
+			aria-label='Conéctate conmigo en LinkedIn'
 			href='https://www.linkedin.com/in/fabianhmz/'
 			target='_blank'
 			rel='noopener noreferrer'
@@ -70,6 +72,7 @@ const translatePath = useTranslatedPath(lang)
 		<!-- GitHub -->
 
 		<a
+			aria-label='Revisa mi código en GitHub'
 			href='https://github.com/FabianHermar'
 			target='_blank'
 			rel='noopener noreferrer'
@@ -94,6 +97,7 @@ const translatePath = useTranslatedPath(lang)
 		<!-- Mail -->
 
 		<a
+			aria-label='Envíame un correo electrónico'
 			href='mailto:ctofabian@gmail.com'
 			target='_blank'
 			rel='noopener noreferrer'
@@ -116,7 +120,12 @@ const translatePath = useTranslatedPath(lang)
 		</a>
 	</div>
 	<div class='flex select-none flex-row justify-center gap-3 lg:justify-start'>
-		<a class={styles.Btn} href='/FabianHerreraCV.pdf' download='FabianHerreraCV.pdf'>
+		<a
+			aria-label='Descarga mi CV en formato PDF'
+			class={styles.Btn}
+			href='/FabianHerreraCV.pdf'
+			download='FabianHerreraCV.pdf'
+		>
 			<span>{t('btn.downloadCV')}</span>
 			<svg
 				class={styles.svgIcon}
@@ -131,6 +140,7 @@ const translatePath = useTranslatedPath(lang)
 		</a>
 
 		<a
+			aria-label='Mira mi CV en formato digital'
 			href='https://cv.fabianh.dev'
 			target='_blank'
 			rel='noopener noreferrer'
