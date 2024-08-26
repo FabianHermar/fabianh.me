@@ -2,6 +2,7 @@
 import Footer from '@/components/Footer.astro'
 import Header from '@/components/Header.astro'
 import Hero from '@/components/Hero.astro'
+// import TimeLine from '@/components/TimeLine'
 import { getI18N } from '@/i18n'
 import Layout from '@/layouts/Layout.astro'
 import WhoIAm from '../WhoIAm.astro'
@@ -32,6 +33,7 @@ const i18n = getI18N({ currentLocale })
 	<main>
 		<Hero />
 		<WhoIAm />
+		<!-- <TimeLine client:visible /> -->
 	</main>
 	<Footer />
 </Layout>
