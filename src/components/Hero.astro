@@ -1,5 +1,6 @@
 ---
 import { getI18N } from '@/i18n/index'
+import { Image } from 'astro:assets'
 import Container from './Container.astro'
 import SocialMediaLinks from './SocialMediaLinks.astro'
 
@@ -26,7 +27,7 @@ const i18n = getI18N({ currentLocale })
 			</div>
 		</div>
 		<div class='h-auto w-full select-none grayscale lg:w-[550px]'>
-			<img src='/me.png' alt='Fabian Herrera photo' />
+			<Image src='/me.png' alt='Fabian Herrera photo' width={1000} height={1000} />
 		</div>
 	</section>
 </Container>
