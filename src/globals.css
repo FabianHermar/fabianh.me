@@ -138,3 +138,12 @@ html {
     mask-size: 200vmax;
   }
 }
+
+.tooltip {
+  opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.has-tooltip:hover .tooltip {
+  opacity: 1;
+}
