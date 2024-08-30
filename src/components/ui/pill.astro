@@ -1,3 +1,13 @@
 ---
-$END$
+interface Props {
+	text: string
+	image: string
+}
+
+const { text, image } = Astro.props
 ---
+
+<span class='inline-flex items-center justify-center rounded-full font-GilroySemibold border border-neutral-200 bg-white select-none space-x-2 whitespace-nowrap px-3 py-1.5 sm:text-xs'>
+	<img src={image} alt={text} class='size-4 inline-block mr-2' />
+	{text}
+</span>
