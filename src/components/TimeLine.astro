@@ -1,14 +1,13 @@
-'use client'
-
-import { useEffect, useRef, useState } from 'react'
-import { ArrowUpRight, MessageSquare, Code, Database, Server, Cpu, Terminal } from 'lucide-react'
+// ExperienceTimeline.tsx
+import React, { useEffect, useRef, useState } from 'react';
+import { Icon } from '@iconify/react';
 
 interface TimelineItem {
-  title: string
-  company: string
-  period: string
-  description: string[]
-  skills: string[]
+  title: string;
+  company: string;
+  period: string;
+  description: string[];
+  skills: string[];
 }
 
 const experienceData: TimelineItem[] = [
@@ -56,74 +55,60 @@ const experienceData: TimelineItem[] = [
     ],
     skills: ["Technical Support", "Troubleshooting", "IT Infrastructure", "Customer Service"]
   }
-]
+];
 
-export default function ExperienceTimeline() {
-  const [progress, setProgress] = useState(0)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const windowHeight = window.innerHeight
-      const documentHeight = document.documentElement.scrollHeight
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-      const maxScroll = documentHeight - windowHeight
-      const currentProgress = (scrollTop / maxScroll) * 100
-      setProgress(currentProgress)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  return (
-    <div className="bg-gray-900 text-gray-300 min-h-screen p-8">
-      <div className="relative">
-        <div className="absolute left-4 top-0 bottom-0 w-1 bg-gray-700">
-          <div 
-            className="absolute top-0 left-0 w-full bg-yellow-500 transition-all duration-300 ease-out"
-            style={{ height: `${progress}%` }}
-          ></div>
-        </div>
-        {experienceData.map((item, index) => (
-          <TimelineItem key={index} item={item} />
-        ))}
-      </div>
-    </div>
-  )
+function getSkillIcon(skill: string): string {
+  switch (skill.toLowerCase()) {
+    case 'communication':
+      return 'lucide:message-square';
+    case 'python':
+    case 'javascript':
+    case 'react':
+      return 'lucide:code';
+    case 'bash':
+      return 'lucide:terminal';
+    case 'c++':
+      return 'lucide:cpu';
+    case 'node.js':
+      return 'lucide:server';
+    case 'postgresql':
+    case 'sql':
+      return 'lucide:database';
+    default:
+      return 'lucide:circle';
+  }
 }
 
-function TimelineItem({ item }: { item: TimelineItem }) {
-  const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
+const TimelineItem: React.FC<{ item: TimelineItem }> = ({ item }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible(entry.isIntersecting)
-        })
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
       },
       {
         threshold: 0.1,
         rootMargin: '-50px 0px -50px 0px',
       }
-    )
+    );
 
     if (ref.current) {
-      observer.observe(ref.current)
+      observer.observe(ref.current);
     }
 
     return () => {
       if (ref.current) {
-        observer.unobserve(ref.current)
+        observer.unobserve(ref.current);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <div
       ref={ref}
-      className={`mb-16 pl-12 relative transition-opacity duration-500 ease-in-out ${
+      className={`mb-16 pl-12 relative transition-opacity duration-500 ease-in-out max-h-96 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
@@ -131,7 +116,7 @@ function TimelineItem({ item }: { item: TimelineItem }) {
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-yellow-500 flex items-center">
           {item.title}
-          <ArrowUpRight className="ml-2" size={20} />
+          <Icon icon="lucide:arrow-up-right" className="ml-2" width="20" height="20" />
         </h2>
         <h3 className="text-xl text-yellow-400 mt-1">{item.company}</h3>
         <p className="text-gray-500 mt-1">{item.period}</p>
@@ -142,40 +127,52 @@ function TimelineItem({ item }: { item: TimelineItem }) {
         ))}
         <div className="mt-6 flex flex-wrap gap-2">
           {item.skills.map((skill, index) => (
-            <span
-              key={index}
-              className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm flex items-center"
-            >
-              {getSkillIcon(skill)}
+            <span key={index} className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm flex items-center">
+              <Icon icon={getSkillIcon(skill)} className="mr-1" width="16" height="16" />
               {skill}
             </span>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-function getSkillIcon(skill: string) {
-  switch (skill.toLowerCase()) {
-    case 'communication':
-      return <MessageSquare className="mr-1" size={16} />
-    case 'python':
-      return <Code className="mr-1" size={16} />
-    case 'javascript':
-      return <Code className="mr-1" size={16} />
-    case 'bash':
-      return <Terminal className="mr-1" size={16} />
-    case 'c++':
-      return <Cpu className="mr-1" size={16} />
-    case 'react':
-      return <Code className="mr-1" size={16} />
-    case 'node.js':
-      return <Server className="mr-1" size={16} />
-    case 'postgresql':
-    case 'sql':
-      return <Database className="mr-1" size={16} />
-    default:
-      return null
-  }
-}
+const ExperienceTimeline: React.FC = () => {
+  const [progress, setProgress] = useState(0);
+  const timelineRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (timelineRef.current) {
+        const { top, height } = timelineRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const visibleHeight = Math.min(windowHeight, top + height) - Math.max(0, top);
+        const percentVisible = (visibleHeight / height) * 100;
+        setProgress(Math.max(0, Math.min(100, percentVisible)));
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once to set initial state
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <div className="bg-gray-900 text-gray-300 min-h-screen p-8">
+      <div ref={timelineRef} className="relative">
+        <div className="absolute left-4 top-0 bottom-0 w-1 bg-gray-700">
+          <div
+            className="absolute top-0 left-0 w-full bg-yellow-500 transition-all duration-300 ease-out"
+            style={{ height: `${progress}%` }}
+          ></div>
+        </div>
+        {experienceData.map((item, index) => (
+          <TimelineItem key={index} item={item} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ExperienceTimeline;
