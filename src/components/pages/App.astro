@@ -6,6 +6,7 @@ import Hero from '@/components/Hero.astro'
 import { getI18N } from '@/i18n'
 import Layout from '@/layouts/Layout.astro'
 import WhoIAm from '../WhoIAm.astro'
+import TimeLine from '../TimeLine.astro'
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 ---
@@ -33,6 +34,17 @@ const i18n = getI18N({ currentLocale })
 	<main>
 		<Hero />
 		<WhoIAm />
+		<TimeLine
+			link='https://www.gilab.udg.edu/'
+			target='_blank'
+			title='Test'
+			location='Test location'
+			duration='Test Duration'
+			description='Test description'
+			technologies={[
+				{ text: 'Astro', image: '/svg/astrojs.svg'}
+			]}
+		/>
 		<!-- <TimeLine client:visible /> -->
 	</main>
 	<Footer />
