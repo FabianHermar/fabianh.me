@@ -1,7 +1,7 @@
 ---
-import Arrow from '@/components/Arrow.astro'
 import { LANGUAGES } from '@/i18n/ui'
 import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from '../i18n/utils'
+import DropdownArrow from './DropdownArrow.astro'
 
 const route = getRouteFromUrl(Astro.url)
 const lang = getLangFromUrl(Astro.url)
@@ -23,7 +23,7 @@ const otherLocales = Object.values(LANGUAGES).filter((locale) => locale.code !==
 		>
 			<currentLocaleData.flag />
 			{currentLocaleData.name}
-			<Arrow />
+			<DropdownArrow />
 		</button>
 		<ul
 			class='absolute hidden w-full pt-0.5 group-hover:block group-hover:animate-accordion-down group-hover:duration-200'
