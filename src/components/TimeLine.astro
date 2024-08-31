@@ -1,47 +1,73 @@
 ---
-import Arrow from './Arrow.astro'
-import Pill from './ui/pill.astro'
+ import Container from '@/components/Container.astro'
+ import ExperienceCard from './ExperienceCard.astro'
+ import HyperText from '@/components/ui/hyper-text'
 
-interface Technologies {
-	text: string
-	image: string
-}
-
-interface Props {
-	link: string
-	target?: string
-	title: string
-	location: string
-	duration: string
-	description: string
-	technologies: Technologies[]
-}
-
-const { link, target,  title, location, duration, description, technologies } = Astro.props
 ---
 
-<article class='px-4'>
-	<a href={link} target={target} class='block max-w-3xl hover:bg-[#f4eafd]/50 backdrop-blur transition-colors rounded-2xl border border-neutral-100'>
-		<div
-			class='bg-gray-900 hover:bg-gray-800 group relative overflow-hidden rounded-lg p-6 transition-all duration-300'
-		>
-			<div class='mb-2 flex items-center justify-between'>
-				<h3
-					class='text-yellow-400 pr-2 text-2xl font-bold transition-colors group-hover:text-[#c38ff1]'
-				>
-					{title}
-				</h3>
-				<Arrow
-					class='text-yellow-400 h-6 w-6 flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#ffa84b]'
+<Container>
+	<div class='flex h-10 pt-10 mb-8 justify-center items-center'>
+		<span class='md:text-4xl font-GilroyBold text-2xl font-bold text-neutral-500'>01. &nbsp;</span>
+		<HyperText
+			className="md:text-4xl  font-GilroyBold text-2xl font-bold text-black"
+			text="Where I've worked"
+			client:visible
+		/>
+		<span class="ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400"></span>
+	</div>
+	<div class="pt-10">
+		<ol class="relative border-s-2 border-neutral-400">
+			<li class="mb-10 ms-4">
+				<div class="absolute w-3 h-3 bg-[#ff5e69] rounded-full mt-1.5 -start-[6.5px] border border-white"></div>
+				<ExperienceCard
+					link='https://boxode.org'
+					target='_blank'
+					title='Co-founder & Principal Frontend Developer &bull; Boxode'
+					location='Aguascalientes, México &bull; Remote'
+					duration='Abril 2023 - Present'
+					ContainerStyles="hover:bg-[#ffe1e3]/50"
+					textStyles="group-hover:text-[#ff5e69]"
+					description='Test description'
+					description2="Test description 2"
+					technologies={[
+						{ text: 'Astro', image: '/svg/astrojs.svg'}
+					]}
 				/>
-			</div>
-			<p class='text-gray-400 mb-4'>{location} | {duration}</p>
-			<p class='text-gray-300 mb-4'>
-				{description}
-			</p>
-			<div class='flex flex-wrap gap-2'>
-				{technologies.map(tech => <Pill text={tech.text} image={tech.image} />)}
-			</div>
-		</div>
-	</a>
-</article>
+			</li>
+			<li class="mb-10 ms-4">
+				<div class="absolute w-3 h-3 bg-[#b16cea] rounded-full mt-1.5 -start-[6.5px] border border-white"></div>
+				<ExperienceCard
+					link='#!'
+					target=''
+					title='Servicio Técnico de Sistemas &bull; CompuCel'
+					location='Cuauhtémoc, ZAC, México &bull; Presencial'
+					duration='Noviembre 2022 - Febrero 2023'
+					description='Test description'
+					description2="Test description 2"
+					ContainerStyles="hover:bg-[#f4eafd]/50"
+					textStyles="group-hover:text-[#c38ff1]"
+					technologies={[
+						{ text: 'Astro', image: '/svg/astrojs.svg'}
+					]}
+				/>
+			</li>
+			<li class="mb-10 ms-4">
+				<div class="absolute w-3 h-3 bg-[#ffa84b] rounded-full mt-1.5 -start-[6.5px] border border-white"></div>
+				<ExperienceCard
+					link='#!'
+					target=''
+					title='Becario de Desarrollo de Software &bull; INBAC Instituto Niels Bohr'
+					location='San Francisco de los Romo, AGS, México &bull; Remoto'
+					duration='Marzo 2022 - Agosto 2024'
+					ContainerStyles="hover:bg-[#fff0d4]/50"
+					textStyles="group-hover:text-[#ffa84b]"
+					description='Test description'
+					description2="Test description 2"
+					technologies={[
+						{ text: 'Astro', image: '/svg/astrojs.svg'}
+					]}
+				/>
+			</li>
+		</ol>
+	</div>
+</Container>
