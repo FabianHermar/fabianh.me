@@ -2,7 +2,6 @@
 import Footer from '@/components/Footer.astro'
 import Header from '@/components/Header.astro'
 import Hero from '@/components/Hero.astro'
-// import TimeLine from '@/components/TimeLine'
 import { getI18N } from '@/i18n'
 import Layout from '@/layouts/Layout.astro'
 import WhoIAm from '../WhoIAm.astro'
@@ -10,6 +9,15 @@ import TimeLine from '../TimeLine.astro'
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 ---
+<Layout title={i18n.SEO.title}>
+	<Header />
+	<main>
+		<Hero />
+		<TimeLine />
+		<WhoIAm />
+	</main>
+	<Footer />
+</Layout>
 
 <!-- <script is:inline>
 	const getThemePreference = () => {
@@ -29,23 +37,3 @@ const i18n = getI18N({ currentLocale })
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
 	}
 </script> -->
-<Layout title={i18n.SEO.title}>
-	<Header />
-	<main>
-		<Hero />
-		<WhoIAm />
-		<TimeLine
-			link='https://www.gilab.udg.edu/'
-			target='_blank'
-			title='Test'
-			location='Test location'
-			duration='Test Duration'
-			description='Test description'
-			technologies={[
-				{ text: 'Astro', image: '/svg/astrojs.svg'}
-			]}
-		/>
-		<!-- <TimeLine client:visible /> -->
-	</main>
-	<Footer />
-</Layout>
