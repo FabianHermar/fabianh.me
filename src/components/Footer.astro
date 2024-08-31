@@ -12,34 +12,19 @@ const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 ---
 
-<footer class='h-screen'>
+<footer class='bg-white'>
 	<Container>
-		<div class='pt-10 lg:pt-20'>
-			<h3
-				class='pb-4 font-GilroyBold text-3xl tracking-tight text-black dark:text-white lg:text-6xl'
-			>
-				{t('footer.title')}
-			</h3>
-			<p
-				class='inline-block h-16 bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold text-3xl tracking-tight text-transparent lg:text-6xl'
-			>
-				{t('footer.subtitle')}
-			</p>
-		</div>
-
-		<div class='pt-0 text-black dark:text-white lg:pt-20'>
-			<div class='mx-auto max-w-screen-xl space-y-8 py-16 lg:space-y-16'>
-				<div class='grid grid-cols-1 gap-8 lg:grid-cols-3'>
+		<div class='mx-auto w-full md:py-8'>
+			<div class='sm:flex sm:items-center sm:justify-between'>
+				<div class='flex flex-col'>
 					<div>
-						<div>
-							<h4 class='font-GilroyBold text-2xl tracking-tight text-black dark:text-white'>
-								Fabian Herrera
-								<span
-									class='bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold tracking-tight text-transparent'
-									>.
-								</span>
-							</h4>
-						</div>
+						<h4 class='font-GilroyBold text-2xl tracking-tight text-black dark:text-white'>
+							Fabian Herrera
+							<span
+								class='bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold tracking-tight text-transparent'
+								>.
+							</span>
+						</h4>
 						<div>
 							<a
 								href='mailto:ctofabian@gmail.com'
@@ -60,154 +45,88 @@ const translatePath = useTranslatedPath(lang)
 								</span>
 							</a>
 						</div>
-
-						<ul class='mt-8 flex gap-6'>
-							<li>
-								<a
-									href='https://x.com/FabianHermar'
-									rel='noreferrer'
-									target='_blank'
-									class='text-neutral-500 transition hover:opacity-75'
-								>
-									<span class='sr-only'>Twitter</span>
-
-									<svg
-										xmlns='http://www.w3.org/2000/svg'
-										width='28'
-										height='28'
-										viewBox='0 0 72 72'
-										fill='currentColor'
-									>
-										<path
-											d='M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z'
-											fill=''></path>
-									</svg>
-								</a>
-							</li>
-
-							<li>
-								<a
-									href='https://github.com/FabianHermar'
-									rel='noreferrer'
-									target='_blank'
-									class='text-neutral-500 transition hover:opacity-75'
-								>
-									<span class='sr-only'>GitHub</span>
-
-									<svg class='h-6 w-6' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
-										<path
-											fill-rule='evenodd'
-											d='M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z'
-											clip-rule='evenodd'></path>
-									</svg>
-								</a>
-							</li>
-
-							<li>
-								<a
-									href='https://www.linkedin.com/in/fabianhmz/'
-									rel='noreferrer'
-									target='_blank'
-									class='text-neutral-500 transition hover:opacity-75'
-								>
-									<span class='sr-only'>LinkedIn</span>
-
-									<svg
-										xmlns='http://www.w3.org/2000/svg'
-										width='28'
-										height='28'
-										viewBox='0 0 72 72'
-										fill='currentColor'
-									>
-										<path
-											d='M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z'
-											fill=''></path>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class='grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3'>
-						<div>
-							<ul
-								class='mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-black transition-colors dark:text-white lg:mt-6 lg:text-2xl'
-							>
-								<li>
-									<a
-										href='#'
-										class='group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100'
-									>
-										{t('footer.about')}
-									</a>
-								</li>
-
-								<li>
-									<a
-										href='#'
-										class='group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100'
-									>
-										{t('footer.contact')}
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<div>
-							<ul
-								class='mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-black transition-colors dark:text-white lg:mt-6 lg:text-2xl'
-							>
-								<li>
-									<a
-										href='#'
-										class='group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100'
-									>
-										{t('footer.services')}
-									</a>
-								</li>
-
-								<li>
-									<a
-										href='#'
-										class='group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100'
-									>
-										{t('footer.blog')}
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<div>
-							<ul
-								class='mt-2 space-y-4 font-GilroySemibold text-lg tracking-tight text-black transition-colors dark:text-white lg:mt-6 lg:text-2xl'
-							>
-								<li>
-									<a
-										href='#'
-										class='group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100'
-									>
-										{t('footer.expertise')}
-									</a>
-								</li>
-
-								<li>
-									<a
-										href='#'
-										class='group relative before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100'
-									>
-										{t('footer.projects')}
-									</a>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
-				<div class='flex flex-row items-center justify-between'>
-					<p class='text-gray-300 font-GilroyRegular text-xs tracking-wide'>
-						{t('footer.small')}
-					</p>
-					<!-- <ModeToggle client:load /> -->
+				<ul
+					class='text-gray-500 dark:text-gray-400 mb-6 flex flex-wrap items-center font-GilroySemibold text-base sm:mb-0'
+				>
+					<li>
+						<a
+							href='#'
+							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
+							>{t('footer.about')}</a
+						>
+					</li>
+					<li>
+						<a
+							href='#'
+							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
+							>{t('footer.blog')}</a
+						>
+					</li>
+					<li>
+						<a
+							href='#'
+							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
+							>{t('footer.projects')}</a
+						>
+					</li>
+					<li>
+						<a
+							href='#'
+							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
+							>{t('footer.style')}</a
+						>
+					</li>
+				</ul>
+			</div>
+			<hr class='border-gray-200 dark:border-gray-700 my-6 sm:mx-auto lg:my-8' />
+			<div class='flex justify-between items-center'>
+				<div class="flex flex-row gap-x-3">
+					<a href="https://x.com/FabianHermar" target="_blank" aria-label="Sigueme en X">
+						<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='28'
+						height='28'
+						viewBox='0 0 72 72'
+						fill='#666'
+					>
+						<path
+							d='M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z'
+							fill=''>
+						</path>
+					</svg>
+					</a>
+					<a href="https:/linkedin.com/in/fabianhmz" target="_blank" aria-label="Sigueme en LinkedIn">
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							width='28'
+							height='28'
+							viewBox='0 0 72 72'
+							fill='#666'
+						>
+							<path
+								d='M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z'
+								fill=''>
+
+							</path>
+						</svg>
+					</a>
+					<a href="https://github.com/FabianHermar" target="_blank" aria-label="Sigueme en GitHub">
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							class='fill-[#666] relative z-10 size-6 transition-all duration-300 group-hover:fill-white'
+							viewBox='0 0 512 512'
+						>
+							<path
+								d='M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z'
+							></path>
+						</svg>
+					</a>
 				</div>
+			<span class='font-GilroyRegular text-sm'>
+				{t('footer.small')}
+			</span>
 			</div>
 		</div>
 	</Container>
