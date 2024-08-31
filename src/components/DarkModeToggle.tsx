@@ -3,10 +3,10 @@ import * as React from 'react'
 
 import { Button } from '@/components/ui/button'
 import {
-	DropdownMenu,
-	DropdownMenuContent,
+  DropdownMenu,
+  DropdownMenuContent,
 	DropdownMenuItem,
-	DropdownMenuTrigger,
+	DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 
 export function ModeToggle() {
