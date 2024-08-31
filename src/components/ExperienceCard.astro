@@ -1,0 +1,57 @@
+---
+import Arrow from './Arrow.astro'
+import Pill from './ui/pill.astro'
+import Container from '@/components/Container.astro'
+
+interface Technologies {
+	text: string
+	image: string
+}
+
+interface Props {
+	link: string
+	target?: string
+	title: string
+	location: string
+	duration: string
+	description: string
+	description2?: string
+	ContainerStyles?: string
+	textStyles?: string
+	technologies: Technologies[]
+}
+
+const { link, target,  title, location, duration, description, description2, ContainerStyles, textStyles, technologies } = Astro.props
+---
+
+<Container>
+	<article>
+		<a href={link} target={target} class=`block max-w-full ${ContainerStyles} backdrop-blur transition-colors rounded-2xl border border-neutral-100`>
+			<div
+				class='bg-gray-900 hover:bg-gray-800 group relative overflow-hidden rounded-lg p-6 transition-all duration-300'
+			>
+				<div class='mb-2 flex items-center justify-between'>
+					<h3
+						class=`${textStyles} pr-2 text-2xl font-bold font-GilroyBold transition-colors text-balance`
+					>
+						{title}
+					</h3>
+					<Arrow
+						styles={textStyles}
+						class='h-6 w-6 flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#ffa84b]'
+					/>
+				</div>
+				<time class='text-neutral-400 font-GilroySemibold mb-4'>{location} | {duration}</time>
+				<p class='text-gray-300 font-GilroyRegular mb-4 text-pretty'>
+					{description}
+				</p>
+				<p class='text-gray-300 font-GilroyRegular mb-4 text-pretty'>
+					{description2}
+				</p>
+				<div class='flex flex-wrap gap-2'>
+					{technologies.map(tech => <Pill text={tech.text} image={tech.image} />)}
+				</div>
+			</div>
+		</a>
+	</article>
+</Container>
