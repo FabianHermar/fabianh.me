@@ -112,8 +112,8 @@ html {
 }
 
 ::selection {
-	background-color: #2978ee;
-	color: #fff;
+	background-color: #ffe1e3;
+	color: #ff5e69;
 }
 
 ::view-transition-group(root) {
