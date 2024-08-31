@@ -36,9 +36,7 @@ export const ui = {
 		'footer.subtitle': 'Pongámonos en contacto.',
 		'footer.about': 'Sobre mi',
 		'footer.projects': 'Proyectos',
-		'footer.services': 'Servicios',
-		'footer.contact': 'Contáctame',
-		'footer.expertise': 'Experiencia',
+		'footer.style': 'Guía de estilo',
 		'footer.blog': 'Blog',
 		'footer.small': 'Desarrollado moviendo las manitas y mucho ❤.'
 	},
@@ -53,9 +51,7 @@ export const ui = {
 		'footer.subtitle': 'Let\'s get in touch.',
 		'footer.about': 'About me',
 		'footer.projects': 'Projects',
-		'footer.services': 'Services',
-		'footer.contact': 'Contact me',
-		'footer.expertise': 'Expertise',
+		'footer.style': 'Style guide',
 		'footer.blog': 'Blog',
 		'footer.small': 'Developed moving the hands and a lot of ❤.'
 	},
@@ -70,9 +66,7 @@ export const ui = {
 		'footer.subtitle': 'Lass uns in Kontakt kommen.',
 		'footer.about': 'Über mich',
 		'footer.projects': 'Projekte',
-		'footer.services': 'Dienstleistungen',
-		'footer.contact': 'Kontaktiere mich',
-		'footer.expertise': 'Erfahrung',
+		'footer.style': 'Stilhandbuch',
 		'footer.blog': 'Blog',
 		'footer.small': 'Entwickelt, indem die Hände bewegt und viel ❤.'
 	},
