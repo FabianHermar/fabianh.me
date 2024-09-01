@@ -26,13 +26,13 @@ const { link, target,  title, location, duration, description, description2, Con
 
 <Container>
 	<article>
-		<a href={link} target={target} class=`block max-w-full ${ContainerStyles} backdrop-blur transition-colors rounded-2xl border border-neutral-100`>
+		<a href={link} target={target} class=`block max-w-full ${ContainerStyles} backdrop-blur transition-colors rounded-2xl md:border md:border-neutral-100`>
 			<div
-				class='bg-gray-900 hover:bg-gray-800 group relative overflow-hidden rounded-lg p-6 transition-all duration-300'
+				class='bg-gray-900 hover:bg-gray-800 group relative overflow-hidden rounded-lg md:p-6 transition-all duration-300'
 			>
 				<div class='mb-2 flex items-center justify-between'>
 					<h3
-						class=`${textStyles} pr-2 text-2xl font-bold font-GilroyBold transition-colors text-balance`
+						class=`${textStyles} pr-2 md:text-3xl text-lg font-bold font-GilroyBold transition-colors text-balance`
 					>
 						{title}
 					</h3>
