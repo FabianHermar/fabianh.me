@@ -1,0 +1,16 @@
+---
+ import Container from '@/components/Container.astro'
+ import GradualSpacing from '@/components/ui/gradual-spacing'
+---
+
+<Container>
+	<div class='flex h-10 pt-10 mb-8 justify-center items-center'>
+		<span class='md:text-4xl font-GilroyBold text-2xl font-bold text-neutral-500'>04. &nbsp;</span>
+		<GradualSpacing
+			className="md:text-4xl  font-GilroyBold text-2xl font-bold text-black"
+			text="Ready for work together?"
+			client:visible
+		/>
+		<span class="ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400"></span>
+	</div>
+</Container>
