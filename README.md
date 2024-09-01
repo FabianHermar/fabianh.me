@@ -17,7 +17,7 @@
     </picture>
   <h3>Desarrollo productos digitales que capturan la imaginación y elevan la experiencia de usuario.</h3>
     <br />
-    <img src="https://github.com/FabianHermar/fabianh.dev/blob/main/public/FH_mockup.webp" alt="Web design of my personal portfolio" />
+    <img src="https://raw.githubusercontent.com/FabianHermar/fabianh.me/main/public/portfolio_mockup.webp" alt="Web design of my personal portfolio" />
     <br />
   </div>
     <div>
