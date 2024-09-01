@@ -1,6 +1,5 @@
 ---
 import Container from './Container.astro'
-import Toast from '@/components/ui/Toast'
 
 import { getI18N } from '@/i18n/index'
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '@/i18n/utils'
@@ -130,6 +129,5 @@ const translatePath = useTranslatedPath(lang)
 			</span>
 			</div>
 		</div>
-		<Toast client:visible message="Hola" />
 	</Container>
 </footer>
