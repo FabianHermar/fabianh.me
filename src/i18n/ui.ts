@@ -38,7 +38,7 @@ export const ui = {
 		'footer.projects': 'Proyectos',
 		'footer.style': 'Guía de estilo',
 		'footer.blog': 'Blog',
-		'footer.small': 'Desarrollado moviendo las manitas y mucho ❤.'
+		'footer.small': 'Desarrollado con mucho ❤ utilizando Astro y React. Desplegado en Vercel y administrado por CloudFlare.'
 	},
 	en: {
 		'nav.about': 'About me',
@@ -53,7 +53,7 @@ export const ui = {
 		'footer.projects': 'Projects',
 		'footer.style': 'Style guide',
 		'footer.blog': 'Blog',
-		'footer.small': 'Developed moving the hands and a lot of ❤.'
+		'footer.small': 'Developed with a lot of ❤ using Astro and React. Deployed on Vercel and managed by CloudFlare.'
 	},
 	de: {
 		'nav.about': 'Über mich',
@@ -68,7 +68,7 @@ export const ui = {
 		'footer.projects': 'Projekte',
 		'footer.style': 'Stilhandbuch',
 		'footer.blog': 'Blog',
-		'footer.small': 'Entwickelt, indem die Hände bewegt und viel ❤.'
+		'footer.small': 'Entwickelt mit viel ❤ unter Verwendung von Astro und React. Bereitgestellt auf Vercel und verwaltet von CloudFlare.'
 	},
 } as const
 
