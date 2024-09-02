@@ -1,0 +1,64 @@
+---
+import { Github , ExternalLinkIcon } from 'lucide-react'
+import Container from '@/components/Container.astro'
+import Pill from '@/components/ui/pill.astro'
+
+interface Technologies {
+	text: string
+	image: string
+}
+
+
+
+---
+
+<section class="w-full max-w-4xl bg-[#121212] text-white overflow-hidden rounded-lg shadow-lg">
+	<Container>
+		<article class="flex flex-col lg:flex-row-reverse">
+			<div class="lg:w-2/5 lg:pl-6">
+				<div class="relative aspect-[16/9] lg:aspect-square rounded-lg overflow-hidden">
+					<img
+						src="/placeholder.svg?height=720&width=1280"
+						alt="Screenshot of The Gamelab project"
+						class="object-cover w-full h-full"
+					/>
+				</div>
+			</div>
+			<div class="lg:w-3/5">
+				<header class="pb-4">
+					<div class="flex justify-between items-center">
+						<h3 class="text-3xl font-bold text-[#FFD700]">The Gamelab</h3>
+						<div class="flex gap-2">
+							<a href="" class="text-white hover:text-gray-300">
+								<Github className="h-5 w-5" />
+							</a>
+							<a href="" class="text-white hover:text-gray-300">
+								<ExternalLinkIcon className="h-5 w-5" />
+							</a>
+						</div>
+					</div>
+				</header>
+				<div class="space-y-4">
+					<p class="text-gray-400">
+						<span class="mr-2">🎮</span>
+						Una colección de juegos en crecimiento, hechos con tecnologías web.
+					</p>
+					<p class="text-sm">
+						Este proyecto marca mi regreso al desarrollo de juegos, combinando mi
+						pasión por la creación de los mismos y el desarrollo web. Actualmente
+						cuenta con 1 solo juego, pero planeo ir añadiendo más en el futuro,
+						usando diversas tecnologías como <span class="text-[#FFD700]">Three.js, Phaser, Pixi.js y Canvas</span>,
+						entre otras herramientas interesantes.
+					</p>
+					<p class="text-sm">
+						Mis <span class="font-semibold">objetivos futuros</span> incluyen explorar los <span class="text-[#FFD700]">juegos multijugador</span>, lo cual
+						se alinea con mi <span class="font-semibold">interés en el backend y la infraestructura en la nube</span>.
+					</p>
+					<footer class="flex gap-2">
+						<!-- Badges -->
+					</footer>
+				</div>
+			</div>
+		</article>
+	</Container>
+</section>
