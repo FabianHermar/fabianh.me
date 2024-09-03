@@ -1,100 +1,100 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: [ "class" ],
+  darkMode: ['class'],
   content: [
-    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'
   ],
-  prefix: "",
+  prefix: '',
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: '2rem',
       screens: {
-        "2xl": "1400px",
-      },
+        '2xl': '1400px'
+      }
     },
     extend: {
       fontFamily: {
-        GilroyRegular: [ 'GilroyRegular', 'sans-serif' ],
-        GilroyBold: [ 'GilroyBold', 'sans-serif' ],
-        GilroySemibold: [ 'GilroySemibold', 'sans-serif' ]
+        GilroyRegular: [ 'GilroyRegular', 'system-ui', 'sans-serif' ],
+        GilroyBold: [ 'GilroyBold', 'system-ui', 'sans-serif' ],
+        GilroySemibold: [ 'GilroySemibold', 'system-ui', 'sans-serif' ]
       }
     },
     colors: {
-      border: "hsl(var(--border))",
-      input: "hsl(var(--input))",
-      ring: "hsl(var(--ring))",
-      background: "hsl(var(--background))",
-      foreground: "hsl(var(--foreground))",
+      border: 'hsl(var(--border))',
+      input: 'hsl(var(--input))',
+      ring: 'hsl(var(--ring))',
+      background: 'hsl(var(--background))',
+      foreground: 'hsl(var(--foreground))',
       neutral: {
-        50: "#fafafa",
-        100: "#f5f5f5",
-        200: "#e5e5e5;",
-        300: "#d4d4d4",
-        400: "#a3a3a3",
-        500: "#737373",
-        600: "#525252",
-        700: "#404040",
-        800: "#262626",
-        900: "#171717",
-        950: "#0a0a0a",
+        50: '#fafafa',
+        100: '#f5f5f5',
+        200: '#e5e5e5;',
+        300: '#d4d4d4',
+        400: '#a3a3a3',
+        500: '#737373',
+        600: '#525252',
+        700: '#404040',
+        800: '#262626',
+        900: '#171717',
+        950: '#0a0a0a',
       },
-      black: "rgb(0,0,0)",
-      white: "rgb(255,255,255)",
-      transparent: "transparent",
+      black: 'rgb(0,0,0)',
+      white: 'rgb(255,255,255)',
+      transparent: 'transparent',
       primary: {
-        DEFAULT: "hsl(var(--primary))",
-        foreground: "hsl(var(--primary-foreground))",
+        DEFAULT: 'hsl(var(--primary))',
+        foreground: 'hsl(var(--primary-foreground))'
       },
       secondary: {
-        DEFAULT: "hsl(var(--secondary))",
-        foreground: "hsl(var(--secondary-foreground))",
+        DEFAULT: 'hsl(var(--secondary))',
+        foreground: 'hsl(var(--secondary-foreground))'
       },
       destructive: {
-        DEFAULT: "hsl(var(--destructive))",
-        foreground: "hsl(var(--destructive-foreground))",
+        DEFAULT: 'hsl(var(--destructive))',
+        foreground: 'hsl(var(--destructive-foreground))'
       },
       muted: {
-        DEFAULT: "hsl(var(--muted))",
-        foreground: "hsl(var(--muted-foreground))",
+        DEFAULT: 'hsl(var(--muted))',
+        foreground: 'hsl(var(--muted-foreground))'
       },
       accent: {
-        DEFAULT: "hsl(var(--accent))",
-        foreground: "hsl(var(--accent-foreground))",
+        DEFAULT: 'hsl(var(--accent))',
+        foreground: 'hsl(var(--accent-foreground))'
       },
       popover: {
-        DEFAULT: "hsl(var(--popover))",
-        foreground: "hsl(var(--popover-foreground))",
+        DEFAULT: 'hsl(var(--popover))',
+        foreground: 'hsl(var(--popover-foreground))'
       },
       card: {
-        DEFAULT: "hsl(var(--card))",
-        foreground: "hsl(var(--card-foreground))",
-      },
+        DEFAULT: 'hsl(var(--card))',
+        foreground: 'hsl(var(--card-foreground))'
+      }
     },
     borderRadius: {
-      lg: "var(--radius)",
-      md: "calc(var(--radius) - 2px)",
-      sm: "calc(var(--radius) - 4px)",
-      xs: "calc(var(--radius) - 6px)",
-      xl: "calc(var(--radius) + 2px)",
-      "2xl": "calc(var(--radius) + 4px)",
-      "3xl": "calc(var(--radius) + 6px)",
-      full: "9999px",
+      lg: 'var(--radius)',
+      md: 'calc(var(--radius) - 2px)',
+      sm: 'calc(var(--radius) - 4px)',
+      xs: 'calc(var(--radius) - 6px)',
+      xl: 'calc(var(--radius) + 2px)',
+      '2xl': 'calc(var(--radius) + 4px)',
+      '3xl': 'calc(var(--radius) + 6px)',
+      full: '9999px'
     },
     keyframes: {
-      "accordion-down": {
-        from: { height: "0" },
-        to: { height: "var(--radix-accordion-content-height)" },
+      'accordion-down': {
+        from: { height: '0' },
+        to: { height: 'var(--radix-accordion-content-height)' }
       },
-      "accordion-up": {
-        from: { height: "var(--radix-accordion-content-height)" },
-        to: { height: "0" },
-      },
+      'accordion-up': {
+        from: { height: 'var(--radix-accordion-content-height)' },
+        to: { height: '0' }
+      }
     },
     animation: {
-      "accordion-down": "accordion-down 0.2s ease-out",
-      "accordion-up": "accordion-up 0.2s ease-out",
-    },
+      'accordion-down': 'accordion-down 0.2s ease-out',
+      'accordion-up': 'accordion-up 0.2s ease-out'
+    }
   },
-  plugins: [ require( "tailwindcss-animate" ) ],
+  plugins: [ require( 'tailwindcss-animate' ) ]
 }
