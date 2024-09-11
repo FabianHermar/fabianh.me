@@ -14,6 +14,7 @@ interface Props {
 	title: string
 	location: string
 	duration: string
+	phase: string
 	description: string
 	description2?: string
 	ContainerStyles?: string
@@ -21,12 +22,12 @@ interface Props {
 	technologies: Technologies[]
 }
 
-const { link, target,  title, location, duration, description, description2, ContainerStyles, textStyles, technologies } = Astro.props
+const { link, target,  title, location, duration, phase, description, description2, ContainerStyles, textStyles, technologies } = Astro.props
 ---
 
 <Container>
 	<article>
-		<a href={link} target={target} class=`block max-w-full ${ContainerStyles} backdrop-blur transition-colors rounded-2xl md:border md:border-neutral-100`>
+		<a href={link} target={target} aria-label=`Tarjeta donde muestro mi experiencia laboral en ${title}` class=`block max-w-full ${ContainerStyles} backdrop-blur transition-colors rounded-2xl md:border md:border-neutral-100`>
 			<div
 				class='bg-gray-900 hover:bg-gray-800 group relative overflow-hidden rounded-lg md:p-6 transition-all duration-300'
 			>
@@ -41,15 +42,20 @@ const { link, target,  title, location, duration, description, description2, Con
 						class='h-6 w-6 flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#ffa84b]'
 					/>
 				</div>
-				<time class='text-neutral-400 font-GilroySemibold mb-4'>{location} | {duration}</time>
-				<p class='text-gray-300 font-GilroyRegular mb-4 text-pretty'>
+				<time class='text-neutral-500 font-GilroySemibold mb-4'>{location} | {duration}</time>
+				<p class='text-neutral-400 font-GilroyRegular text-pretty pt-4 italic'>
+					{phase}
+				</p>
+				<p class='text-neutral-800 font-GilroyRegular mb-4 text-pretty pt-4'>
 					{description}
 				</p>
-				<p class='text-gray-300 font-GilroyRegular mb-4 text-pretty'>
+				<p class='text-neutral-800 font-GilroyRegular mb-4 text-pretty'>
 					{description2}
 				</p>
-				<div class='flex flex-wrap gap-2'>
-					{technologies.map(tech => <Pill text={tech.text} image={tech.image} />)}
+				<div class="flex flex-wrap gap-2">
+					{technologies?.map((tech) => (
+						<Pill text={tech.text} image={tech.image} class="flex-1 min-w-[calc(50%-0.5rem)] md:min-w-[calc(33%-0.5rem)]" />
+					))}
 				</div>
 			</div>
 		</a>
