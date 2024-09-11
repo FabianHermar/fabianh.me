@@ -28,7 +28,7 @@ export const ui = {
 	es: {
 		'nav.about': 'Sobre mi',
 		'nav.projects': 'Proyectos',
-		'nav.skills': 'Habilidades',
+		'nav.experience': 'Experiencia',
 		'nav.contact': 'Contáctame',
 		'btn.downloadCV': 'Descargar CV',
 		'btn.digitalCV': 'CV Digital',
@@ -43,7 +43,7 @@ export const ui = {
 	en: {
 		'nav.about': 'About me',
 		'nav.projects': 'Projects',
-		'nav.skills': 'Skills',
+		'nav.experience': 'Experience',
 		'nav.contact': 'Contact me',
 		'btn.downloadCV': 'Download CV',
 		'btn.digitalCV': 'Digital CV',
@@ -58,7 +58,7 @@ export const ui = {
 	de: {
 		'nav.about': 'Über mich',
 		'nav.projects': 'Projekte',
-		'nav.skills': 'Fähigkeiten',
+		'nav.experience': 'Erfahrung',
 		'nav.contact': 'Kontaktiere mich',
 		'btn.downloadCV': 'CV herunterladen',
 		'btn.digitalCV': 'Digitaler Lebenslauf',
