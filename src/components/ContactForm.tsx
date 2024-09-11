@@ -5,7 +5,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function ContactForm () {
 	return (
-		<div className='text-gray-800 flex min-h-screen flex-col bg-white lg:flex-row'>
+		<div className='text-gray-800 flex min-h-screen flex-col bg-white lg:flex-row' id='contact'>
 			<div className='flex w-full flex-col items-center justify-center border-neutral-200 p-8 lg:w-1/2 lg:border-r'>
 				<div className='mb-8 lg:mb-0'>
 					<h3 className='mb-4 font-GilroyBold text-3xl font-bold md:text-4xl'>
@@ -41,7 +41,7 @@ export default function ContactForm () {
 						</p>
 						<div className='flex flex-row items-center gap-x-3 pt-3'>
 							<a
-								href='https://www.linkedin.com/in/fabianhmz/'
+								href='https://x.com/FabianHermar'
 								target='_blank'
 								rel='noreferrer'
 							>
@@ -60,7 +60,7 @@ export default function ContactForm () {
 								</svg>
 							</a>
 							<a 
-								href='https://x.com/FabianHermar'
+								href='https://www.linkedin.com/in/fabianhmz'
 								target='_blank'
 								rel='noreferrer'>
 								<svg
