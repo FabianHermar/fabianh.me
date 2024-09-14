@@ -9,6 +9,7 @@ interface Technologies {
 }
 
 interface ProjectsCardProps {
+	projectImage: string
 	externalLink: string
 	githubLink: string
 	target?: string
@@ -19,7 +20,7 @@ interface ProjectsCardProps {
 	technologies: Technologies[]
 }
 
-const { externalLink, githubLink, target,  title, subtitle, description, description2, technologies } = Astro.props as ProjectsCardProps
+const { projectImage ,externalLink, githubLink, target,  title, subtitle, description, description2, technologies } = Astro.props as ProjectsCardProps
 ---
 
 <section>
@@ -29,15 +30,15 @@ const { externalLink, githubLink, target,  title, subtitle, description, descrip
 				<div class='w-full md:order-2 md:w-1/2'>
 					<div class='h-64 md:h-full'>
 						<img
-							src='/portfolio_mockup.webp'
-							alt='Screenshot of The Gamelab project'
+							src={projectImage}
+							alt=`Screenshot of ${title} project`
 							class='h-full w-full object-cover select-none'
 						/>
 					</div>
 				</div>
 				<div class='w-full space-y-6 p-6 md:order-1 md:w-1/2'>
 					<div class='flex items-center justify-start gap-4 pb-4'>
-						<h2 class='text-3xl font-bold text-[#FFB300]'>{title}</h2>
+						<h2 class='text-3xl font-bold text-[#ffa84b] font-GilroyBold'>{title}</h2>
 						<div class='flex items-center gap-4'>
 							<div class='h-8 w-px bg-neutral-300'></div>
 							<div class='flex gap-2'>
@@ -50,13 +51,13 @@ const { externalLink, githubLink, target,  title, subtitle, description, descrip
 							</div>
 						</div>
 					</div>
-					<p class='font-medium text-neutral-600'>
+					<p class='font-medium text-neutral-600 font-GilroySemibold'>
 						{subtitle}
 					</p>
-					<p class='text-sm text-neutral-700'>
+					<p class='text-sm text-neutral-700 font-normal font-GilroyRegular'>
 						{description}
 					</p>
-					<p class='text-sm text-neutral-700'>
+					<p class='text-sm text-neutral-700 font-normal font-GilroyRegular'>
 						{description2}
 					</p>
 					<div class="flex flex-wrap gap-2">
