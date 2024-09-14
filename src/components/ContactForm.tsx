@@ -6,7 +6,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 export default function ContactForm () {
 	return (
 		<div className='text-gray-800 flex min-h-screen flex-col bg-white lg:flex-row' id='contact'>
-			<div className='flex w-full flex-col items-center justify-center border-neutral-200 p-8 lg:w-1/2 lg:border-r'>
+			<div className='flex w-full flex-col items-center justify-center border-neutral-200 md:p-8 lg:w-1/2 lg:border-r'>
 				<div className='mb-8 lg:mb-0'>
 					<h3 className='mb-4 font-GilroyBold text-3xl font-bold md:text-4xl'>
 						Gracias por estar aquí 🧡
@@ -89,7 +89,7 @@ export default function ContactForm () {
 					</div>
 				</div>
 			</div>
-			<div className='flex w-full flex-col items-center justify-center p-8 lg:w-1/2'>
+			<div className='flex w-full flex-col items-center md:p-8 justify-center lg:w-1/2'>
 				<div className='mb-8 rounded-lg bg-neutral-50 p-6 shadow-sm lg:mb-0'>
 					<h2 className='mb-4 font-GilroySemibold text-xl font-semibold md:text-2xl'>
 						Rellena el siguiente formulario y me pondré en contacto contigo lo más pronto posible.
