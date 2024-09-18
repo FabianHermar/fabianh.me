@@ -1,82 +1,91 @@
 ---
- import Container from '@/components/Container.astro'
- import ExperienceCard from './ExperienceCard.astro'
- import GradualSpacing from '@/components/ui/gradual-spacing'
-import Toast from '@/components/ui/Toast'
-
+import Container from '@/components/Container.astro'
+import GradualSpacing from '@/components/ui/gradual-spacing'
+import ExperienceCard from './ExperienceCard.astro'
 ---
 
 <Container>
-	<div class='flex h-10 pt-10 mb-8 justify-center items-center' id="experience">
-		<span class='md:text-4xl font-GilroyBold text-2xl font-bold text-neutral-500'>01. &nbsp;</span>
+	<div class='mb-8 flex h-10 items-center justify-center pt-10' id='experience'>
+		<span class='font-GilroyBold text-2xl font-bold text-neutral-500 md:text-4xl'>01. &nbsp;</span>
 		<GradualSpacing
-			className="md:text-4xl  font-GilroyBold text-2xl font-bold text-black"
+			className='font-GilroyBold text-2xl font-bold text-black md:text-4xl'
 			text="Where I've worked"
 			client:visible
 		/>
-		<span class="ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400"></span>
+		<span class='ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400'></span>
 	</div>
-	<div class="pt-10">
-		<ol class="relative border-s-2 border-neutral-400">
-			<li class="mb-10 ms-4">
-				<div class="absolute w-3 h-3 bg-[#ff5e69] rounded-full mt-1.5 -start-[6.5px] border border-white"></div>
+	<div class='pt-10'>
+		<ol class='relative border-s-2 border-neutral-400'>
+			<li class='mb-10 ms-4'>
+				<div
+					class='absolute -start-[6.5px] mt-1.5 h-3 w-3 rounded-full border border-white bg-[#ff5e69]'
+				>
+				</div>
 				<ExperienceCard
 					link='https://boxode.org'
 					target='_blank'
-					title='Co-founder & Principal Frontend Developer &bull; Boxode'
-					location='Aguascalientes, México &bull; Remote'
+					title='Co-founder & Principal Frontend Developer • Boxode'
+					location='Aguascalientes, México • Remote'
 					duration='Abril 2023 - Julio 2024 | Jornada Parcial'
-					ContainerStyles="md:hover:bg-[#ffe1e3]/50"
-					textStyles="group-hover:text-[#ff5e69]"
+					ContainerStyles='md:hover:bg-[#ffe1e3]/50'
+					textStyles='group-hover:text-[#ff5e69]'
 					phase=`"Cada paso fuera de la zona de confort te acerca más a tus metas."`
-					description='Test description'
-					description2="Test description 2"
+					description='Boxode, una de las más grandes ideas y proyectos que he realizado durante mi vida, y he aquí un poco sobre su historia. Boxode, Ltd. o más conocida como Boxode, es una empresa de desarrollo de software fundada en diciembre de 2022 en el estado de Aguascalientes, pero que comenzó sus operaciones oficiales en abril de 2023.'
+					description2='La idea de la creación surgió gracias a que un colega y yo tuvimos la idea de crear una empresa de desarrollo de software donde pudiéramos aplicar los conocimientos adquiridos durante el estudio de la Ingeniería en Desarrollo y Gestión de Software. Ahora, junto con otros compañeros conocidos, esta crece en personal poco a poco para poder brindar un servicio de calidad y cumplir con las expectativas de nuestros clientes.'
 					technologies={[
-						{ text: 'Resiliencia', image: '/svg/resilience.svg'},
-						{ text: 'Next.JS', image: '/svg/nextjs.svg'},
-						{ text: 'MongoDB', image: '/svg/mongodb.svg'},
-						{ text: 'TypeScript', image: '/svg/typescript.svg'},
-						{ text: 'ExpressJS', image: '/svg/expressjs.svg'}
+						{ text: 'Resiliencia', image: '/svg/resilience.svg' },
+						{ text: 'Next.JS', image: '/svg/nextjs.svg' },
+						{ text: 'MongoDB', image: '/svg/mongodb.svg' },
+						{ text: 'TypeScript', image: '/svg/typescript.svg' },
+						{ text: 'ExpressJS', image: '/svg/expressjs.svg' },
 					]}
 				/>
 			</li>
-			<li class="mb-10 ms-4">
-				<div class="absolute w-3 h-3 bg-[#b16cea] rounded-full mt-1.5 -start-[6.5px] border border-white"></div>
+			<li class='mb-10 ms-4'>
+				<div
+					class='absolute -start-[6.5px] mt-1.5 h-3 w-3 rounded-full border border-white bg-[#b16cea]'
+				>
+				</div>
 				<ExperienceCard
+					phase={null}
 					link={null}
 					target={null}
-					title='Servicio Técnico de Sistemas &bull; CompuCel'
-					location='Cuauhtémoc, ZAC, México &bull; Presencial'
+					title='Servicio Técnico de Sistemas • CompuCel'
+					location='Cuauhtémoc, ZAC, México • Presencial'
 					duration='Noviembre 2022 - Febrero 2023 | Contrato Temporal'
 					description='Test description'
-					description2="Test description 2"
-					ContainerStyles="md:hover:bg-[#f4eafd]/50"
-					textStyles="group-hover:text-[#c38ff1]"
+					description2='Test description 2'
+					ContainerStyles='md:hover:bg-[#f4eafd]/50'
+					textStyles='group-hover:text-[#c38ff1]'
 					technologies={[
-						{ text: 'Resolución de Problemas', image: '/svg/wrench.svg'},
-						{ text: 'Comunicación', image: '/svg/communication.svg'},
-						{ text: 'Gestión del tiempo', image: '/svg/clock.svg'},
-						{ text: 'Identificación del problema', image: '/svg/attention.svg'}
+						{ text: 'Resolución de Problemas', image: '/svg/wrench.svg' },
+						{ text: 'Comunicación', image: '/svg/communication.svg' },
+						{ text: 'Gestión del tiempo', image: '/svg/clock.svg' },
+						{ text: 'Identificación del problema', image: '/svg/attention.svg' },
 					]}
 				/>
 			</li>
-			<li class="mb-10 ms-4">
-				<div class="absolute w-3 h-3 bg-[#ffa84b] rounded-full mt-1.5 -start-[6.5px] border border-white"></div>
+			<li class='mb-10 ms-4'>
+				<div
+					class='absolute -start-[6.5px] mt-1.5 h-3 w-3 rounded-full border border-white bg-[#ffa84b]'
+				>
+				</div>
 				<ExperienceCard
+					phase={null}
 					link={null}
 					target={null}
-					title='Becario de Desarrollo de Software &bull; INBAC Instituto Niels Bohr'
-					location='San Francisco de los Romo, AGS, México &bull; Remoto'
+					title='Becario de Desarrollo de Software • INBAC Instituto Niels Bohr'
+					location='San Francisco de los Romo, AGS, México • Remoto'
 					duration='Marzo 2022 - Agosto 2022 | Contrato Temporal'
-					ContainerStyles="md:hover:bg-[#fff0d4]/50"
-					textStyles="group-hover:text-[#ffa84b]"
-					description='Test description'
-					description2="Test description 2"
+					ContainerStyles='md:hover:bg-[#fff0d4]/50'
+					textStyles='group-hover:text-[#ffa84b]'
+					description='Este puesto fue uno de los primeros retos que se presentarón en mi camino al estar presentando mis prácticas profesionales, ya que se creo un sistema de control escolar para administrar mejor al personal que conforma la institución, así como también a los alumnos.'
+					description2='Gracias a este proyecto que fue uno de los más complejos que realicé en ese tiempo, pude aprender y comprender más a profundidad el lenguange de programación PHP y JS. Así como también el uso de diferentes métodos en las bases de datos que sinceramente desconocia que, aunque las asesorias por medio de mi superior del proyecto eran prácticamente nulas, pude realizar este proyecto.'
 					technologies={[
-						{ text: 'Pensamiento Analítico', image: '/svg/brain.svg'},
-						{ text: 'PHP', image: '/svg/php.svg'},
-						{ text: 'MySQL', image: '/svg/mysql.svg'},
-						{ text: 'JavaScript', image: '/svg/javascript.svg'}
+						{ text: 'Pensamiento Analítico', image: '/svg/brain.svg' },
+						{ text: 'PHP', image: '/svg/php.svg' },
+						{ text: 'MySQL', image: '/svg/mysql.svg' },
+						{ text: 'JavaScript', image: '/svg/javascript.svg' },
 					]}
 				/>
 			</li>
