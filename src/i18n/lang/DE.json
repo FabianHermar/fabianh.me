@@ -5,6 +5,20 @@
   "hero": {
     "title": "Ich entwickle digitale produkte",
     "title_2": "die die fantasie anregen und das nutzererlebnis verbessern.",
-    "subtitle": "Hallo! Ich bin Fabian Herrera, ein Softwareentwickler aus Mexiko. Ich habe mich auf die Entwicklung intuitiver Benutzeroberflächen für wachsende Startups und eine Vielzahl von Kunden spezialisiert."
+    "subtitle": "Hallo! Ich bin Fabian Herrera, ein Softwareentwickler aus Mexiko. Ich habe mich auf die Entwicklung intuitiver Benutzeroberflächen für wachsende Startups und eine Vielzahl von Kunden spezialisiert.",
+    "WIW": {
+      "title": "Wo ich arbeitete",
+      "card1": {
+        "title": "Mitbegründer & leitender Frontend-Entwickler • Boxode",
+        "location": "Aguascalientes, Mexiko - Fernarbeit",
+        "duration": "April 2023 - Juli 2024 | Teilzeit",
+        "phrase": "\"Jeder Schritt aus der Komfortzone bringt Sie Ihren Zielen näher.\"",
+        "description1": "Boxode, eine der großartigsten Ideen und Projekte, die ich je gemacht habe, und hier ist ein wenig über seine Geschichte. Boxode, Ltd. oder besser bekannt als Boxode, ist ein Softwareentwicklungsunternehmen, das im Dezember 2022 im Bundesstaat Aguascalientes gegründet wurde, aber seinen offiziellen Betrieb im April 2023 aufnahm.",
+        "description2": "Die Idee zur Gründung entstand, weil ein Kollege und ich die Idee hatten, ein Softwareentwicklungsunternehmen zu gründen, in dem wir die während des Studiums der Softwareentwicklung und des Wirtschaftsingenieurwesens erworbenen Kenntnisse anwenden können. Zusammen mit anderen Kollegen, die wir kennen, wächst das Unternehmen nun nach und nach personell an, um eine qualitativ hochwertige Dienstleistung anbieten und die Erwartungen unserer Kunden erfüllen zu könne.",
+        "tech": {
+          "resilience": "Resilienz"
+        }
+      }
+    }
   }
 }
