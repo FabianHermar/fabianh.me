@@ -5,6 +5,20 @@
   "hero": {
     "title": "Desarrollo productos digitales",
     "title_2": "que capturan la imaginación y elevan la experiencia de usuario.",
-    "subtitle": "¡Hola! Soy Fabian Herrera, desarrollador de software de México. Me especializo en la creación de interfaces intuitivas para startups en crecimiento y una variedad de clientes."
+    "subtitle": "¡Hola! Soy Fabian Herrera, desarrollador de software de México. Me especializo en la creación de interfaces intuitivas para startups en crecimiento y una variedad de clientes.",
+    "WIW": {
+      "title": "Dónde he trabajado",
+      "card1": {
+        "title": "Cofundador y Desarrollador Frontend Principal • Boxode",
+        "location": "Aguascalientes, México - Remoto",
+        "duration": "Abril 2023 - Julio 2024 | Jornada Parcial",
+        "phrase": "\"Cada paso fuera de la zona de confort te acerca más a tus metas.\"",
+        "description1": "Boxode, una de las más grandes ideas y proyectos que he realizado durante mi vida, y he aquí un poco sobre su historia. Boxode, Ltd. o más conocida como Boxode, es una empresa de desarrollo de software fundada en diciembre de 2022 en el estado de Aguascalientes, pero que comenzó sus operaciones oficiales en abril de 2023.",
+        "description2": "La idea de la creación surgió gracias a que un colega y yo tuvimos la idea de crear una empresa de desarrollo de software donde pudiéramos aplicar los conocimientos adquiridos durante el estudio de la Ingeniería en Desarrollo y Gestión de Software. Ahora, junto con otros compañeros conocidos, esta crece en personal poco a poco para poder brindar un servicio de calidad y cumplir con las expectativas de nuestros clientes.",
+        "tech": {
+          "resilience": "Resiliencia"
+        }
+      }
+    }
   }
 }
