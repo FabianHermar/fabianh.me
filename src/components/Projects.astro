@@ -2,6 +2,10 @@
 import Container from '@/components/Container.astro'
 import ProjectsCard from './ProjectsCard.astro'
 import GradualSpacing from './ui/gradual-spacing'
+import { getI18N } from '@/i18n'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <Container>
@@ -9,7 +13,7 @@ import GradualSpacing from './ui/gradual-spacing'
 		<span class='font-GilroyBold text-2xl font-bold text-neutral-500 md:text-4xl'>02. &nbsp;</span>
 		<GradualSpacing
 			className='font-GilroyBold text-2xl font-bold text-black md:text-4xl'
-			text='Some of my projects'
+			text=`${i18n.hero.projects.title}`
 			client:visible
 		/>
 		<span class='ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400'></span>
