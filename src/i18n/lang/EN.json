@@ -16,9 +16,37 @@
         "description1": "Boxode, one of the greatest ideas and projects I have ever realized during my life, and here is a little bit about its history. Boxode, Ltd. or better known as Boxode, is a software development company founded in December 2022 in the state of Aguascalientes, but started its official operations in April 2023.",
         "description2": "The idea of creation arose because a colleague and I had the idea of creating a software development company where we could apply the knowledge acquired during the study of Software Development and Management Engineering. Now, together with other known colleagues, it is growing in staff little by little to be able to provide a quality service and meet the expectations of our customer.",
         "tech": {
-          "resilience": "Resilience"
+          "tech1": "Resilience"
+        }
+      },
+      "card2": {
+        "title": "Systems Technical Service • CompuCel",
+        "location": "Cuauhtémoc, ZAC, México • On-site",
+        "duration": "November 2022 - February 2023 | Temporary Contract",
+        "phrase": "",
+        "description1": "During my time as part of the technical support team, I was responsible for providing assistance to users in both software problem solving and operating system and hardware configuration and maintenance.",
+        "description2": "I also developed skills in creating technical documentation, where I recorded incidents and their respective solutions, which facilitated the resolution of future problems for other team members.",
+        "tech": {
+          "tech1": "Problem Solving",
+          "tech2": "Communication",
+          "tech3": "Time Management",
+          "tech4": "Problem Identification"
+        }
+      },
+      "card3": {
+        "title": "Software Development Intern • INBAC Niels Bohr Institute",
+        "location": "San Francisco de los Romo, AGS, México • Remote",
+        "duration": "March 2022 - August 2022 | Temporary Contract",
+        "phrase": "",
+        "description1": "This position was one of the first challenges that arose in my path when presenting my professional practices, since a school control system was created to better manage the personnel that make up the institution, as well as the students.",
+        "description2": "Thanks to this project, which was one of the most complex I carried out at that time, I was able to learn and understand more in depth the programming language PHP and JS. As well as the use of different methods in the databases that I honestly did not know, although the advice through my project superior was practically nil, I was able to carry out this project.",
+        "tech": {
+          "tech1": "Analytical Thinking"
         }
       }
+    },
+    "projects": {
+      "title": "Some of my projects"
     }
   }
 }
