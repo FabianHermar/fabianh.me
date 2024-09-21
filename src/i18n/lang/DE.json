@@ -16,9 +16,37 @@
         "description1": "Boxode, eine der großartigsten Ideen und Projekte, die ich je gemacht habe, und hier ist ein wenig über seine Geschichte. Boxode, Ltd. oder besser bekannt als Boxode, ist ein Softwareentwicklungsunternehmen, das im Dezember 2022 im Bundesstaat Aguascalientes gegründet wurde, aber seinen offiziellen Betrieb im April 2023 aufnahm.",
         "description2": "Die Idee zur Gründung entstand, weil ein Kollege und ich die Idee hatten, ein Softwareentwicklungsunternehmen zu gründen, in dem wir die während des Studiums der Softwareentwicklung und des Wirtschaftsingenieurwesens erworbenen Kenntnisse anwenden können. Zusammen mit anderen Kollegen, die wir kennen, wächst das Unternehmen nun nach und nach personell an, um eine qualitativ hochwertige Dienstleistung anbieten und die Erwartungen unserer Kunden erfüllen zu könne.",
         "tech": {
-          "resilience": "Resilienz"
+          "tech1": "Resilienz"
+        }
+      },
+      "card2": {
+        "title": "Technischer Service für Systeme • CompuCel",
+        "location": "Cuauhtémoc, ZAC, Mexiko • Vor Ort",
+        "duration": "November 2022 - Februar 2023 | Befristeter Vertrag",
+        "phrase": "",
+        "description1": "Während meiner Zeit im technischen Support-Team war ich dafür verantwortlich, Benutzern bei der Lösung von Softwareproblemen sowie bei der Konfiguration und Wartung von Betriebssystemen und Hardware zu helfen.",
+        "description2": "Ich habe auch Fähigkeiten in der Erstellung technischer Dokumentationen entwickelt, in denen ich Vorfälle und ihre jeweiligen Lösungen aufgezeichnet habe, was die Lösung zukünftiger Probleme für andere Teammitglieder erleichterte.",
+        "tech": {
+          "tech1": "Problem lösen",
+          "tech2": "Kommunikation",
+          "tech3": "Zeitmanagement",
+          "tech4": "Problemidentifikation"
+        }
+      },
+      "card3": {
+        "title": "Softwareentwicklungspraktikant • INBAC Niels Bohr Institut",
+        "location": "San Francisco de los Romo, AGS, Mexiko • Fernarbeit",
+        "duration": "März 2022 - August 2022 | Befristeter Vertrag",
+        "phrase": "",
+        "description1": "Diese Position war eine der ersten Herausforderungen, die sich mir auf meinem Weg stellten, als ich meine beruflichen Praktiken vorstellte, da ein Schulverwaltungssystem erstellt wurde, um das Personal, das die Institution bildet, sowie die Schüler besser zu verwalten.",
+        "description2": "Dank dieses Projekts, das eines der komplexesten war, das ich zu dieser Zeit durchgeführt habe, konnte ich die Programmiersprachen PHP und JS sowie die Verwendung verschiedener Methoden in den Datenbanken tiefergehend lernen und verstehen, die ich ehrlich gesagt nicht kannte, obwohl die Beratung durch meinen Projektleiter praktisch null war, konnte ich dieses Projekt durchführen.",
+        "tech": {
+          "tech1": "Analytisches Denken"
         }
       }
+    },
+    "projects": {
+      "title": "Einige meiner Projekte"
     }
   }
 }
