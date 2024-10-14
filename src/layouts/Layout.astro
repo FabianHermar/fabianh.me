@@ -93,4 +93,24 @@ const lang = getLangFromUrl(Astro.url)
 		<slot />
 	<Toast client:load />
 	</body>
+
+	<script>
+		function handleIntersection(entries) {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible')
+				}
+			})
+		}
+
+		const observer = new IntersectionObserver(handleIntersection, {
+			root: null,
+			rootMargin: '0px',
+			threshold: 0.1,
+		})
+
+		document.querySelectorAll('.fade-enter-active').forEach((card) => {
+			observer.observe(card)
+		})
+	</script>
 </html>
