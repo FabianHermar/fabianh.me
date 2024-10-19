@@ -46,7 +46,13 @@
       }
     },
     "projects": {
-      "title": "Einige meiner Projekte"
+      "title": "Einige meiner Projekte",
+      "project1": {
+        "title": "Dune UI",
+        "subtitle": "Eine Bibliothek von TailwindCSS-Komponenten",
+        "description": "Dieses Projekt war eines der etwas größeren Projekte, die ich im Jahr 2024 durchgeführt habe, und dank dessen konnte ich viele weitere Dinge lernen, die ich zuvor nicht kannte.",
+        "description2": "Heute ist DuneUI eine Bibliothek von mehr TailwindCSS-Komponenten, die jedoch stärker auf meinen Designstil ausgerichtet ist, der etwas minimalistischer und moderner wird, was viele Monate Arbeit und eine frühzeitige Planung erfordert hat. Daher habe ich mich aus der Motivation von mehreren Freunden, Lehrern und Bekannten entschieden, sie zu erstellen, die meinen Designstil mögen, und hier präsentiere ich DuneUI."
+      }
     }
   }
 }
