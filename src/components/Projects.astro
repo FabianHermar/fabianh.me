@@ -1,15 +1,15 @@
 ---
 import Container from '@/components/Container.astro'
+import { getI18N } from '@/i18n'
 import ProjectsCard from './ProjectsCard.astro'
 import GradualSpacing from './ui/gradual-spacing'
-import { getI18N } from '@/i18n'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 ---
 
 <Container>
-	<div class='mb-8 flex h-10 items-center justify-center pt-10' id="projects">
+	<div class='mb-8 flex h-10 items-center justify-center pt-10' id='projects'>
 		<span class='font-GilroyBold text-2xl font-bold text-neutral-500 md:text-4xl'>02. &nbsp;</span>
 		<GradualSpacing
 			className='font-GilroyBold text-2xl font-bold text-black md:text-4xl'
@@ -18,27 +18,27 @@ const i18n = getI18N({ currentLocale })
 		/>
 		<span class='ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400'></span>
 	</div>
-	<div class='pt-10 relative flex items-center justify-center flex-col'>
-		<div class="py-16 fade-enter-active">
+	<div class='relative flex flex-col items-center justify-center pt-10'>
+		<div class='fade-enter-active py-16'>
 			<ProjectsCard
 				projectImage='/projects/DuneUI.webp'
 				externalLink='https://duneui.com'
 				githubLink='https://github.com/fabianhermar/duneui'
 				target='_blank'
-				title='Dune UI'
-				subtitle='🏜️ A TailwindCSS library of components'
-				description='Este proyecto ha sido uno de los proyectos un tanto grande de los que he realizado en el año 2024 y que gracias a este pude aprender muchas más cosas de las cuales anteriormente desconocía y que no sabía cómo usar.'
-				description2='Hoy en día, DuneUI es una biblioteca más de componentes de TailwindCSS, pero esta esta más enfocada a mi estilo de diseño que llega a ser un tanto más minimalista y moderno, la cual a conllevado muchos meses de trabajo y planificación anticipada. A lo cual, decidí crearla por motivación de varios amigos, maestros y conocidos que les gusta mi forma de diseñar y es aquí que les presento DuneUI.'
+				title=`${i18n.hero.projects.project1.title}`
+				subtitle=`🏜️ ${i18n.hero.projects.project1.subtitle}`
+				description=`${i18n.hero.projects.project1.description}`
+				description2=`${i18n.hero.projects.project1.description2}`
 				technologies={[
 					{ text: 'Astro', image: '/svg/astrojs.svg' },
 					{ text: 'React', image: '/svg/react.svg' },
 					{ text: 'JavaScript', image: '/svg/javascript.svg' },
 					{ text: 'TypeScript', image: '/svg/typescript.svg' },
-					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' }
+					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' },
 				]}
 			/>
 		</div>
-		<div class="fade-enter-active">
+		<div class='fade-enter-active'>
 			<ProjectsCard
 				projectImage='/projects/DuneUI.webp'
 				externalLink='https://boxode.org'
@@ -51,15 +51,15 @@ const i18n = getI18N({ currentLocale })
 				technologies={[
 					{ text: 'React', image: '/svg/react.svg' },
 					{ text: 'TypeScript', image: '/svg/typescript.svg' },
-					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' }
+					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' },
 				]}
 			/>
 		</div>
-		<div class="py-16 fade-enter-active">
+		<div class='fade-enter-active py-16'>
 			<ProjectsCard
 				projectImage='/projects/DuneUI.webp'
 				externalLink='https://windui.org'
-				githubLink="https://github.com/FabianHermar/WindUI"
+				githubLink='https://github.com/FabianHermar/WindUI'
 				target='_blank'
 				title='Test title'
 				subtitle='Test subtitle'
@@ -68,7 +68,7 @@ const i18n = getI18N({ currentLocale })
 				technologies={[
 					{ text: 'React', image: '/svg/react.svg' },
 					{ text: 'TypeScript', image: '/svg/typescript.svg' },
-					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' }
+					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' },
 				]}
 			/>
 		</div>
@@ -76,28 +76,28 @@ const i18n = getI18N({ currentLocale })
 			class='pointer-events-none absolute -inset-x-2.5 bottom-20 h-[16.6%] w-full select-none overflow-hidden bg-gradient-to-t from-white from-10% via-white/50 via-30% to-transparent to-90% sm:h-[22.4%]'
 		>
 		</div>
-			<a
-				href='/archive'
-				class='group relative inline-flex h-12 items-center justify-center overflow-hidden bg-black px-6 font-medium text-white'
-			><span class='font-GilroySemibold select-none'>Ver todos los proyectos</span>
-				<div class='ml-1 transition group-hover:translate-x-1'>
-					<svg
-						width='15'
-						height='15'
-						viewBox='0 0 15 15'
-						fill='none'
-						xmlns='http://www.w3.org/2000/svg'
-						class='h-5 w-5'
+		<a
+			href='/archive'
+			class='group relative inline-flex h-12 items-center justify-center overflow-hidden bg-black px-6 font-medium text-white'
+			><span class='select-none font-GilroySemibold'>Ver todos los proyectos</span>
+			<div class='ml-1 transition group-hover:translate-x-1'>
+				<svg
+					width='15'
+					height='15'
+					viewBox='0 0 15 15'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'
+					class='h-5 w-5'
+				>
+					<path
+						d='M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z'
+						fill='currentColor'
+						fill-rule='evenodd'
+						clip-rule='evenodd'
 					>
-						<path
-							d='M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z'
-							fill='currentColor'
-							fill-rule='evenodd'
-							clip-rule='evenodd'
-						>
-						</path>
-					</svg>
-				</div>
-			</a>
+					</path>
+				</svg>
+			</div>
+		</a>
 	</div>
 </Container>
