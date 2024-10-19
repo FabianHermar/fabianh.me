@@ -1,7 +1,7 @@
 ---
+import Toast from '@/components/ui/Toast'
 import { getLangFromUrl } from '@/i18n/utils'
 import { ViewTransitions } from 'astro:transitions'
-import Toast from '@/components/ui/Toast'
 
 import '../globals.css'
 interface Props {
@@ -31,7 +31,7 @@ const lang = getLangFromUrl(Astro.url)
 		<link rel='alternate' hreflang='es' href='https://fabianh.me/es/' />
 		<link rel='alternate' hreflang='en' href='https://fabianh.me/en/' />
 		<link rel='alternate' hreflang='de' href='https://fabianh.me/de/' />
-		<link rel="canonical" href="https://fabianh.me"/>
+		<link rel='canonical' href='https://fabianh.me' />
 		<meta
 			name='apple-mobile-web-app-title'
 			content='Fabian Herrera - Desarrollador Web con más 2 años de experiencia.'
@@ -91,10 +91,8 @@ const lang = getLangFromUrl(Astro.url)
 	</head>
 	<body class='dark-transition'>
 		<slot />
-	<Toast client:load />
-	</body>
-
-	<script>
+		<Toast client:load />
+	</body><script is:inline>
 		function handleIntersection(entries) {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
