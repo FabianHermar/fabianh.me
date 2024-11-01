@@ -53,6 +53,23 @@
         "description": "Dieses Projekt war eines der etwas größeren Projekte, die ich im Jahr 2024 durchgeführt habe, und dank dessen konnte ich viele weitere Dinge lernen, die ich zuvor nicht kannte.",
         "description2": "Heute ist DuneUI eine Bibliothek von mehr TailwindCSS-Komponenten, die jedoch stärker auf meinen Designstil ausgerichtet ist, der etwas minimalistischer und moderner wird, was viele Monate Arbeit und eine frühzeitige Planung erfordert hat. Daher habe ich mich aus der Motivation von mehreren Freunden, Lehrern und Bekannten entschieden, sie zu erstellen, die meinen Designstil mögen, und hier präsentiere ich DuneUI."
       }
+    },
+    "moreinfo": {
+      "title": "Mehr über mich",
+      "phrase": "Inspiration entriegelt die Zukunft",
+      "who": {
+        "title": "Wer bin ich?",
+        "1": "Software-Ingenieur mit Abschluss an der Universidad Tecnológica del Norte de Aguascalientes und mehr als 3 Jahren Erfahrung als Entwickler",
+        "2": {
+          "fp": "Im Alter von 13 Jahren begann ich, mich intensiver mit der Welt der Programmierung zu beschäftigen, indem ich meine ersten Programme in C++ erstellte. Nach einer Weile begann ich, mich intensiver mit dem Erlernen der",
+          "sp": "Web-Entwicklung",
+          "tp": "UI/UX",
+          "ftp": "und natürlich auch die Entwicklung von",
+          "ffp": "Mobile Anwendungen."
+        },
+        "3": "Ich liebe es zu reisen und vor allem der Natur nahe zu sein und mehr über sie zu lernen. Derzeit konzentriere ich mich darauf, zu wachsen, zu lernen und mein Softwareentwicklungs-Startup zusammen mit mehreren Kollegen aufzubauen, um unser Wissen weiter zu teilen.",
+        "button": "Siehe vollständige Zusammenfassung"
+      }
     }
   }
 }
