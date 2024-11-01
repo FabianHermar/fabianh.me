@@ -53,6 +53,23 @@
         "description": "This project has been one of the somewhat large projects I have carried out in the year 2024 and thanks to this I was able to learn many more things that I previously did not know how to use.",
         "description2": "Today, DuneUI is a library of more TailwindCSS components, but this one is more focused on my design style that becomes a bit more minimalist and modern, which has taken many months of work and planning in advance. To which, I decided to create it out of motivation from several friends, teachers, and acquaintances who like my way of designing and this is where I present DuneUI."
       }
+    },
+    "moreinfo": {
+      "title": "More about me",
+      "phrase": "\"Inspiration unlocks the future\"",
+      "who": {
+        "title": "Who am I?",
+        "1": "Software Engineer graduated from the Universidad Tecnológica del Norte de Aguascalientes with more than 3 years of experience as a developer.",
+        "2": {
+          "fp": "At the age of 13 I started to get more involved in the programming world by creating my first programs in C++. After a while I started to get more involved in the learning of the",
+          "sp": "Web Development",
+          "tp": "UI/UX",
+          "ftp": "and of course, also the development of",
+          "ffp": "Mobile Applications."
+        },
+        "3": "I love traveling and especially being close to nature and learning more about it. I am currently focused on growing, learning and creating my software development startup together with several colleagues to continue sharing our knowledge.",
+        "button": "See complete summary"
+      }
     }
   }
 }
