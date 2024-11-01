@@ -1,24 +1,28 @@
 ---
-import '../styles/Bento.css'
 import Container from '@/components/Container.astro'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import WhoIAm from '@/components/WhoIAm.astro'
+import '../styles/Bento.css'
+import AnimatedSection from './ui/animated-section'
 ---
+
 <Container>
-	<div class='flex h-10 pt-10 mb-8 justify-center items-center'>
-		<span class='md:text-4xl font-GilroyBold text-2xl font-bold text-neutral-500'>03. &nbsp;</span>
+	<div class='mb-8 flex h-10 items-center justify-center pt-10'>
+		<span class='font-GilroyBold text-2xl font-bold text-neutral-500 md:text-4xl'>03. &nbsp;</span>
 		<GradualSpacing
-			className="md:text-4xl  font-GilroyBold text-2xl font-bold text-black"
-			text="More about me"
+			className='font-GilroyBold text-2xl font-bold text-black md:text-4xl'
+			text='More about me'
 			client:visible
 		/>
-		<span class="ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400"></span>
+		<span class='ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400'></span>
 	</div>
 	<WhoIAm />
-	<section class="parent pt-10">
-		<article class="div1 fade-enter-active"> </article>
-		<article class="div2 fade-enter-active"> </article>
-		<article class="div3 fade-enter-active"> </article>
-		<article class="div4 fade-enter-active"> </article>
-	</section>
+	<AnimatedSection client:visible>
+		<section class='parent pt-10'>
+			<article class='div1'>Working in these sections, stay tuned!</article>
+			<article class='div2'>Working in these sections, stay tuned!</article>
+			<article class='div3'>Working in these sections, stay tuned!</article>
+			<article class='div4'>Working in these sections, stay tuned!</article>
+		</section>
+	</AnimatedSection>
 </Container>
