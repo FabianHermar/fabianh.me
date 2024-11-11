@@ -2,8 +2,12 @@
 import Container from '@/components/Container.astro'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import WhoIAm from '@/components/WhoIAm.astro'
+import { getI18N } from '@/i18n'
 import '../styles/Bento.css'
 import AnimatedSection from './ui/animated-section'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <Container>
@@ -11,7 +15,7 @@ import AnimatedSection from './ui/animated-section'
 		<span class='font-GilroyBold text-2xl font-bold text-neutral-500 md:text-4xl'>03. &nbsp;</span>
 		<GradualSpacing
 			className='font-GilroyBold text-2xl font-bold text-black md:text-4xl'
-			text='More about me'
+			text=`${i18n.hero.moreinfo.title}`
 			client:visible
 		/>
 		<span class='ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400'></span>
