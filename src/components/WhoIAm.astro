@@ -1,37 +1,45 @@
+---
+import { getI18N } from '@/i18n'
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
 <section
 	class='relative flex flex-col items-center justify-center gap-y-4 px-6 pt-20'
 	id='about-me'
 >
 	<h2 class='text-center font-GilroyBold text-2xl font-bold lg:text-5xl'>
-		"La inspiración desbloquea el futuro"
+		{i18n.hero.moreinfo.phrase}
 	</h2>
-	<span class='font-GilroySemibold text-lg text-neutral-500 lg:text-2xl'>Who I Am?</span>
+	<span class='font-GilroySemibold text-lg text-neutral-500 lg:text-2xl'
+		>{i18n.hero.moreinfo.who.title}</span
+	>
 	<p class='max-w-[42rem] text-pretty font-GilroyRegular text-lg'>
-		Ingeniero de Software egresado de la Universidad Tecnológica del Norte de Aguascalientes con más
-		de 3 años de experiencia como desarrollador.
+		{i18n.hero.moreinfo.who['1']}
 	</p>
 	<p class='max-w-[42rem] text-pretty font-GilroyRegular text-lg'>
-		Empecé a los 13 años a relacionarme más con el mundo de la programación creando mis primeros
-		programas en C++. Luego de un tiempo comencé a involucrarme más en el aprendizaje del <span
-			class='has-tooltip relative cursor-crosshair rounded-lg bg-[#ff5e69] px-1.5 py-0.5 font-GilroySemibold select-none'
-			>Desarrollo Web<span
+		{i18n.hero.moreinfo.who['2'].fp}
+		<span
+			class='has-tooltip relative cursor-crosshair select-none rounded-lg bg-[#ff5e69] px-1.5 py-0.5 font-GilroySemibold'
+			>{i18n.hero.moreinfo.who['2'].sp}<span
 				class='tooltip absolute -top-[90px] left-0 z-10 w-48 rounded-lg bg-[#ff5e69]/50 px-1.5 py-0.5 font-GilroySemibold text-sm backdrop-blur-sm'
 			>
 				HTML | CSS | JS | TS | ReactJS | NextJS | NodeJS | API REST | MongoDB | MySQL
 			</span></span
 		>,
 		<span
-			class='has-tooltip relative cursor-crosshair rounded-lg bg-[#b16cea] px-1.5 py-0.5 font-GilroySemibold select-none'
-			>UI/UX<span
+			class='has-tooltip relative cursor-crosshair select-none rounded-lg bg-[#b16cea] px-1.5 py-0.5 font-GilroySemibold'
+			>{i18n.hero.moreinfo.who['2'].tp}<span
 				class='tooltip absolute -left-32 -top-[110px] w-48 rounded-lg bg-[#b16cea]/50 px-1.5 py-0.5 font-GilroySemibold text-sm backdrop-blur-sm'
 			>
 				Figma | Adobe Photoshop | Adobe Illustrator | Responsive Design | Wirerframes | Web
 				Accesibility
 			</span>
 		</span>
-		&nbsp;y claro, también el desarrollo de <span
-			class='has-tooltip relative cursor-crosshair rounded-lg bg-[#ffa84b] px-1.5 py-0.5 font-GilroySemibold select-none'
-			>Aplicaciones Móviles.
+		&nbsp;{i18n.hero.moreinfo.who['2'].ftp}
+		<span
+			class='has-tooltip relative cursor-crosshair select-none rounded-lg bg-[#ffa84b] px-1.5 py-0.5 font-GilroySemibold'
+			>{i18n.hero.moreinfo.who['2'].ffp}.
 			<span
 				class='tooltip absolute left-0 top-8 w-48 text-pretty rounded-lg bg-[#ffa84b]/50 px-1.5 py-0.5 font-GilroySemibold text-sm backdrop-blur-sm'
 			>
@@ -40,9 +48,7 @@
 		</span>
 	</p>
 	<p class='max-w-[42rem] text-pretty font-GilroyRegular text-lg'>
-		Me encanta el viajar y especialmente estar cercas de la naturaleza y conocer más sobre ella.
-		Actualmente estoy enfocado en crecer, aprender y crear mi startup de desarrollo de software
-		junto con varios colegas y así seguir compartiendo nuestro conocimiento.
+		{i18n.hero.moreinfo.who['3']}
 	</p>
 	<div
 		class='pointer-events-none absolute -inset-x-2.5 -bottom-2.5 h-[16.6%] w-full select-none overflow-hidden bg-gradient-to-t from-white from-10% via-white/50 via-30% to-transparent to-90% sm:h-[44.4%]'
@@ -52,7 +58,7 @@
 		<a
 			href='/about-me'
 			class='group relative inline-flex h-12 items-center justify-center overflow-hidden bg-neutral-950 px-6 font-medium text-neutral-200'
-			><span class='font-GilroySemibold select-none'>Ver resumen completo</span>
+			><span class='select-none font-GilroySemibold'>{i18n.hero.moreinfo.who.button}</span>
 			<div class='ml-1 transition group-hover:translate-x-1'>
 				<svg
 					width='15'
