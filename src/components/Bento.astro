@@ -1,10 +1,11 @@
 ---
+import { UTCClock } from '@/components/Clock'
 import Container from '@/components/Container.astro'
+import AnimatedSection from '@/components/ui/animated-section'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import WhoIAm from '@/components/WhoIAm.astro'
 import { getI18N } from '@/i18n'
 import '../styles/Bento.css'
-import AnimatedSection from './ui/animated-section'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -25,7 +26,9 @@ const i18n = getI18N({ currentLocale })
 		<section class='parent pt-10'>
 			<article class='div1'>Working in these sections, stay tuned!</article>
 			<article class='div2'>Working in these sections, stay tuned!</article>
-			<article class='div3'>Working in these sections, stay tuned!</article>
+			<article class='div3 flex flex-col items-center justify-center'>
+				<UTCClock client:visible />
+			</article>
 			<article class='div4'>Working in these sections, stay tuned!</article>
 		</section>
 	</AnimatedSection>
