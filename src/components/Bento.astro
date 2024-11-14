@@ -5,6 +5,7 @@ import AnimatedSection from '@/components/ui/animated-section'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import WhoIAm from '@/components/WhoIAm.astro'
 import { getI18N } from '@/i18n'
+import { Image } from 'astro:assets'
 import '../styles/Bento.css'
 
 const { currentLocale } = Astro
@@ -24,12 +25,58 @@ const i18n = getI18N({ currentLocale })
 	<WhoIAm />
 	<AnimatedSection client:visible>
 		<section class='parent pt-10'>
-			<article class='div1'>Working in these sections, stay tuned!</article>
-			<article class='div2'>Working in these sections, stay tuned!</article>
-			<article class='div3 flex flex-col items-center justify-center'>
+			<article class='current-weather md:p-5'>
+				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
+					<Image
+						class='h-8 w-8 select-none md:h-12 md:w-12'
+						src='/svg/sun_3d.svg'
+						alt='Weather'
+						width={20}
+						height={20}
+					/>
+					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Current Weather</h2>
+				</div>
+				<p class='text-white'>Working in this section, stay tuned!</p>
+			</article>
+			<article class='div2 md:p-5'>
+				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
+					<Image
+						class='h-8 w-8 select-none md:h-12 md:w-12'
+						src='/svg/man_tech.svg'
+						alt='Hobbies'
+						width={20}
+						height={20}
+					/>
+					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Hobbies</h2>
+				</div>
+				<p class='text-white'>Working in this section, stay tuned!</p>
+			</article>
+			<article class='current-time md:p-5'>
+				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
+					<Image
+						class='h-8 w-8 select-none md:h-12 md:w-12'
+						src='/svg/seven_oclock.svg'
+						alt='Clock'
+						width={20}
+						height={20}
+					/>
+					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Current Time</h2>
+				</div>
 				<UTCClock client:visible />
 			</article>
-			<article class='div4'>Working in these sections, stay tuned!</article>
+			<article class='education md:p-5'>
+				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
+					<Image
+						class='h-8 w-8 select-none md:h-12 md:w-12'
+						src='/svg/graduation_cap_3d.svg'
+						alt='Graduation Cap'
+						width={20}
+						height={20}
+					/>
+					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Education</h2>
+				</div>
+				<p class='text-white'>Working in this section, stay tuned!</p>
+			</article>
 		</section>
 	</AnimatedSection>
 </Container>
