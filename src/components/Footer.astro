@@ -14,11 +14,13 @@ const translatePath = useTranslatedPath(lang)
 
 <footer class='bg-white pt-16'>
 	<Container>
-		<div class='mx-auto w-full md:py-8 border-t border-neutral-200'>
-			<div class='sm:flex sm:items-center sm:justify-between'>
-				<div class='flex flex-col'>
-					<div>
-						<h4 class='font-GilroyBold text-2xl tracking-tight text-black dark:text-white'>
+		<div
+			class='relative mx-auto max-w-screen-xl border-t border-neutral-200 px-4 py-16 sm:px-6 lg:px-8 lg:pt-24'
+		>
+			<div class='lg:flex lg:items-end lg:justify-between'>
+				<div>
+					<div class='flex justify-center lg:justify-start'>
+						<h4 class='font-GilroyBold text-2xl tracking-tight text-black'>
 							Fabian Herrera
 							<span
 								class='bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold tracking-tight text-transparent'
@@ -26,44 +28,57 @@ const translatePath = useTranslatedPath(lang)
 							</span>
 						</h4>
 					</div>
+
+					<p class='text-gray-500 mx-auto mt-6 max-w-md text-center leading-relaxed lg:text-left'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet
+						culpa cum itaque neque.
+					</p>
 				</div>
+
 				<ul
-					class='text-gray-500 dark:text-gray-400 mb-6 flex flex-wrap items-center font-GilroyRegular text-base sm:mb-0'
+					class='text-gray-500 mb-6 flex flex-wrap items-center font-GilroyRegular text-base sm:mb-0'
 				>
 					<li>
 						<a
-							href='#'
 							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
-							>{t('footer.about')}</a
+							href='#'
 						>
+							{t('footer.about')}
+						</a>
 					</li>
+
 					<li>
 						<a
-							href='#'
 							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
-							>{t('footer.blog')}</a
+							href='#'
 						>
+							{t('footer.blog')}
+						</a>
 					</li>
+
 					<li>
 						<a
-							href='#'
 							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#ff5e69] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
-							>{t('footer.projects')}</a
+							href='#'
 						>
+							{t('footer.projects')}
+						</a>
 					</li>
+
 					<li>
 						<a
-							href='/guia-de-estilo'
 							class='group relative me-4 before:absolute before:inset-x-0 before:bottom-0 before:h-[2px] before:origin-right before:scale-x-0 before:bg-[#b16cea] before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 md:me-6'
-							>{t('footer.style')}</a
+							href='#'
 						>
+							{t('footer.style')}
+						</a>
 					</li>
 				</ul>
 			</div>
-			<hr class='border-gray-200 dark:border-gray-700 my-6 sm:mx-auto lg:my-8' />
-			<span class='font-GilroyRegular font-medium text-sm py-4 text-center'>
+
+			<p class='mt-12 text-center font-GilroyRegular text-sm font-medium lg:text-right'>
 				{t('footer.small')}
-			</span>
+			</p>
 		</div>
 	</Container>
 </footer>
