@@ -5,17 +5,17 @@ import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function ContactForm () {
 	return (
-		<div className='text-gray-800 flex min-h-screen flex-col bg-white lg:flex-row' id='contact'>
+		<div className='text-gray-800 flex min-h-screen flex-col bg-white lg:flex-row pt-6 md:pt-0' id='contact'>
 			<div className='flex w-full flex-col items-center justify-center border-neutral-200 md:p-8 lg:w-1/2 lg:border-r'>
 				<div className='mb-8 lg:mb-0'>
-					<h3 className='mb-4 font-GilroyBold text-3xl font-bold md:text-4xl'>
+					<h3 className='mb-4 font-GilroyBold text-2xl font-bold md:text-4xl'>
 						Gracias por estar aquí 🧡
 					</h3>
 					<p className='text-gray-600 mb-4 font-GilroyRegular font-normal'>
 						Si tienes alguna pregunta, un proyecto en mente en que te gustaría que trabajáramos
 						juntos, o simplemente quieres decir ¡Hola!, mi correo es el siguiente:
 					</p>
-					<div className='pb-4'>
+					<div className='pb-4 md:pb-10'>
 						<a
 							href='mailto:ctofabian@gmail.com'
 							className='text-gray-400 mt-4 flex max-w-xs flex-row items-center gap-2 font-GilroySemibold text-lg'
@@ -33,7 +33,7 @@ export default function ContactForm () {
 						</a>
 					</div>
 					<hr />
-					<div className='pt-4 md:block hidden'>
+					<div className='pt-10 md:block hidden'>
 						<h3 className='mb-4 font-GilroyBold text-3xl font-bold md:text-4xl'>Más formas de contacto</h3>
 						<p className='font-GilroyRegular text-base'>
 							Si lo prefieres, también puedes contactarme mediante mis otras redes que te dejo aquí
