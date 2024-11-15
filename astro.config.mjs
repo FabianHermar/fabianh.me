@@ -21,5 +21,9 @@ export default defineConfig({
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: true }
-  })
+  }),
+
+  vite: {
+    assetsInclude: ['src/sw.js'],
+  }
 })
