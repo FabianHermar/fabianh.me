@@ -2,7 +2,6 @@
 import Toast from '@/components/ui/Toast'
 import { getLangFromUrl } from '@/i18n/utils'
 import { ViewTransitions } from 'astro:transitions'
-import '../registerServiceWorker'
 
 import '../globals.css'
 interface Props {
@@ -93,5 +92,6 @@ const lang = getLangFromUrl(Astro.url)
 	<body class='dark-transition'>
 		<slot />
 		<Toast client:load />
+		<script src='src/main.js' defer></script>
 	</body>
 </html>
