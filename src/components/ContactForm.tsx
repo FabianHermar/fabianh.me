@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function ContactForm () {
 	return (
@@ -130,13 +129,6 @@ export default function ContactForm () {
 								className='border-gray-300 bg-white'
 								rows={4}
 							/>
-						</div>
-						<div>
-							{/* <ReCAPTCHA */}
-							{/*	sitekey={process.env.CAPTCHA_SECRET_KEY} */}
-							{/*	theme='light' */}
-							{/*	ref={recaptchaRef} */}
-							{/* /> */}
 						</div>
 						<div className='flex flex-col justify-between gap-4 sm:flex-row'>
 							<Button
