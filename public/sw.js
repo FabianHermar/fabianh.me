@@ -1,6 +1,11 @@
 const CACHE_NAME = 'cache-v1';
 const STATIC_ASSETS = [
   '/',
+  '/favicon/favicon.ico',
+  '/FabianHerrera_CV.pdf',
+  '/me.avif',
+  '/portfolio_mockup.webp',
+  '/sw.js'
 ];
 
 self.addEventListener('install', (event) => {
