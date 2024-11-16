@@ -1,6 +1,7 @@
 const CACHE_NAME = 'cache-v1';
 const STATIC_ASSETS = [
   '/',
+  '/index.html',
   '/favicon/favicon.ico',
   '/FabianHerrera_CV.pdf',
   '/me.avif',
