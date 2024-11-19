@@ -1,6 +1,7 @@
 ---
 import { UTCClock } from '@/components/Clock'
 import Container from '@/components/Container.astro'
+import Hobbies from '@/components/Hobbies.html'
 import AnimatedSection from '@/components/ui/animated-section'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import WhoIAm from '@/components/WhoIAm.astro'
@@ -49,10 +50,10 @@ const i18n = getI18N({ currentLocale })
 					/>
 					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Hobbies</h2>
 				</div>
-				<p class='text-white'>Working in this section, stay tuned!</p>
+				<Hobbies />
 			</article>
 			<article class='current-time md:p-5'>
-				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
+				<div class='mb-14 flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
 					<Image
 						class='h-8 w-8 select-none md:h-12 md:w-12'
 						src='/svg/seven_oclock.svg'
