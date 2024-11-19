@@ -50,9 +50,9 @@ const formatTime = (date: Date) => {
     <div className="w-full max-w-md mx-auto shadow-lg rounded-lg overflow-hidden">
       <div className="px-6 py-4">
         <div className="flex flex-col items-center space-y-4 text-white">
-          <div className="text-5xl font-GilroyBold text-gray-700" aria-live="polite">{formatTime(time)}</div>
-          <p className="text-sm md:text-lg text-gray-600 font-GilroySemibold">Zona horaria: {timeZone}</p>
-          <p className=" text-xs md:text-base text-center text-gray-600 font-GilroyRegular" aria-live="polite">{getTimeZoneMessage()}</p>
+          <div className=" text-5xl md:text-7xl font-GilroyBold text-gray-700" aria-live="polite">{formatTime(time)}</div>
+          <p className="text-sm md:text-xl text-gray-600 font-GilroySemibold">Zona horaria: {timeZone}</p>
+          <p className=" text-xs md:text-lg text-center text-gray-600 font-GilroyRegular" aria-live="polite">{getTimeZoneMessage()}</p>
         </div>
       </div>
     </div>
