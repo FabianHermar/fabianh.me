@@ -24,6 +24,6 @@ export default defineConfig({
   }),
 
   vite: {
-    assetsInclude: ['src/sw.js'],
+    assetsInclude: ['/sw.js'],
   }
 })
