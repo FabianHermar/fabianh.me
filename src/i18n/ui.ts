@@ -1,6 +1,6 @@
-import GermanyFlag from '@/components/flags/Germany.astro';
-import MexicoFlag from '@/components/flags/Mexico.astro';
-import USFlag from '@/components/flags/US.astro';
+import GermanyFlag from '@/components/flags/Germany.astro'
+import MexicoFlag from '@/components/flags/Mexico.astro'
+import USFlag from '@/components/flags/US.astro'
 
 // Add missing imports
 export const LANGUAGES: Record<string, { code: string; name: string; flag: typeof MexicoFlag }> = {
@@ -38,7 +38,8 @@ export const ui = {
 		'footer.projects': 'Proyectos',
 		'footer.style': 'Guía de estilo',
 		'footer.blog': 'Blog',
-		'footer.small': 'Desarrollado con mucho ❤ utilizando Astro y React. Desplegado en Vercel y administrado por CloudFlare.'
+		'footer.small':
+			'Desarrollado con mucho ❤ utilizando Astro y React. Desplegado en Vercel y administrado por CloudFlare.',
 	},
 	en: {
 		'nav.about': 'About me',
@@ -48,12 +49,13 @@ export const ui = {
 		'btn.downloadCV': 'Download CV',
 		'btn.digitalCV': 'Digital CV',
 		'footer.title': 'Ready to create something awesome together?',
-		'footer.subtitle': 'Let\'s get in touch.',
+		'footer.subtitle': "Let's get in touch.",
 		'footer.about': 'About me',
 		'footer.projects': 'Projects',
 		'footer.style': 'Style guide',
 		'footer.blog': 'Blog',
-		'footer.small': 'Developed with a lot of ❤ using Astro and React. Deployed on Vercel and managed by CloudFlare.'
+		'footer.small':
+			'Developed with a lot of ❤ using Astro and React. Deployed on Vercel and managed by CloudFlare.',
 	},
 	de: {
 		'nav.about': 'Über mich',
@@ -68,7 +70,8 @@ export const ui = {
 		'footer.projects': 'Projekte',
 		'footer.style': 'Stilhandbuch',
 		'footer.blog': 'Blog',
-		'footer.small': 'Entwickelt mit viel ❤ unter Verwendung von Astro und React. Bereitgestellt auf Vercel und verwaltet von CloudFlare.'
+		'footer.small':
+			'Entwickelt mit viel ❤ unter Verwendung von Astro und React. Bereitgestellt auf Vercel und verwaltet von CloudFlare.',
 	},
 } as const
 
