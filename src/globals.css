@@ -117,42 +117,43 @@ html {
 }
 
 ::view-transition-group(root) {
-  animation-timing-function: var(--expo-out);
+	animation-timing-function: var(--expo-out);
 }
 
 ::view-transition-new(root) {
-  mask: url('/svg/polygon.svg') top left / 0 no-repeat;
-  mask-origin: top left;
-  animation: scale 1.5s;
+	mask: url('/svg/polygon.svg') top left / 0 no-repeat;
+	mask-origin: top left;
+	animation: scale 1.5s;
 }
 
 ::view-transition-old(root),
 .dark::view-transition-old(root) {
-  animation: scale 1.5s;
-  z-index: -1;
-  transform-origin: top left;
+	animation: scale 1.5s;
+	z-index: -1;
+	transform-origin: top left;
 }
 
 @keyframes scale {
-  to {
-    mask-size: 200vmax;
-  }
+	to {
+		mask-size: 200vmax;
+	}
 }
 
 .tooltip {
-  opacity: 0;
-	transition: opacity .3s ease-in-out;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
 }
 
 .has-tooltip:hover .tooltip {
-  opacity: 1;
+	opacity: 1;
 }
-
 
 .fade-enter-active {
 	opacity: 0;
 	transform: translateY(20px);
-	transition: opacity 0.5s ease, transform 0.5s ease;
+	transition:
+		opacity 0.5s ease,
+		transform 0.5s ease;
 }
 
 .visible {
