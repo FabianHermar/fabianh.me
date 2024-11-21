@@ -3,10 +3,10 @@ import * as React from 'react'
 
 import { Button } from '@/components/ui/button.tsx'
 import {
-  DropdownMenu,
-  DropdownMenuContent,
+	DropdownMenu,
+	DropdownMenuContent,
 	DropdownMenuItem,
-	DropdownMenuTrigger
+	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu.tsx'
 
 export function ModeToggle() {
