@@ -1,7 +1,7 @@
 ---
+import DropdownArrow from '@/components/icons/DropdownArrow.astro'
 import { LANGUAGES } from '@/i18n/ui'
-import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from '../i18n/utils'
-import DropdownArrow from './icons/DropdownArrow.astro'
+import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from '@/i18n/utils'
 
 const route = getRouteFromUrl(Astro.url)
 const lang = getLangFromUrl(Astro.url)
