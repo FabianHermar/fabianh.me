@@ -17,7 +17,7 @@
 }
 
 .div2 {
-	background-color: #ff5e69;
+	background-color: rgba(255, 94, 105, 0.8);
 }
 
 .current-time {
@@ -25,7 +25,7 @@
 }
 
 .education {
-	background-color: burlywood;
+	background-color: rgba(255, 168, 75, 0.8);
 }
 
 /* Mobile (por debajo de 768px) */
