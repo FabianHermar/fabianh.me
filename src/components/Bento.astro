@@ -1,14 +1,14 @@
 ---
 import { UTCClock } from '@/components/Clock'
 import Container from '@/components/Container.astro'
-import Hobbies from '@/components/Hobbies.html'
+import Hobbies from '@/components/Hobbies.astro'
 import AnimatedSection from '@/components/ui/animated-section'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import WhoIAm from '@/components/WhoIAm.astro'
 import { getI18N } from '@/i18n'
 import '@/styles/Bento.css'
 import { Image } from 'astro:assets'
-import Education from './Education.astro'
+import Education from '@/components/Education.astro'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
