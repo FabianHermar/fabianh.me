@@ -1,6 +1,7 @@
 ---
 import { UTCClock } from '@/components/Clock'
 import Container from '@/components/Container.astro'
+import Education from '@/components/Education.astro'
 import Hobbies from '@/components/Hobbies.astro'
 import AnimatedSection from '@/components/ui/animated-section'
 import GradualSpacing from '@/components/ui/gradual-spacing'
@@ -8,7 +9,6 @@ import WhoIAm from '@/components/WhoIAm.astro'
 import { getI18N } from '@/i18n'
 import '@/styles/Bento.css'
 import { Image } from 'astro:assets'
-import Education from '@/components/Education.astro'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -36,7 +36,9 @@ const i18n = getI18N({ currentLocale })
 						width={20}
 						height={20}
 					/>
-					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Current Weather</h2>
+					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>
+						{i18n.hero.bento.weather.title}
+					</h2>
 				</div>
 				<p class='text-white'>Working in this section, stay tuned!</p>
 			</article>
