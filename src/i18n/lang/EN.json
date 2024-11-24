@@ -70,6 +70,15 @@
         "3": "I love traveling and especially being close to nature and learning more about it. I am currently focused on growing, learning and creating my software development startup together with several colleagues to continue sharing our knowledge.",
         "button": "See complete summary"
       }
+    },
+    "bento": {
+      "weather": {
+        "title": "Current Weather"
+      },
+      "hobbies": {
+        "fp": "When I'm not immersed in the development world, I enjoy spending time on activities that feed my creativity and keep me inspired. I love to <strong class='font-GilroyBold text-black'>Read</strong>, <strong class='font-GilroyBold text-black'>Cook</strong>, <strong class='font-GilroyBold text-black'>Play the violin</strong>, <strong class='font-GilroyBold text-black'>Gardening</strong>, <strong class='font-GilroyBold text-black'>Explore nature</strong>, and above all I also enjoy <strong class='font-GilroyBold text-black'>Spending time with my family and friends</strong>. These activities not only help me disconnect for a while, but also challenge me to think differently, which often translates into more creative and effective solutions in my work as a developer.",
+        "sp": "I firmly believe that what we do away from the keyboard has a direct impact on our perspective and creativity when we are in front of it. It's a perfect circle of learning and inspiration!"
+      }
     }
   }
 }
