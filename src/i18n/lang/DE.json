@@ -76,8 +76,8 @@
         "title": "Aktuelles Wetter"
       },
       "hobbies": {
-        "fp": "Wenn ich nicht in die Welt der Entwicklung eintauche, verbringe ich gerne Zeit mit Aktivitäten, die meine Kreativität fördern und mich inspirieren. Ich liebe , <strong class='font-GilroyBold text-black'>Kochen</strong>, <strong class='font-GilroyBold text-black'>Geige spielen</strong>, <strong class='font-GilroyBold text-black'>Gartenarbeit</strong>, <strong class='font-GilroyBold text-black'>Die Natur erforschen</strong> und vor allem genieße ich es, <strong class='font-GilroyBold text-black'>Zeit mit meiner Familie und meinen Freunden zu verbringen.</strong>.",
-        "sp": "Ich bin der festen Überzeugung, dass das, was wir abseits der Tastatur tun, sich direkt auf unsere Perspektive und Kreativität auswirkt, wenn wir vor der Tastatur sitzen - es ist ein perfekter Kreislauf aus Lernen und Inspiration!"
+        "fp": "Wenn ich nicht in die Welt der Entwicklung eintauche, verbringe ich gerne Zeit mit Aktivitäten, die meine Kreativität fördern und mich inspirieren. Ich liebe , <strong class='font-GilroyBold text-black font-bold'>Kochen</strong>, <strong class='font-GilroyBold text-black font-bold'>Geige spielen</strong>, <strong class='font-GilroyBold text-black font-bold'>Gartenarbeit</strong>, <strong class='font-GilroyBold text-black font-bold'>Die Natur erforschen</strong> und vor allem genieße ich es, <strong class='font-GilroyBold text-black font-bold'>Zeit mit meiner Familie und meinen Freunden zu verbringen.</strong>.",
+        "sp": "Ich bin der festen Überzeugung, dass das, was wir abseits der Tastatur tun, sich direkt auf unsere Perspektive und Kreativität auswirkt, wenn wir vor der Tastatur sitzen. <strong class='font-GilroyBold text-black font-bold'>Es ist ein perfekter Kreislauf aus Lernen und Inspiration!</strong>"
       }
     }
   }
