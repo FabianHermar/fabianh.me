@@ -24,7 +24,7 @@ export default defineConfig({
 
   vite: {
     assetsInclude: ['/sw.js'],
-    envDir: '.env',
+    envDir: '/.env',
 		ssr: {
 			noExternal: ["path-to-regexp"],
 		}
