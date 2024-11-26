@@ -25,9 +25,6 @@ export default defineConfig({
   vite: {
     assetsInclude: ['/sw.js'],
     envDir: '.env',
-    build: {
-			cssMinify: "lightningcss",
-		},
 		ssr: {
 			noExternal: ["path-to-regexp"],
 		}
