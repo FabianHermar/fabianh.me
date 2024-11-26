@@ -1,4 +1,5 @@
 ---
+import CurrentWeather from '@/components//Weather'
 import { UTCClock } from '@/components/Clock'
 import Container from '@/components/Container.astro'
 import Education from '@/components/Education.astro'
@@ -40,7 +41,7 @@ const i18n = getI18N({ currentLocale })
 						{i18n.hero.bento.weather.title}
 					</h2>
 				</div>
-				<p class='text-white'>Working in this section, stay tuned!</p>
+				<CurrentWeather client:visible />
 			</article>
 			<article class='div2 md:p-5'>
 				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
@@ -56,7 +57,7 @@ const i18n = getI18N({ currentLocale })
 				<Hobbies />
 			</article>
 			<article class='current-time md:p-5'>
-				<div class='mb-14 flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
+				<div class='flex items-center gap-x-3 px-6 pt-5 md:mb-14 md:px-1 md:pt-0'>
 					<Image
 						class='h-8 w-8 select-none md:h-12 md:w-12'
 						src='/svg/seven_oclock.svg'
@@ -66,7 +67,7 @@ const i18n = getI18N({ currentLocale })
 					/>
 					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>Current Time</h2>
 				</div>
-				<UTCClock client:visible />
+				<UTCClock client:load />
 			</article>
 			<article class='education md:p-5'>
 				<div class='flex items-center gap-x-3 px-6 pt-5 md:px-1 md:pt-0'>
