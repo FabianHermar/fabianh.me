@@ -32,6 +32,9 @@
         <li>
           <a href="https://ui.shadcn.com/">⬛ Shadcn/ui</a> - Libreria de componentes más popular del momento.
         </li>
+        <li>
+          <a href="https://axios-http.com/">⇅ Axios</a> - Cliente HTTP basado en promesas para el navegador y node.js.
+        </li>
       </ul>
     </div>
   <div>
