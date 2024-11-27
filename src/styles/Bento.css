@@ -9,7 +9,7 @@
 .current-time,
 .education {
 	border-radius: 20px;
-	min-height: 200px;
+	/* min-height: 200px; */
 }
 
 .current-weather {
