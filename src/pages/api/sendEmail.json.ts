@@ -6,8 +6,8 @@ const resend = new Resend(RESEND_API_KEY)
 
 export const GET: APIRoute = async ({ params, request }) => {
 	const send = await resend.emails.send({
-		from: 'hello@fabianh.me',
-		to: 'hello@fabianh.me',
+		from: 'no-reply@fabianh.me',
+		to: 'contactofabianmartinez@gmail.com',
 		subject: 'Send Email Test',
 		html: '<h1>Test</h1>',
 		text: 'Test',
