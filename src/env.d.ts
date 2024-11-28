@@ -4,6 +4,7 @@
 interface ImportMetaEnv {
 	readonly IPINFO_API_KEY: string
 	readonly OPENWEATHER_API_KEY: string
+	readonly RESEND_API_KEY: string
 }
 
 interface ImportMeta {
