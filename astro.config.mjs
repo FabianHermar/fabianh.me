@@ -11,6 +11,7 @@ export default defineConfig({
 				IPINFO_API_KEY: envField.string({ context: 'client', access: 'public' }),
 				OPENWEATHER_API_KEY: envField.string({ context: 'client', access: 'public' }),
 				RESEND_API_KEY: envField.string({ context: 'client', access: 'public' }),
+				AUTH_TOKEN: envField.string({ context: 'client', access: 'public' }),
 			},
 		},
 	},
