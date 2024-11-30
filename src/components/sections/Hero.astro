@@ -1,0 +1,44 @@
+---
+import Container from '@/components/common/Container.astro'
+import SocialMediaLinks from '@/components/features/SocialMediaLinks.astro'
+import { getI18N } from '@/i18n'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Container>
+	<section class='flex flex-col items-center justify-center pt-10 lg:flex-row lg:pt-16'>
+		<div class='size-full flex-1 pr-4'>
+			<h1
+				class='bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold text-4xl font-bold tracking-tight text-transparent lg:h-[148px] lg:text-7xl'
+			>
+				{i18n.hero.title}
+			</h1>
+			<h2 class='text-balance font-GilroyBold text-3xl font-bold lg:text-5xl'>
+				{i18n.hero.title_2}
+			</h2>
+			<p
+				class='text-balance pt-4 font-GilroyRegular text-base font-normal text-neutral-500 lg:text-xl'
+			>
+				{i18n.hero.subtitle}
+			</p>
+			<div>
+				<SocialMediaLinks />
+			</div>
+		</div>
+		<div class='relative h-auto w-full select-none lg:w-[550px]'>
+			<img
+				loading='lazy'
+				src='/me.avif'
+				alt='Fabian Herrera photo'
+				style='
+			filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+			mask-image: linear-gradient(to bottom, white 50%, transparent 85%);
+		'
+				width='1000'
+				height='1000'
+			/>
+		</div>
+	</section>
+</Container>
