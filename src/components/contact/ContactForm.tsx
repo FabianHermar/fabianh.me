@@ -1,22 +1,16 @@
 import { Textarea } from '@/components/ui/textarea'
 import EmailTemplate from '@/components/contact/EmailComponent'
 import { render } from '@react-email/render'
-import { AUTH_TOKEN } from 'astro:env/client'
+import { AUTH_TOKEN, SITE_KEY } from 'astro:env/client'
 import { toast, Toaster } from 'sonner'
 import { useRef, useState } from 'react'
 import TurnstileComponent from '../features/Turnstile'
 
 function ContactForm() {
 	const formRef = useRef<HTMLFormElement>(null)
-	const [captchaToken, setCaptchaToken] = useState<string | null>(null)
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
-
-		if (!captchaToken) {
-			toast.warning('Por favor, completa el captcha')
-			return
-		}
 
 		const formData = new FormData(e.currentTarget)
 		const { name, email, subject, message } = Object.fromEntries(formData.entries())
@@ -66,11 +60,10 @@ function ContactForm() {
 		toast.promise(promise, {
 			loading: 'Enviando...',
 			success: (data) => {
-				// form reset
+				// Reiniciar el formulario
 				if (formRef.current) {
 					formRef.current.reset()
 				}
-				setCaptchaToken(null)
 				return 'Correo enviado exitosamente'
 			},
 			error: 'Error al enviar el correo',
@@ -136,22 +129,26 @@ function ContactForm() {
 						name='message'
 					/>
 				</div>
-				<div className='mb-4 flex items-center justify-center'>
-					<TurnstileComponent
-						onVerify={(token) => setCaptchaToken(token)}
-						onError={() => setCaptchaToken(null)}
+				<div className='mb-4'>
+					<TurnstileComponent 
+						onVerify={(token: string) => {
+							console.log(token)
+						}}
+						onError={() => {
+							console.log('Error')
+						}}
 					/>
 				</div>
 				<div className='flex flex-col justify-between gap-4 sm:flex-row'>
 					<input
 						type='submit'
-						className='w-full bg-black py-2 font-GilroySemibold text-white hover:bg-black/80 sm:w-60'
+						className='w-full bg-black py-2 font-GilroySemibold text-white hover:bg-black/80 sm:w-60 cursor-pointer'
 						id='submit'
 						value='Enviar'
 					/>
 					<input
 						type='reset'
-						className='text-gray-700 w-full border border-neutral-200 border-neutral-300 bg-white py-2 font-GilroySemibold hover:bg-neutral-100 sm:w-60'
+						className='text-gray-700 w-full border border-neutral-200 border-neutral-300 bg-white py-2 font-GilroySemibold hover:bg-neutral-100 sm:w-60 cursor-pointer'
 						value='Borrar'
 					/>
 				</div>
