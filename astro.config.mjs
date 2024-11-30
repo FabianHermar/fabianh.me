@@ -12,6 +12,7 @@ export default defineConfig({
 				OPENWEATHER_API_KEY: envField.string({ context: 'client', access: 'public' }),
 				RESEND_API_KEY: envField.string({ context: 'client', access: 'public' }),
 				AUTH_TOKEN: envField.string({ context: 'client', access: 'public' }),
+				SITE_KEY: envField.string({ context: 'client', access: 'public' }),
 			},
 		},
 	},
