@@ -6,6 +6,7 @@ interface ImportMetaEnv {
 	readonly OPENWEATHER_API_KEY: string
 	readonly RESEND_API_KEY: string
 	readonly AUTH_TOKEN: string
+	readonly SITE_KEY: string
 }
 
 interface ImportMeta {
