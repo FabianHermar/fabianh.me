@@ -1,0 +1,87 @@
+---
+import Container from '@/components/common/Container.astro'
+import Arrow from '@/components/icons/Arrow.astro'
+import AnimatedSection from '@/components/ui/animated-section'
+import Pill from '@/components/ui/pill.astro'
+
+interface Technologies {
+	text: string
+	image: string
+}
+
+interface Props {
+	link: string
+	target?: string
+	title: string
+	location: string
+	duration: string
+	phase: string
+	description: string
+	description2?: string
+	ContainerStyles?: string
+	textStyles?: string
+	technologies: Technologies[]
+}
+
+const {
+	link,
+	target,
+	title,
+	location,
+	duration,
+	phase,
+	description,
+	description2,
+	ContainerStyles,
+	textStyles,
+	technologies,
+} = Astro.props
+---
+
+<Container>
+	<AnimatedSection client:visible>
+		<article>
+			<a
+				href={link}
+				target={target}
+				aria-label=`Tarjeta donde muestro mi experiencia laboral en ${title}`
+				class=`block max-w-full ${ContainerStyles} backdrop-blur transition-colors rounded-2xl md:border md:border-neutral-100`
+			>
+				<div class='group relative overflow-hidden rounded-lg transition-all duration-300 md:p-6'>
+					<div class='mb-2 flex items-center justify-between'>
+						<h3
+							class=`${textStyles} pr-2 md:text-3xl text-lg font-bold font-GilroyBold transition-colors text-balance`
+						>
+							{title}
+						</h3>
+						<Arrow
+							styles={textStyles}
+							class:list='h-6 w-6 flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 '
+						/>
+					</div>
+					<time class='mb-4 font-GilroySemibold text-neutral-500'>{location} | {duration}</time>
+					<p class='text-pretty pt-4 font-GilroyRegular italic text-neutral-400'>
+						{phase}
+					</p>
+					<p class='mb-4 text-pretty pt-4 font-GilroyRegular text-neutral-800'>
+						{description}
+					</p>
+					<p class='mb-4 text-pretty font-GilroyRegular text-neutral-800'>
+						{description2}
+					</p>
+					<div class='flex flex-wrap gap-2'>
+						{
+							technologies?.map((tech) => (
+								<Pill
+									text={tech.text}
+									image={tech.image}
+									class:list='min-w-[calc(50%-0.5rem)] flex-1 md:min-w-[calc(33%-0.5rem)]'
+								/>
+							))
+						}
+					</div>
+				</div>
+			</a>
+		</article>
+	</AnimatedSection>
+</Container>
