@@ -1,12 +1,10 @@
 ---
-import Bento from '@/components/Bento.astro'
-import Footer from '@/components/Footer.astro'
-import Header from '@/components/Header.astro'
-import Hero from '@/components/Hero.astro'
-import Projects from '@/components/Projects.astro'
-import TimeLine from '@/components/TimeLine.astro'
+import Bento from '@/components/sections/Bento.astro'
+import ContactMe from '@/components/sections/ContactMe.astro'
+import Hero from '@/components/sections/Hero.astro'
+import Projects from '@/components/sections/Projects.astro'
+import TimeLine from '@/components/sections/TimeLine.astro'
 import Layout from '@/layouts/Layout.astro'
-import ContactMe from '../ContactMe.astro'
 
 import { getI18N } from '@/i18n'
 const { currentLocale } = Astro
@@ -14,15 +12,11 @@ const i18n = getI18N({ currentLocale })
 ---
 
 <Layout title={i18n.SEO.title}>
-	<Header />
-	<main>
-		<Hero />
-		<TimeLine />
-		<Projects />
-		<Bento />
-		<ContactMe />
-	</main>
-	<Footer />
+	<Hero />
+	<TimeLine />
+	<Projects />
+	<Bento />
+	<ContactMe />
 </Layout>
 
 <!-- <script is:inline>
