@@ -1,8 +1,9 @@
 ---
-import Toast from '@/components/ui/Toast'
 import { getLangFromUrl } from '@/i18n/utils'
 import { ViewTransitions } from 'astro:transitions'
 
+import Footer from '@/components/common/Footer.astro'
+import Header from '@/components/common/Header.astro'
 import '../globals.css'
 interface Props {
 	title: string
@@ -90,8 +91,11 @@ const lang = getLangFromUrl(Astro.url)
 		<ViewTransitions />
 	</head>
 	<body class='dark-transition'>
-		<slot />
-		<Toast client:load />
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
 		<!-- <script src='src/main.js' defer></script> -->
 	</body>
 </html>
