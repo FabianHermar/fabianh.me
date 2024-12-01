@@ -130,7 +130,7 @@ function ContactForm() {
 					/>
 				</div>
 				<div className='mb-4'>
-					<TurnstileComponent 
+					<TurnstileComponent
 						onVerify={(token: string) => {
 							console.log(token)
 						}}
@@ -142,13 +142,13 @@ function ContactForm() {
 				<div className='flex flex-col justify-between gap-4 sm:flex-row'>
 					<input
 						type='submit'
-						className='w-full bg-black py-2 font-GilroySemibold text-white hover:bg-black/80 sm:w-60 cursor-pointer'
+						className='w-full cursor-pointer bg-black py-2 font-GilroySemibold text-white hover:bg-black/80 sm:w-60'
 						id='submit'
 						value='Enviar'
 					/>
 					<input
 						type='reset'
-						className='text-gray-700 w-full border border-neutral-200 border-neutral-300 bg-white py-2 font-GilroySemibold hover:bg-neutral-100 sm:w-60 cursor-pointer'
+						className='text-gray-700 w-full cursor-pointer border border-neutral-200 border-neutral-300 bg-white py-2 font-GilroySemibold hover:bg-neutral-100 sm:w-60'
 						value='Borrar'
 					/>
 				</div>
