@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react'
+import { getI18N } from '@/i18n'
+
 
 export function UTCClock() {
 	const [time, setTime] = useState<Date | null>(null)
 	const [timeZone, setTimeZone] = useState('')
 	const [utcOffset, setUtcOffset] = useState(0)
+	const currentLocale = 'es'
+	const i18n = getI18N({ currentLocale })
 
 	useEffect(() => {
 		try {
@@ -38,7 +42,7 @@ export function UTCClock() {
 
 	const getTimeZoneMessage = () => {
 		if (utcOffset === -6) {
-			return 'Estamos en la misma zona horaria (UTC-6)'
+			return `${i18n.hero.bento.time.timezone}`
 		} else {
 			const diff = utcOffset + 6
 			const direction = diff > 0 ? 'adelante' : 'atrás'
