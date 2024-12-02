@@ -8,7 +8,6 @@ const STATIC_ASSETS = [
 	'/portfolio_mockup.webp',
 	'/src/globals.css',
 	'/src/styles/Bento.css',
-	'/src/styles/DownloadButton.module.css',
 	'/projects/DuneUI.webp',
 	'/projects/UTNA.webp',
 	'/fonts/Gilroy-Bold.woff2',
