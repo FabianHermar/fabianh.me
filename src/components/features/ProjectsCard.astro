@@ -2,6 +2,7 @@
 import Container from '@/components/common/Container.astro'
 import AnimatedSection from '@/components/ui/animated-section'
 import Pill from '@/components/ui/pill.astro'
+import { Image } from 'astro:assets'
 import { ExternalLinkIcon, Github } from 'lucide-react'
 
 interface Technologies {
@@ -43,10 +44,13 @@ const {
 				<div class='flex flex-col md:flex-row'>
 					<div class='w-full md:order-2 md:w-1/2'>
 						<div class='h-64 md:h-full'>
-							<img
+							<Image
 								src={projectImage}
 								alt=`Screenshot of ${title} project`
 								class='h-full w-full select-none object-cover'
+								width={500}
+								height={500}
+								server:defer
 							/>
 						</div>
 					</div>
