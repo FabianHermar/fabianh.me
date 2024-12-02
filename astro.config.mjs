@@ -17,6 +17,8 @@ export default defineConfig({
 		},
 	},
 
+	publicDir: 'public',
+
 	integrations: [
 		tailwind({
 			applyBaseStyles: false,
