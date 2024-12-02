@@ -85,6 +85,22 @@
         "location": "Rincón de Romos, AGS",
         "duration": "Septiembre 2019 - Abril 2025",
         "description": "Estudiante de la <a href='https://utna.edu.mx/utna' target='_blank' rel='noopener noreferrer' class='font-GilroyBold font-bold text-black underline'>Universidad Tecnológica del Norte de Aguascalientes (UTNA)</a>, donde he fortalecido mis habilidades en desarrollo de software y he ampliado mis conocimientos en áreas clave como <strong class='font-GilroyBold font-bold text-black'>algoritmos</strong>, <strong class='font-GilroyBold font-bold text-black'>estructuras de datos</strong>, <strong class='font-GilroyBold font-bold text-black'>programación orientada a objetos</strong>, <strong class='font-GilroyBold font-bold text-black'>manejo de bases de datos</strong>, etc. Mi formación me ha permitido integrar teoría y práctica para abordar proyectos tecnológicos con enfoque innovador y eficiente."
+      },
+      "time": {
+        "title": "Hora actual",
+        "timezone": "Estamos en la misma zona horaria (UTC-6)",
+        "direction": {
+          "back": "Atrás",
+          "forward": "Adelante"
+        },
+        "message": {
+          "youre": "Estás",
+          "hour": {
+            "singular": "hora",
+            "plural": "s"
+          },
+          "local": "de México"
+        }
       }
     }
   }
