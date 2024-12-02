@@ -85,6 +85,22 @@
         "location": "Rincón de Romos, AGS",
         "duration": "September 2019 - April 2025",
         "description": "Students of the <a href='https://utna.edu.mx/utna' target='_blank' rel='noopener noreferrer' class='font-GilroyBold font-bold text-black underline'>Universidad Tecnológica del Norte de Aguascalientes (UTNA)</a>, where I have strengthened my skills in software development and expanded my knowledge in key areas such as <strong class='font-GilroyBold font-bold text-black'>algorithms</strong>, <strong class='font-GilroyBold font-bold text-black'>data structures</strong>, <strong class='font-GilroyBold font-bold text-black'>object oriented programming</strong>, <strong class='font-GilroyBold font-bold text-black'>databases management</strong>, etc. My training has allowed me to integrate theory and practice to approach technological projects with an innovative and efficient approach."
+      },
+      "time": {
+        "title": "Current Time",
+        "timezone": "We are in the same time zone (UTC-6)",
+        "direction": {
+          "back": "Back",
+          "forward": "Forward"
+        },
+        "message": {
+          "yuore": "You're",
+          "hour": {
+            "singular": "hour",
+            "plural": "s"
+          },
+          "local": "of Mexico"
+        }
       }
     }
   }
