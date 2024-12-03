@@ -15,6 +15,7 @@ export default defineConfig({
 				SITE_KEY: envField.string({ context: 'client', access: 'public' }),
 			},
 		},
+		serverIslands: true,
 	},
 
 	publicDir: 'public',
