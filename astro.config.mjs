@@ -13,6 +13,7 @@ export default defineConfig({
 			AUTH_TOKEN: envField.string({ context: 'client', access: 'public' }),
 			SITE_KEY: envField.string({ context: 'client', access: 'public' }),
 		},
+		validateSecrets: true,
 	},
 	serverIslands: true,
 
