@@ -1,10 +1,10 @@
 import { Textarea } from '@/components/ui/textarea'
 import EmailTemplate from '@/components/contact/EmailComponent'
 import { render } from '@react-email/render'
-import { AUTH_TOKEN, SITE_KEY } from 'astro:env/client'
+import { AUTH_TOKEN } from 'astro:env/client'
 import { toast, Toaster } from 'sonner'
-import { useRef, useState } from 'react'
-import TurnstileComponent from '../features/Turnstile'
+import { useRef } from 'react'
+import TurnstileComponent from '@/components/features/Turnstile'
 
 function ContactForm() {
 	const formRef = useRef<HTMLFormElement>(null)
