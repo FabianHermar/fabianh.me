@@ -1,6 +1,6 @@
 ---
 import { getLangFromUrl } from '@/i18n/utils'
-import { ViewTransitions } from 'astro:transitions'
+import { ClientRouter } from 'astro:transitions'
 
 import Footer from '@/components/common/Footer.astro'
 import Header from '@/components/common/Header.astro'
@@ -88,7 +88,7 @@ const lang = getLangFromUrl(Astro.url)
 				y.parentNode.insertBefore(t, y)
 			})(window, document, 'clarity', 'script', 'nvs574hxz7')
 		</script>
-		<ViewTransitions />
+		<ClientRouter />
 	</head>
 	<body class='dark-transition'>
 		<Header />
