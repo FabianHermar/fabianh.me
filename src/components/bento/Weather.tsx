@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { fetchWeather } from '@/pages/api/fetchWeather.ts'
+import { fetchWeather } from '@/api/fetchWeather.ts'
 import type { WeatherData } from '@/types/weather'
-import { getWeatherIcon } from '@/pages/api/getWeatherIcon.ts'
+import { getWeatherIcon } from '@/api/getWeatherIcon.ts'
 import { Eye } from 'lucide-react'
 
 const CurrentWeather: React.FC = () => {
