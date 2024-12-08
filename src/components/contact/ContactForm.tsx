@@ -4,7 +4,6 @@ import { render } from '@react-email/render'
 import { AUTH_TOKEN } from 'astro:env/client'
 import { toast, Toaster } from 'sonner'
 import { useRef } from 'react'
-import TurnstileComponent from '@/components/features/Turnstile'
 
 function ContactForm() {
 	const formRef = useRef<HTMLFormElement>(null)
@@ -127,16 +126,6 @@ function ContactForm() {
 						rows={4}
 						required
 						name='message'
-					/>
-				</div>
-				<div className='mb-4'>
-					<TurnstileComponent
-						onVerify={(token: string) => {
-							console.log(token)
-						}}
-						onError={() => {
-							console.log('Error')
-						}}
 					/>
 				</div>
 				<div className='flex flex-col justify-between gap-4 sm:flex-row'>
