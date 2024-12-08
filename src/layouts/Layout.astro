@@ -17,10 +17,7 @@ const lang = getLangFromUrl(Astro.url)
 <html lang={lang}>
 	<head>
 		<meta charset='UTF-8' />
-		<meta
-			name='description'
-			content='Desarrollador web fullstack con más de 2 años de experiencia.'
-		/>
+		<meta name='description' content='Desarrollador frontend con más de 2 años de experiencia.' />
 		<meta name='viewport' content='width=device-width' />
 		<link rel='shortcut icon' href='/favicon/favicon.ico' type='image/x-icon' />
 		<title>{title}</title>
@@ -98,6 +95,6 @@ const lang = getLangFromUrl(Astro.url)
 			<slot />
 		</main>
 		<Footer />
-		<script src='/main.js' defer></script>
+		<!-- <script src='/main.js' defer type="text/partytown"></script> -->
 	</body>
 </html>
