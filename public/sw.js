@@ -1,62 +1,45 @@
-const CACHE_NAME = 'cache-v1'
-const STATIC_ASSETS = [
-	'/',
-	'/index.html',
-	'/favicon/favicon.ico',
-	'/FabianHerrera_CV.pdf',
-	'/me.avif',
-	'/portfolio_mockup.webp',
-	'/src/globals.css',
-	'/src/styles/Bento.css',
-	'/projects/DuneUI.webp',
-	'/projects/UTNA.webp',
-	'/fonts/Gilroy-Bold.woff2',
-	'/fonts/Gilroy-SemiBold.woff2',
-	'/fonts/Gilroy-Regular.woff2',
-]
+const CACHE_NAME = 'image-cache-v1'
+
+const IMAGE_REGEX = /\.(?:png|jpg|jpeg|svg|gif|webp|avif)$/
 
 self.addEventListener('install', (event) => {
-	console.log('Service Worker installing.')
-	event.waitUntil(
-		caches.open(CACHE_NAME).then((cache) => {
-			console.log('Caching static assets')
-			return cache.addAll(STATIC_ASSETS).catch((error) => {
-				console.error('Failed to cache:', error)
-			})
-		})
-	)
+	// console.log('[SW] Instalado')
+	event.waitUntil(self.skipWaiting()) // Salta la espera
 })
 
 self.addEventListener('activate', (event) => {
-	console.log('Service Worker activating.')
+	// console.log('[SW] Activado')
 	event.waitUntil(
 		caches.keys().then((cacheNames) => {
 			return Promise.all(
 				cacheNames.map((cacheName) => {
 					if (cacheName !== CACHE_NAME) {
-						console.log('Deleting old cache:', cacheName)
+						console.log(`[SW] Eliminando caché antiguo: ${cacheName}`)
 						return caches.delete(cacheName)
 					}
 				})
 			)
 		})
 	)
+	self.clients.claim()
 })
 
 self.addEventListener('fetch', (event) => {
-	if (event.request.url.startsWith(self.location.origin)) {
+	const { request } = event
+
+	if (request.url.match(IMAGE_REGEX)) {
 		event.respondWith(
-			caches.match(event.request).then((cachedResponse) => {
-				if (cachedResponse) {
-					return cachedResponse
-				}
-				return caches.open(CACHE_NAME).then((cache) => {
-					return fetch(event.request).then((response) => {
-						// Solo almacenar en caché las solicitudes GET
-						if (event.request.method === 'GET') {
-							cache.put(event.request, response.clone())
-						}
-						return response
+			caches.open(CACHE_NAME).then((cache) => {
+				return cache.match(request).then((cachedResponse) => {
+					if (cachedResponse) {
+						// console.log(`[SW] Sirviendo desde caché: ${request.url}`)
+						return cachedResponse // Devuelve la imagen desde el caché
+					}
+
+					// console.log(`[SW] Descargando y almacenando: ${request.url}`)
+					return fetch(request).then((networkResponse) => {
+						cache.put(request, networkResponse.clone())
+						return networkResponse
 					})
 				})
 			})
