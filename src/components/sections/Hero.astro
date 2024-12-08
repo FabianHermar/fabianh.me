@@ -2,6 +2,7 @@
 import Container from '@/components/common/Container.astro'
 import SocialMediaLinks from '@/components/features/SocialMediaLinks.astro'
 import { getI18N } from '@/i18n'
+import { Image } from 'astro:assets'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -28,16 +29,17 @@ const i18n = getI18N({ currentLocale })
 			</div>
 		</div>
 		<div class='relative h-auto w-full select-none lg:w-[550px]'>
-			<img
-				loading='lazy'
+			<Image
 				src='/me.avif'
 				alt='Fabian Herrera photo'
-				style='
-			filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-			mask-image: linear-gradient(to bottom, white 50%, transparent 85%);
-		'
-				width='1000'
-				height='1000'
+				style={{
+					filter: 'drop-shadow(0 0 5px rgba(255, 255, 255, 0.5))',
+					maskImage: 'linear-gradient(to bottom, white 50%, transparent 85%)',
+				}}
+				class='relative h-auto w-full select-none lg:w-[550px]'
+				width={550}
+				height={550}
+				server:defer
 			/>
 		</div>
 	</section>
