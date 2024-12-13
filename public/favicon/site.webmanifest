@@ -55,19 +55,5 @@
 				}
 			]
 		}
-	],
-	"screenshots": [
-		{
-			"src": "/favicon/main.avif",
-			"type": "image/webp",
-			"sizes": "3840x2160",
-			"form_factor": "wide"
-		},
-		{
-			"src": "/favicon/work.avif",
-			"type": "image/webp",
-			"sizes": "3840x2160",
-			"form_factor": "wide"
-		}
 	]
 }
