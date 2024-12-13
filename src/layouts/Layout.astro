@@ -2,6 +2,8 @@
 import { getLangFromUrl } from '@/i18n/utils'
 import { ClientRouter } from 'astro:transitions'
 
+import '../globals.css'
+
 import Footer from '@/components/common/Footer.astro'
 import Header from '@/components/common/Header.astro'
 interface Props {
@@ -19,7 +21,6 @@ const lang = getLangFromUrl(Astro.url)
 		<meta name='description' content='Desarrollador frontend con más de 2 años de experiencia.' />
 		<meta name='viewport' content='width=device-width' />
 		<link rel='shortcut icon' href='/favicon/favicon.ico' type='image/x-icon' />
-		<link rel='stylesheet' href='/src/globals.css' />
 		<title>{title}</title>
 		<link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
 		<link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
