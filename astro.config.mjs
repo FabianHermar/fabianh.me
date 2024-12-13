@@ -3,8 +3,6 @@ import { defineConfig, envField } from 'astro/config'
 import react from '@astrojs/react'
 import vercel from '@astrojs/vercel'
 
-import partytown from '@astrojs/partytown';
-
 // https://astro.build/config
 export default defineConfig({
     env: {
@@ -21,7 +19,7 @@ export default defineConfig({
 
     integrations: [tailwind({
         applyBaseStyles: false,
-		}), react(), partytown()],
+		}), react()],
 
     i18n: {
         defaultLocale: 'es',
