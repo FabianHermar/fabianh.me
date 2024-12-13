@@ -1,6 +1,4 @@
 ---
-import styles from '@/styles/DownloadButton.module.css'
-
 import { getI18N } from '@/i18n'
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '@/i18n/utils'
 
@@ -118,17 +116,12 @@ const translatePath = useTranslatedPath(lang)
 	<div class='flex select-none flex-row justify-center gap-3 lg:justify-start'>
 		<a
 			aria-label='Download my CV in PDF format'
-			class={styles.Btn}
+			class='Btn'
 			href='/FabianHerrera_CV.pdf'
 			download='FabianHerreraCV.pdf'
 		>
 			<span>{t('btn.downloadCV')}</span>
-			<svg
-				class={styles.svgIcon}
-				viewBox='0 0 384 512'
-				height='1em'
-				xmlns='http://www.w3.org/2000/svg'
-			>
+			<svg class='svgIcon' viewBox='0 0 384 512' height='1em' xmlns='http://www.w3.org/2000/svg'>
 				<path
 					d='M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'
 				></path>
@@ -180,3 +173,49 @@ const translatePath = useTranslatedPath(lang)
 		</a>
 	</div>
 </section>
+
+<style>
+	.Btn {
+		width: auto;
+		height: 2.5rem;
+		padding: 4px 10px;
+		display: flex;
+		gap: 8px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		position: relative;
+		transition-duration: 0.3s;
+		font-size: 14px;
+		background-color: dark-light(#fff, #000);
+		color: dark-light(#fff, #000);
+		border: 1px solid #000;
+		@apply font-GilroySemibold;
+	}
+
+	.svgIcon {
+		fill: dark-light(#fff, #000);
+	}
+
+	.Btn:hover {
+		transition-duration: 0.3s;
+	}
+
+	.Btn:hover .svgIcon {
+		fill: dark-light(#fff, #000);
+		animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
+
+	@keyframes slide-in-top {
+		0% {
+			transform: translateY(-10px);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	}
+</style>
