@@ -101,9 +101,9 @@ const lang = getLangFromUrl(Astro.url)
 		</script>
 		<ClientRouter />
 	</head>
-	<body class='dark-transition'>
+	<body class='dark-transition flex h-full flex-col'>
 		<Header />
-		<main class='h-screen'>
+		<main class='flex-1'>
 			<slot />
 		</main>
 		<Footer />
