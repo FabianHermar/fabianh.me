@@ -103,10 +103,9 @@ const lang = getLangFromUrl(Astro.url)
 	</head>
 	<body class='dark-transition'>
 		<Header />
-		<main>
+		<main class='h-screen'>
 			<slot />
 		</main>
 		<Footer />
-		<!-- <script src='/main.js' defer type="text/partytown"></script> -->
 	</body>
 </html>
