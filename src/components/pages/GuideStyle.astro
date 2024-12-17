@@ -5,15 +5,15 @@ import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout title='Guia de Estilo'>
-	<main class='h-[435px]'>
+	<section class='h-screen'>
 		<Container>
-			<div class='flex flex-col items-center'>
+			<div class='flex flex-col items-center pb-10 pt-6'>
 				<h1
-					class='bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold text-4xl font-bold tracking-tight text-transparent drop-shadow-sm lg:text-7xl'
+					class='-z-20 bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold text-4xl font-bold tracking-tight text-transparent drop-shadow-sm lg:text-7xl'
 				>
 					Guia de Estilo
 				</h1>
-				<p class='font-GilroyRegular text-xl font-normal'>
+				<p class='-z-20 text-center font-GilroyRegular text-base font-normal md:text-xl'>
 					Conoce un poco más sobre el como esta componetizado mi portafolio
 				</p>
 			</div>
@@ -21,5 +21,5 @@ import Layout from '@/layouts/Layout.astro'
 				<Typo />
 			</div>
 		</Container>
-	</main>
+	</section>
 </Layout>
