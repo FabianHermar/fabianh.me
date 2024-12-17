@@ -29,11 +29,12 @@ const i18n = getI18N({ currentLocale })
 		</div>
 		<div class='relative aspect-square h-auto w-80 select-none lg:w-[550px]'>
 			<img
-				loading='lazy'
 				src='/me.avif'
 				alt='Fabian Herrera photo'
 				width='550'
 				height='550'
+				loading='eager'
+				decoding='async'
 				style='
 			filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 			mask-image: linear-gradient(to bottom, white 50%, transparent 85%);
