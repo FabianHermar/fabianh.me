@@ -1,12 +1,25 @@
 ---
+import Container from '@/components/common/Container.astro'
+import Typo from '@/components/styleGuide/typo.astro'
 import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout title='Guia de Estilo'>
 	<main class='h-[435px]'>
-		<div class='flex flex-col items-center justify-center gap-y-4 pt-32'>
-			<h1 class='font-GilroyBold text-5xl'>Working on this page 🛠</h1>
-			<a href='/' class='font-GilroyRegular text-2xl underline'>Return to Home</a>
-		</div>
+		<Container>
+			<div class='flex flex-col items-center'>
+				<h1
+					class='bg-gradient-to-r from-[#b16cea] from-10% via-[#ff5e69] via-30% to-[#ffa84b] to-90% bg-clip-text font-GilroyBold text-4xl font-bold tracking-tight text-transparent drop-shadow-sm lg:text-7xl'
+				>
+					Guia de Estilo
+				</h1>
+				<p class='font-GilroyRegular text-xl font-normal'>
+					Conoce un poco más sobre el como esta componetizado mi portafolio
+				</p>
+			</div>
+			<div>
+				<Typo />
+			</div>
+		</Container>
 	</main>
 </Layout>
