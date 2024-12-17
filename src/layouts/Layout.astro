@@ -74,7 +74,7 @@ const lang = getLangFromUrl(Astro.url)
 			name='twitter:image'
 			content='https://res.cloudinary.com/dvjzjasfg/image/upload/v1725076616/portfolio_mockup.webp'
 		/>
-		<script defer>
+		<script is:inline>
 			if (window.Worker) {
 				const clarityWorker = new Worker('/workers/clarityWorker.js')
 				clarityWorker.postMessage({})
