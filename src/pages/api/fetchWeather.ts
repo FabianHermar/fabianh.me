@@ -1,6 +1,6 @@
 import axios from 'axios'
 import type { WeatherData, LocationData } from '@/types/weather'
-import { OPENWEATHER_API_KEY, IPINFO_API_KEY } from 'astro:env/client'
+import { OPENWEATHER_API_KEY, IPINFO_API_KEY } from 'astro:env/server'
 
 export const fetchWeather = async (): Promise<{ city: string; weather: WeatherData }> => {
 	try {
