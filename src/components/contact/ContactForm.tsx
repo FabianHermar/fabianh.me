@@ -1,11 +1,12 @@
 import { Textarea } from '@/components/ui/textarea'
 import EmailTemplate from '@/components/contact/EmailComponent'
 import { render } from '@react-email/render'
-import { AUTH_TOKEN } from 'astro:env/server'
+import { getSecret } from 'astro:env/server'
 import { toast, Toaster } from 'sonner'
 import { useRef } from 'react'
 
 function ContactForm() {
+	const AUTH_TOKEN = getSecret('AUTH_TOKEN')
 	const formRef = useRef<HTMLFormElement>(null)
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -36,7 +37,7 @@ function ContactForm() {
 			}
 		)
 
-		const promise = fetch('/api/sendEmail.json', {
+		const promise = await fetch('/api/sendEmail.json', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
