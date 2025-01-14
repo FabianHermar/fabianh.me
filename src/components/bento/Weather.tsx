@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { fetchWeather } from '@/api/fetchWeather.ts'
 import type { WeatherData } from '@/types/weather'
 import { getWeatherIcon } from '@/api/getWeatherIcon.ts'
 import { Eye } from 'lucide-react'
@@ -11,7 +10,9 @@ const CurrentWeather: React.FC = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const { city, weather } = await fetchWeather()
+				const response = await fetch('/api/fetchWeather.json')
+				const data = await response.json()
+				const { city, weather } = data
 				setLocation(city)
 				setWeather(weather)
 			} catch (error) {
