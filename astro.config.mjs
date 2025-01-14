@@ -15,8 +15,8 @@ export default defineConfig({
 		schema: {
 			IPINFO_API_KEY: envField.string({ context: 'server', access: 'secret' }),
 			OPENWEATHER_API_KEY: envField.string({ context: 'server', access: 'secret' }),
-			RESEND_API_KEY: envField.string({ context: 'server', access: 'secret', includes: 're_' }),
-			AUTH_TOKEN: envField.string({ context: 'server', access: 'secret' }),
+			RESEND_API_KEY: envField.string({ context: 'client', access: 'public', includes: 're_' }),
+			AUTH_TOKEN: envField.string({ context: 'client', access: 'public' }),
 			SITE_KEY: envField.string({ context: 'server', access: 'public' }),
 		},
 		validateSecrets: true,
