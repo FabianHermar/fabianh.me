@@ -15,7 +15,7 @@ export default defineConfig({
 		schema: {
 			IPINFO_API_KEY: envField.string({ context: 'server', access: 'secret' }),
 			OPENWEATHER_API_KEY: envField.string({ context: 'server', access: 'secret' }),
-			RESEND_API_KEY: envField.string({ context: 'server', access: 'secret' }),
+			RESEND_API_KEY: envField.string({ context: 'server', access: 'secret', includes: 're_' }),
 			AUTH_TOKEN: envField.string({ context: 'server', access: 'secret' }),
 			SITE_KEY: envField.string({ context: 'server', access: 'public' }),
 		},
@@ -36,12 +36,6 @@ export default defineConfig({
 		locales: ['es', 'en', 'de'],
 		routing: {
 			prefixDefaultLocale: false,
-		},
-	},
-
-	vite: {
-		ssr: {
-			noExternal: ['path-to-regexp'],
 		},
 	},
 })
