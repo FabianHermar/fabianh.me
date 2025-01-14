@@ -1,12 +1,11 @@
 import { Textarea } from '@/components/ui/textarea'
 import EmailTemplate from '@/components/contact/EmailComponent'
 import { render } from '@react-email/render'
-import { getSecret } from 'astro:env/server'
+import { AUTH_TOKEN } from 'astro:env/client'
 import { toast, Toaster } from 'sonner'
 import { useRef } from 'react'
 
 function ContactForm() {
-	const AUTH_TOKEN = getSecret('AUTH_TOKEN')
 	const formRef = useRef<HTMLFormElement>(null)
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
