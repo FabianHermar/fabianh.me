@@ -1,9 +1,6 @@
 import type { APIRoute } from 'astro'
 import { Resend } from 'resend'
-import { getSecret } from 'astro:env/server'
-
-const AUTH_TOKEN = getSecret('AUTH_TOKEN')
-const RESEND_API_KEY = getSecret('RESEND_API_KEY')
+import { RESEND_API_KEY, AUTH_TOKEN } from 'astro:env/client'
 
 const resend = new Resend(RESEND_API_KEY)
 
