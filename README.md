@@ -24,7 +24,7 @@
       <h2>🛠 Stack</h2>
       <ul>
         <li>
-          <a href="https://astro.build/">🚀 Astro</a> - El framework web para sitios web basados en contenidos.
+          <a href="https://astro.build/">🚀 Astro</a> - El framework web para sitios web basados en contenidos. 
         </li>
         <li>
           <a href="https://www.typescriptlang.org/">🟦 Typescript</a> - JavaScript con sintaxis de tipado.
