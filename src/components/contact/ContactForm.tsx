@@ -1,7 +1,7 @@
 import { Textarea } from '@/components/ui/textarea'
 import EmailTemplate from '@/components/contact/EmailComponent'
 import { render } from '@react-email/render'
-import { AUTH_TOKEN } from 'astro:env/client'
+import { AUTH_TOKEN } from 'astro:env/server'
 import { toast, Toaster } from 'sonner'
 import { useRef } from 'react'
 
