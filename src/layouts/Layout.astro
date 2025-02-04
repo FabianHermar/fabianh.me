@@ -74,31 +74,6 @@ const lang = getLangFromUrl(Astro.url)
 			name='twitter:image'
 			content='https://res.cloudinary.com/dvjzjasfg/image/upload/v1725076616/portfolio_mockup.webp'
 		/>
-		<script is:inline>
-			if (window.Worker) {
-				const clarityWorker = new Worker('/workers/clarityWorker.js')
-				clarityWorker.postMessage({})
-
-				clarityWorker.onmessage = function (e) {
-					if (e.data.action === 'insertClarityScript') {
-						;(function (c, l, a, r, i, t, y) {
-							c[a] =
-								c[a] ||
-								function () {
-									;(c[a].q = c[a].q || []).push(arguments)
-								}
-							t = l.createElement(r)
-							t.async = 1
-							t.src = 'https://www.clarity.ms/tag/' + i
-							y = l.getElementsByTagName(r)[0]
-							y.parentNode.insertBefore(t, y)
-						})(window, document, 'clarity', 'script', e.data.clarityId)
-					}
-				}
-			} else {
-				console.error('Web Workers are not supported in this browser.')
-			}
-		</script>
 		<ClientRouter />
 	</head>
 	<body class='dark-transition flex h-full flex-col'>
