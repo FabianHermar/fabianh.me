@@ -1,6 +1,8 @@
 ---
+import Bug from '@/components/icons/bug.astro'
+import Home from '@/components/icons/home.astro'
+import RefreshCw from '@/components/icons/reload.astro'
 import Layout from '@/layouts/Layout.astro'
-import { Bug, Home, RefreshCw } from 'lucide-react'
 ---
 
 <Layout title='404 - Page not found'>
@@ -11,7 +13,7 @@ import { Bug, Home, RefreshCw } from 'lucide-react'
 			<div
 				class='mb-4 flex items-center justify-center space-x-2 font-GilroySemibold text-4xl font-semibold'
 			>
-				<Bug className='h-8 w-8 text-[#ef4444]' />
+				<Bug />
 				<span>¡Ups! Parece que hay un bug en la matriz</span>
 			</div>
 
@@ -26,14 +28,14 @@ import { Bug, Home, RefreshCw } from 'lucide-react'
 					href='/'
 					class='flex items-center space-x-2 bg-primary px-4 py-2 font-GilroySemibold font-semibold text-primary-foreground transition-colors hover:bg-primary/90'
 				>
-					<Home className='h-4 w-4' />
+					<Home />
 					<span>Volver al inicio</span>
 				</a>
 				<button
 					class='flex items-center space-x-2 bg-secondary px-4 py-2 font-GilroySemibold font-semibold text-secondary-foreground transition-colors hover:bg-secondary/90'
 					id='reload-button'
 				>
-					<RefreshCw className='h-4 w-4' />
+					<RefreshCw />
 					<span>Recargar página</span>
 				</button>
 			</div>
