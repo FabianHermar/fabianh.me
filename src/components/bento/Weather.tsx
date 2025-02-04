@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import type { WeatherData } from '@/types/weather'
 import { getWeatherIcon } from '@/api/getWeatherIcon.ts'
-import { Eye } from 'lucide-react'
+import { Eye } from '@/components/icons/eye'
 
 const CurrentWeather: React.FC = () => {
 	const [location, setLocation] = useState<string | null>(null)
