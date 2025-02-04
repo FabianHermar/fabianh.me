@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl } from '@/i18n/utils'
+import Analytics from '@vercel/analytics/astro'
 import { ClientRouter } from 'astro:transitions'
 
 import '../globals.css'
@@ -75,6 +76,7 @@ const lang = getLangFromUrl(Astro.url)
 			content='https://res.cloudinary.com/dvjzjasfg/image/upload/v1725076616/portfolio_mockup.webp'
 		/>
 		<ClientRouter />
+		<Analytics />
 	</head>
 	<body class='dark-transition flex h-full flex-col'>
 		<Header />
