@@ -29,7 +29,7 @@
     "@types/react-dom": "19.0.3",
     "@vercel/analytics": "1.4.1",
     "astro": "5.2.3",
-    "axios": "1.7.9",
+    "axios": "1.8.2",
     "clsx": "2.1.1",
     "dompurify": "3.2.4",
     "framer-motion": "11.17.0",
