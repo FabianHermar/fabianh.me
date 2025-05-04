@@ -52,6 +52,30 @@
         "subtitle": "Una biblioteca de componentes TailwindCSS",
         "description": "Este proyecto ha sido uno de los proyectos un tanto grande de los que he realizado en el año 2024 y que gracias a este pude aprender muchas más cosas de las cuales anteriormente desconocía y que no sabía cómo usar.",
         "description2": "Hoy en día, DuneUI es una biblioteca más de componentes de TailwindCSS, pero esta esta más enfocada a mi estilo de diseño que llega a ser un tanto más minimalista y moderno, la cual a conllevado muchos meses de trabajo y planificación anticipada. A lo cual, decidí crearla por motivación de varios amigos, maestros y conocidos que les gusta mi forma de diseñar y es aquí que les presento DuneUI."
+      },
+      "project2": {
+        "title": "UTNA Website Redesign",
+        "subtitle": "Rediseño total del sitio web de la UTNA realizado por un estudiante",
+        "description": "El rediseño de la página web de mi universidad fue algo que disfrute mucho en realizar, este tiene un diseño más simple, pero a la vez muestra diseño de tendencia actual como lo es el \"Bento Grid\". Este proyecto surgió gracias a que uno de mis profesores me ofreció la posibilidad de rediseñar dicha página web a lo cual acepte, el diseño propuesto fue aprobado por parte del personal administrativo y a partir de ahí comencé a trabajar en el.",
+        "description2": "Este proyecto tenía que estar listo en 3 semanas, por lo cual tuve que darme prisa en terminarlo lo antes posible por la auditoria que iba a tener la universidad. Al paso de la primer semana, el diseño inicial de la landing estaba terminado, pero el proyecto cayo y nunca se pudo concretar al final con superiores de continuar con el proyecto y de poderlo desplegar con el dominio oficial. Dejo por aquí el preview como luce."
+      },
+      "project3": {
+        "title": "Last Dusk",
+        "subtitle": "Juego de supervivencia zombie",
+        "description": "Last Dusk fue un proyecto universitario parte la clase de \"Desarrollo de Videojuegos\" y este consta en sobrevivir la mayor cantidad noches posibles de los zombies y de enemigos varios. Que por el día se tienen que recoger los recursos necesarios para sobrevivir recorriendo un mapa extenso con diferentes zonas y mejor loot, pero con enemigos más fuertes.",
+        "description2": "El proyecto esta terminado un 50% de su totalidad a lo que se desea llegar, se pretende seguir con el proyecto pero usando tecnologías diferentes, modelados mejores, mejoras de interfaces, easter eggs, etc. El juego no esta disponible para el uso y/o distribución comercial hasta que este pueda estar terminado en su mayoría."
+      },
+      "project4": {
+        "title": "Boxode Website",
+        "subtitle": "Rediseño total de la página web de Boxode",
+        "description": "El rediseño de la página web de Boxode fue una experiencia que me permitió fusionar creatividad visual con identidad tecnológica. Inspirado en la inmensidad del espacio, el nuevo diseño incorpora elementos como cielos estrellados y sutiles lluvias de meteoros que envuelven la interfaz en una atmósfera futurista y envolvente. La paleta principal de tonos de azul profundo, blanco brillante y acentos en negro refuerza una estética limpia, profesional y moderna que respeta parte del estilo anterior mientras lo lleva a un nuevo nivel",
+        "description2": "Se matuvieron ciertos componentes visuales del diseño previo, pero esta vez se aplico una estructura más fluida e intuitiva, integrando elementos de interacción actuales que reflejan mejor el carácter innovador de Boxode y el resultado fue una propuesta visual sólida que refleja una visión más audaz del futuro digital de la marca. "
+      },
+      "project5": {
+        "title": "Smart Agriculture Laboratory",
+        "subtitle": "Blog de artículos científicos",
+        "description": "lorem ipsum",
+        "description2": "loren ipsum"
       }
     },
     "moreinfo": {
