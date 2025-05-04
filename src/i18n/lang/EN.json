@@ -52,6 +52,30 @@
         "subtitle": "A TailwindCSS components library",
         "description": "This project has been one of the somewhat large projects I have carried out in the year 2024 and thanks to this I was able to learn many more things that I previously did not know how to use.",
         "description2": "Today, DuneUI is a library of more TailwindCSS components, but this one is more focused on my design style that becomes a bit more minimalist and modern, which has taken many months of work and planning in advance. To which, I decided to create it out of motivation from several friends, teachers, and acquaintances who like my way of designing and this is where I present DuneUI."
+      },
+      "project2": {
+        "title": "UTNA Website Redesign",
+        "subtitle": "Total redesign of UTNA's website by a student",
+        "description": "The redesign of my university's website was something I really enjoyed doing, it has a simpler design, but at the same time it shows a current trend design such as the \"Bento Grid\". This project came about because one of my professors offered me the possibility of redesigning the web page which I accepted, the proposed design was approved by the administrative staff and from there I started working on it.",
+        "description2": "This project had to be ready in 3 weeks, so I had to hurry to finish it as soon as possible because of the audit that the university was going to have. After the first week, the initial design of the landing page was finished, but the project fell through and could never be finished with the project and to be able to deploy it with the official domain. I leave here the preview of what it looks like."
+      },
+      "project3": {
+        "title": "Last Dusk",
+        "subtitle": "Zombie survival game",
+        "description": "Last Dusk was a university project part of the class \"Video Game Development\" and this consists of surviving as many nights as possible from zombies and various enemies. During the day you have to collect the necessary resources to survive by going through an extensive map with different zones and better loot, but with stronger enemies.",
+        "description2": "The project is about 50% finished, we intend to continue with the project but using different technologies, better modeling, interface improvements, easter eggs, etc. The game is not available for commercial use and/or distribution until it is mostly finished."
+      },
+      "project4": {
+        "title": "Boxode Website",
+        "subtitle": "Rediseño total de la página web de Boxode",
+        "description": "El rediseño de la página web de Boxode fue una experiencia que me permitió fusionar creatividad visual con identidad tecnológica. Inspirado en la inmensidad del espacio, el nuevo diseño incorpora elementos como cielos estrellados y sutiles lluvias de meteoros que envuelven la interfaz en una atmósfera futurista y envolvente. La paleta principal de tonos de azul profundo, blanco brillante y acentos en negro refuerza una estética limpia, profesional y moderna que respeta parte del estilo anterior mientras lo lleva a un nuevo nivel",
+        "description2": "Se matuvieron ciertos componentes visuales del diseño previo, pero esta vez se aplico una estructura más fluida e intuitiva, integrando elementos de interacción actuales que reflejan mejor el carácter innovador de Boxode y el resultado fue una propuesta visual sólida que refleja una visión más audaz del futuro digital de la marca. "
+      },
+      "project5": {
+        "title": "Smart Agriculture Laboratory",
+        "subtitle": "Blog de artículos científicos",
+        "description": "lorem ipsum",
+        "description2": "loren ipsum"
       }
     },
     "moreinfo": {
