@@ -9,12 +9,12 @@
     "WIW": {
       "title": "Where I've worked",
       "card1": {
-        "title": "Co-founder & Principal Frontend Developer • Boxode",
+        "title": "Lead Frontend Developer • Boxode",
         "location": "Aguascalientes, México - Remote",
         "duration": "April 2023 - July 2024 | Part-time",
         "phrase": "\"Every step out of the comfort zone brings you closer to your goals.\"",
-        "description1": "Boxode, one of the greatest ideas and projects I have ever realized during my life, and here is a little bit about its history. Boxode, Ltd. or better known as Boxode, is a software development company founded in December 2022 in the state of Aguascalientes, but started its official operations in April 2023.",
-        "description2": "The idea of creation arose because a colleague and I had the idea of creating a software development company where we could apply the knowledge acquired during the study of Software Development and Management Engineering. Now, together with other known colleagues, it is growing in staff little by little to be able to provide a quality service and meet the expectations of our customer.",
+        "description1": "Boxode was one of the most significant projects I have had the opportunity to participate in. Boxode, Ltd., or simply Boxode, is a software development company founded in December 2022 in the state of Aguascalientes, beginning official operations in April 2023. During my time at the company, I witnessed the growth of a team committed to technological innovation and the development of high-impact digital solutions.",
+        "description2": "During my time at the company, I led a small development team of five people, including myself. I was also responsible for training my development team, introducing tools that helped improve collaborative work efficiency and the end-user experience.",
         "tech": {
           "tech1": "Resilience"
         }
