@@ -2,7 +2,7 @@
   "SEO": {
     "title": "Fabian Herrera - Fullstack-Webentwickler mit mehr als 2 Jahren Erfahrung."
   },
-  "hero": {
+  "landing": {
     "title": "Ich entwickle digitale produkte",
     "title_2": "die die fantasie anregen und das nutzererlebnis verbessern.",
     "subtitle": "Hallo! Ich bin Fabian Herrera, ein Softwareentwickler aus Mexiko. Ich habe mich auf die Entwicklung intuitiver Benutzeroberflächen für wachsende Startups und eine Vielzahl von Kunden spezialisiert.",
@@ -67,13 +67,13 @@
       },
       "project4": {
         "title": "Boxode Website",
-        "subtitle": "Rediseño total de la página web de Boxode",
-        "description": "El rediseño de la página web de Boxode fue una experiencia que me permitió fusionar creatividad visual con identidad tecnológica. Inspirado en la inmensidad del espacio, el nuevo diseño incorpora elementos como cielos estrellados y sutiles lluvias de meteoros que envuelven la interfaz en una atmósfera futurista y envolvente. La paleta principal de tonos de azul profundo, blanco brillante y acentos en negro refuerza una estética limpia, profesional y moderna que respeta parte del estilo anterior mientras lo lleva a un nuevo nivel",
-        "description2": "Se matuvieron ciertos componentes visuales del diseño previo, pero esta vez se aplico una estructura más fluida e intuitiva, integrando elementos de interacción actuales que reflejan mejor el carácter innovador de Boxode y el resultado fue una propuesta visual sólida que refleja una visión más audaz del futuro digital de la marca. "
+        "subtitle": "Komplette Neugestaltung der Website von Boxode",
+        "description": "Die Neugestaltung der Boxode-Website war eine Erfahrung, bei der ich visuelle Kreativität mit technologischer Identität verbinden konnte. Inspiriert von der Unendlichkeit des Weltraums, enthält das neue Design Elemente wie Sternenhimmel und subtile Meteoritenschauer, die die Benutzeroberfläche in eine futuristische und einhüllende Atmosphäre tauchen. Die Hauptfarbpalette aus tiefen Blautönen, strahlendem Weiß und schwarzen Akzenten unterstreicht eine klare, professionelle und moderne Ästhetik, die einen Teil des bisherigen Stils beibehält und ihn gleichzeitig auf eine neue Ebene hebt.",
+        "description2": "Bestimmte visuelle Komponenten des vorherigen Designs wurden beibehalten, aber diesmal wurde eine flüssigere und intuitivere Struktur angewendet, die aktuelle Interaktionselemente integriert, die den innovativen Charakter von Boxode besser widerspiegeln. Das Ergebnis war ein solider visueller Entwurf, der eine mutigere Vision der digitalen Zukunft der Marke widerspiegelt."
       },
       "project5": {
         "title": "Smart Agriculture Laboratory",
-        "subtitle": "Blog de artículos científicos",
+        "subtitle": "Blog mit wissenschaftlichen Artikeln",
         "description": "Dieses Projekt war das letzte, das ich an meiner Universität durchführen musste, um meinen Abschluss zu machen. Es wurde während meines Sozialdienstes, auch bekannt als Praktikum, durchgeführt, bei dem ich in einem Unternehmen arbeiten musste, das dieses Projekt auf der Grundlage der Anforderungen meines Unternehmensberaters entwickelte. Hier ist das fertige Projekt. Aufgrund der Lieferzeit war es noch nicht zu 100 % fertig, aber neue Funktionen werden nach und nach hinzugefügt.",
         "description2": "Das Hauptziel des Projekts bestand darin, eine intuitive Schnittstelle zu schaffen, die es den Forschern erleichtert, ihre Arbeiten hochzuladen, wobei eine reibungslose und zugängliche Benutzererfahrung für alle Nutzer der Plattform im Vordergrund stand. Trotz der zeitlichen Beschränkungen habe ich ein hohes Maß an Engagement und Hingabe an den Tag gelegt, um ungeachtet des Umfangs des Projekts ein hochwertiges Ergebnis zu liefern."
       }
