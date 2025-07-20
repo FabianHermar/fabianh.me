@@ -14,7 +14,7 @@ const i18n = getI18N({ currentLocale })
 				<h3
 					class='w-full pr-2 font-GilroyBold text-lg font-bold text-black transition-colors md:text-3xl'
 				>
-					{i18n.hero.bento.education.career}
+					{i18n.landing.bento.education.career}
 				</h3>
 				<Arrow
 					class:list='h-6 w-6 flex-shrink-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1'
@@ -22,12 +22,12 @@ const i18n = getI18N({ currentLocale })
 				/>
 			</div>
 			<time class='mb-4 px-4 font-GilroySemibold text-neutral-500 md:px-0'
-				>{i18n.hero.bento.education.location} | {i18n.hero.bento.education.duration}</time
+				>{i18n.landing.bento.education.location} | {i18n.landing.bento.education.duration}</time
 			>
 		</div>
 	</a>
 	<p
 		class='text-pretty px-4 pt-4 font-GilroyRegular text-lg text-neutral-800'
-		set:html={sanitizeHtml(i18n.hero.bento.education.description)}
+		set:html={sanitizeHtml(i18n.landing.bento.education.description)}
 	/>
 </div>
