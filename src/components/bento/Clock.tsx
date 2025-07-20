@@ -42,7 +42,7 @@ export function UTCClock() {
 
 	const getTimeZoneMessage = () => {
 		if (utcOffset === -6) {
-			return `${i18n.hero.bento.time.timezone}`
+			return `${i18n.landing.bento.time.timezone}`
 		} else {
 			const diff = utcOffset + 6
 			const direction = diff > 0 ? 'adelante' : 'atrás'
