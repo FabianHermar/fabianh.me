@@ -19,7 +19,7 @@ const i18n = getI18N({ currentLocale })
 		<span class='font-GilroyBold text-2xl font-bold text-neutral-500 md:text-4xl'>03. &nbsp;</span>
 		<GradualSpacing
 			className='font-GilroyBold text-2xl font-bold text-black md:text-4xl'
-			text=`${i18n.hero.moreinfo.title}`
+			text=`${i18n.landing.moreinfo.title}`
 			client:visible
 		/>
 		<span class='ml-[0.6em] mt-1 h-0.5 grow translate-y-full bg-neutral-400'></span>
@@ -37,7 +37,7 @@ const i18n = getI18N({ currentLocale })
 						height={20}
 					/>
 					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>
-						{i18n.hero.bento.weather.title}
+						{i18n.landing.bento.weather.title}
 					</h2>
 				</div>
 				<CurrentWeather client:visible />
@@ -65,7 +65,7 @@ const i18n = getI18N({ currentLocale })
 						height={20}
 					/>
 					<h2 class='font-GilroyBold text-lg font-bold text-white md:text-2xl'>
-						{i18n.hero.bento.time.title}
+						{i18n.landing.bento.time.title}
 					</h2>
 				</div>
 				<UTCClock client:load />
@@ -80,7 +80,7 @@ const i18n = getI18N({ currentLocale })
 						height={20}
 					/>
 					<h2 class='font-GilroyBold text-lg font-bold text-black md:text-2xl'>
-						{i18n.hero.bento.education.title}
+						{i18n.landing.bento.education.title}
 					</h2>
 				</div>
 				<Education />
