@@ -37,23 +37,6 @@ const i18n = getI18N({ currentLocale })
 				]}
 			/>
 		</div>
-		<div>
-			<ProjectsCard
-				projectImage='/projects/SmartAgLab.avif'
-				externalLink='https://smartaglab.vercel.app'
-				githubLink={null}
-				target='_blank'
-				title=`${i18n.landing.projects.project5.title}`
-				subtitle=`🌱 ${i18n.landing.projects.project5.subtitle}`
-				description=`${i18n.landing.projects.project5.description}`
-				description2=`${i18n.landing.projects.project5.description2}`
-				technologies={[
-					{ text: 'Astro', image: '/svg/astrojs.svg' },
-					{ text: 'TypeScript', image: '/svg/typescript.svg' },
-					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' },
-				]}
-			/>
-		</div>
 		<div class='py-16'>
 			<ProjectsCard
 				projectImage='/projects/DuneUI.webp'
@@ -70,6 +53,24 @@ const i18n = getI18N({ currentLocale })
 					{ text: 'JavaScript', image: '/svg/javascript.svg' },
 					{ text: 'TypeScript', image: '/svg/typescript.svg' },
 					{ text: 'TailwindCSS', image: '/svg/tailwindcss.svg' },
+				]}
+			/>
+		</div>
+		<div class='py-16'>
+			<ProjectsCard
+				projectImage='/projects/LastDusk.avif'
+				externalLink={null}
+				githubLink={null}
+				target='_blank'
+				title=`${i18n.landing.projects.project3.title}`
+				subtitle=`🌱 ${i18n.landing.projects.project3.subtitle}`
+				description=`${i18n.landing.projects.project3.description}`
+				description2=`${i18n.landing.projects.project3.description2}`
+				technologies={[
+					{ text: 'Unity', image: '/svg/unity.svg' },
+					{ text: 'C#', image: '/svg/csharp.svg' },
+					{ text: 'Blender', image: '/svg/blender.svg' },
+					{ text: `${i18n.landing.projects.project3.tech['1']}`, image: '/svg/team.svg' },
 				]}
 			/>
 		</div>
