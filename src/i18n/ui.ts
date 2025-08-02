@@ -77,24 +77,24 @@ export const ui = {
 
 export const routes = {
 	es: {
-		about: 'sobre-mi',
-		projects: 'proyectos',
-		archive: 'archivo',
-		blog: 'blog',
+		'about': 'sobre-mi',
+		'projects': 'proyectos',
+		'archive': 'archivo',
+		'blog': 'blog',
 		'style-guide': 'guia-de-estilo',
 	},
 	en: {
-		about: 'about-me',
-		projects: 'projects',
-		archive: 'archive',
-		blog: 'blog',
+		'about': 'about-me',
+		'projects': 'projects',
+		'archive': 'archive',
+		'blog': 'blog',
 		'style-guide': 'style-guide',
 	},
 	de: {
-		about: 'ueber-mich',
-		projects: 'projekte',
-		archive: 'archiv',
-		blog: 'blog',
+		'about': 'ueber-mich',
+		'projects': 'projekte',
+		'archive': 'archiv',
+		'blog': 'blog',
 		'style-guide': 'stilhandbuch',
 	},
 }
