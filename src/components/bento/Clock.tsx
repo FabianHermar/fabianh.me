@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getI18N } from '@/i18n'
 
-
 export function UTCClock() {
 	const [time, setTime] = useState<Date | null>(null)
 	const [timeZone, setTimeZone] = useState('')
